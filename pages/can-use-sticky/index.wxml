@@ -1,0 +1,4 @@
+<m-can-use-sticky bind:canUseCssSticky="canUseCssSticky"></m-can-use-sticky>
+
+
+{{ canUseCssSticky }}

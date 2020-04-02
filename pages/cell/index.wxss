@@ -1,0 +1,11 @@
+page {
+  background-color: #f5f5f5 !important;
+}
+
+.tag-group .tag {
+  margin-left: 12rpx;
+}
+
+.custom-body-class {
+  padding: 0 !important;
+}

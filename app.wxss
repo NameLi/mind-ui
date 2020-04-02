@@ -1,0 +1,32 @@
+@import "./static/font/iconfont.wxss";
+
+view,
+scroll-view,
+swiper,
+button,
+input,
+textarea,
+label,
+navigator,
+image {
+	box-sizing: border-box;
+}
+
+page {
+  overscroll-behavior-y: none;
+  font-family: 'PingFang SC', Helvetica, Arial, sans-serif;
+
+  /* 颜色定义 */
+  --color-primary: #409EFF;           /* primary */
+  --color-success: #67C23A;           /* Success */
+  --color-warning: #E6A23C;           /* Warning */
+  --color-danger: #F56C6C;            /* Danger */
+  --color-info: #909399;              /* Info */
+
+  --color-text-primary: #303133;      /* 主要文字 标题 */
+  --color-text-regular: #606266;      /* 常规文字 正文 */
+  --color-text-secondary: #909399;    /* 次要文字 辅助 */
+
+  --color-border: #dcdee2;            /* 边框 */
+  --color-mask: rgba(0, 0, 0, 0.55);  /* 遮罩颜色 */
+}

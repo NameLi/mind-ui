@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Sticky 吸顶容器",
+  "usingComponents": {
+    "m-can-use-sticky": "/dist/can-use-sticky/index",
+    "m-sticky": "/dist/sticky/index",
+    "m-sticky-item": "/dist/sticky-item/index"
+  }
+}

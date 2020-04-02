@@ -1,0 +1,9 @@
+<view 
+  class="custom-class m-message m-message--{{type}} {{ visible ? '' : 'is-hidden' }}"
+  style="{{ 'z-index:' + zIndex }}" 
+>
+  {{ content }}
+  <view class="close-btn" wx:if="{{showClose}}">
+    <view class="btn" bindtap="onClose"></view>
+  </view>
+</view>

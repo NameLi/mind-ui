@@ -1,0 +1,9 @@
+<view class="m-loadmore custom-class" style="{{ color ? 'color:' + color : '' }}">
+  <view class="m-loadmore__loading" wx:if="{{ loading }}">
+    <view class='{{ spinner ? "" : "m-loadmore__dot" }}'>
+      <text class='m-loadmore__snake' wx:if="{{ spinner }}"></text>
+      <text class='m-loadmore__message'>{{ loadingContent }}</text>
+    </view>
+  </view>
+  <view class="m-loadmore__end" wx:else>{{ loadEndContent }}</view>
+</view>

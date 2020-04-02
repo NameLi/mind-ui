@@ -1,0 +1,50 @@
+<m-cell-group title="单元格分组" border="{{ borderSwitch }}" card="{{ cardSwitch }}">
+  <view slot="group-suffix">
+    <m-icon name="category" bindtap="handleSwitchModel"></m-icon>
+  </view>
+
+  <m-cell icon="love" icon-color="#e54d42" title="图标+标题"></m-cell>
+
+  <m-cell icon="https://note-file.ixook.com/FkwInL0tWpqDeRNtYHMfmaHlioTq" title="图片+标题"></m-cell>
+
+  <m-cell icon="location" icon-color="#00CDA2" title="跳转" url="/pages/home/index" link-type="navigateTo"></m-cell>
+
+  <m-cell icon="tag" icon-color="#00CDA2" title="标签">
+    <view class="tag-group">
+      <m-tag type="warning" round>标签</m-tag>
+      <m-tag custom-class="tag" type="success" round>标签</m-tag>
+      <m-tag custom-class="tag" type="warning">标签</m-tag>
+    </view>
+  </m-cell>
+
+  <m-cell icon="feed" icon-color="#00CDA2" title="表单组件">
+    <m-switch value="{{ switch }}" bind:change="onSwitchChange"></m-switch>
+  </m-cell>
+
+  <m-cell icon="feed" icon-color="#00CDA2" title="表单组件">
+    <m-checkbox value="{{ switch }}" bind:change="onSwitchChange"></m-checkbox>
+  </m-cell>
+
+  <m-cell icon="edit" data-name="detail" bind:click="onClick" icon-color="#00CDA2" title="文本" value="内容区"></m-cell>
+</m-cell-group>
+
+
+<!-- 选项模态框 -->
+<m-modal 
+  visible="{{ visible }}" 
+  show-cancel-button="{{ false }}" 
+  show-confirm-button="{{ false }}" 
+  bind:close="handleSwitchModel"
+  custom-body-class="custom-body-class"
+>
+  <m-cell-group border>
+    <m-cell title="卡片式">
+      <m-switch value="{{ cardSwitch }}" bind:change="onCardSwitchChange"></m-switch>
+    </m-cell>
+    <m-cell title="下边框">
+      <m-switch value="{{ borderSwitch }}" bind:change="onBorderSwitchChange"></m-switch>
+    </m-cell>
+  </m-cell-group>
+</m-modal>
+
+<m-modal id="modal" />

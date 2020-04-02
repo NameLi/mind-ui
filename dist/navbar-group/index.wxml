@@ -1,0 +1,37 @@
+<view class="tabs__wrap custom-class">
+  <scroll-view
+    scroll-x="{{ true }}"
+    scroll-with-animation
+    scroll-left="{{ scrollLeft }}"
+    class="tabs__scroll"
+  >
+    <view class="tabs__nav">
+      <view class="tabs__line" wx:if="{{ lineHeight }}" style="{{ tabs.getLineStyle(lineLeft, activeLineWidth, lineHeight, lineColor) }}"></view>
+      <slot />
+    </view>
+  </scroll-view>
+</view>
+
+
+<wxs module="tabs">
+  function getLineStyle(lineLeft, lineWidth, lineHeight, lineColor) {
+    var styles = [
+      'transform: translateX(' + lineLeft + 'px)',
+      'width:' + lineWidth + 'px'
+    ];
+
+    if(lineHeight) {
+      styles.push('height:' + lineHeight + 'rpx')
+    }
+
+    if(lineColor) {
+      styles.push('background-color:' + lineColor)
+    }
+
+    return styles.join(';');
+  }
+
+  module.exports = {
+    getLineStyle: getLineStyle
+  }
+</wxs>

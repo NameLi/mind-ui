@@ -1,0 +1,14 @@
+.demo-item {
+  padding: 32rpx;
+}
+
+.demo-header {
+  display: flex;
+  padding: 24rpx 0;
+  color: #999;
+  justify-content: space-between;
+}
+
+.demo-desc {
+  color: #aaa;
+}

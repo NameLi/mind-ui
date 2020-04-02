@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Grid 宫格",
+  "usingComponents": {
+    "m-grid": "/dist/grid/index",
+    "m-grid-item": "/dist/grid-item/index"
+  }
+}

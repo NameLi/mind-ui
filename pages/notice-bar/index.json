@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "NoticeBar 通告栏",
+  "usingComponents": {
+    "m-notice-bar": "/dist/notice-bar/index"
+  }
+}

@@ -1,0 +1,30 @@
+Page({
+  data: {
+    list: [
+      'star',
+      'star-fill',
+      'like',
+      'like-fill',
+      'up',
+      'down',
+      'send',
+      'send-fill',
+      'see',
+      'see-fill',
+      'boy',
+      'girl',
+      'unknown',
+      'edit',
+      'set',
+      'date',
+      'news',
+      'feed',
+      'aboutus',
+      'search',
+      'more',
+      'category',
+      'close-fill',
+      'delete',
+    ]
+  }
+})

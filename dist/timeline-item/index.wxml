@@ -1,0 +1,10 @@
+<view class="m-timeline {{ isLast ? 'is-last':'' }}">
+  <view class="m-time">
+    <m-icon wx:if="{{ icon }}" name="{{ icon }}" color="{{ color }}"></m-icon>
+    <text wx:else style="{{ color ? 'color:' + color : '' }}">{{ text }}</text>
+  </view>
+  
+  <view class="m-timeline__content">
+    <slot />
+  </view>
+</view>

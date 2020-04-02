@@ -1,0 +1,11 @@
+page {
+  background-color: #f7f8fa;
+}
+
+.demo-item {
+  padding: 32rpx;
+}
+.demo-item .demo-title {
+  padding: 16rpx 0;
+  color: #999;
+}

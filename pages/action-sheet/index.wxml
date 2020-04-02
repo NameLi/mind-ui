@@ -1,0 +1,42 @@
+<view style="margin-top: 420rpx">
+  <m-button bind:click="handleOpen1">基础用法</m-button>
+  <m-button bind:click="handleOpen2">自定义头部</m-button>
+  <m-button bind:click="handleOpen3">不显示取消按钮</m-button>
+</view>
+
+<!-- 基础用法 -->
+<m-action-sheet 
+  visible="{{ visible1 }}" 
+  actions="{{ actions1 }}" 
+  show-cancel 
+  bind:cancel="handleCancel1" 
+  bind:click="handleClickItem1"
+  bind:getuserinfo="getuserinfo"
+></m-action-sheet>
+
+
+<!-- 自定义头部 -->
+<m-action-sheet 
+  visible="{{ visible2 }}" 
+  actions="{{ actions2 }}" 
+  show-cancel 
+  bind:cancel="handleCancel2" 
+  bind:click="handleClickItem2" 
+>
+  <view slot="header" style="padding: 24rpx 0">
+    <view style="color: #444;font-size: 32rpx">确定吗？</view>
+    <text>删除后无法恢复哦</text>
+  </view>
+</m-action-sheet>
+
+
+<!-- 不显示取消按钮 -->
+<m-action-sheet 
+  visible="{{ visible3 }}" 
+  actions="{{ actions3 }}" 
+  bind:cancel="handleCancel3" 
+  bind:click="handleClickItem3" 
+>
+</m-action-sheet>
+
+<m-message id="message" />

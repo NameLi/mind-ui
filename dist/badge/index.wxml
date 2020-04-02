@@ -1,0 +1,14 @@
+<view class="m-badge custom-class">
+  <slot></slot>
+  <view 
+    wx:if="{{ isDot }}"
+    class="m-badge-dot" 
+    style="{{ bgcolor ? 'background-color: ' + bgcolor : '' }}"
+  ></view>
+
+  <view 
+    wx:elif="{{ value }}"
+    class="m-badge-count {{ static ? 'm-badge-count__static':'' }}" 
+    style="{{ bgcolor ? 'background-color: ' + bgcolor : '' }}"
+  >{{ _value }}</view>
+</view>

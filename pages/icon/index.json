@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Icon 图标",
+  "usingComponents": {
+    "m-grid": "/dist/grid/index",
+    "m-grid-item": "/dist/grid-item/index"
+  }
+}

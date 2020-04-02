@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "NavBar 选项卡",
+  "usingComponents": {
+    "m-navbar-group": "/dist/navbar-group/index",
+    "m-navbar": "/dist/navbar/index"
+  }
+}

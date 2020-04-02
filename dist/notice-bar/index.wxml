@@ -1,0 +1,30 @@
+<view class="notice-bar__wrap custom-class">
+
+  <slot name="preifx"></slot>
+
+  <view class="notice-bar">
+    <view 
+      class="notice-bar__content {{ !scrollable ? 'm-ellipsis' : '' }} {{ multiline ? 'multiline':'' }}"
+      style="{{ notice.setAnimation(scrollable, delaySec, speed, delay) }}"
+    >
+      <slot />
+    </view>
+  </view>
+
+  <slot name="suffix"></slot>
+</view>
+
+
+<wxs module="notice">
+  function setAnimation(scrollable, sec, speed, delay) {
+    if(!scrollable || sec === 0) return ''
+
+    return [
+      'animation: once '+ sec +'s linear ' + delay + 's, round '+ (sec + 750 / speed) +'s linear '+ (sec + delay) +'s infinite',
+    ].join(';');
+  }
+
+  module.exports = {
+    setAnimation: setAnimation
+  }
+</wxs>

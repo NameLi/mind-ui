@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Spinner 加载中",
+  "usingComponents": {
+    "m-spinner": "/dist/spinner/index"
+  }
+}

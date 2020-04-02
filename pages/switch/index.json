@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Switch 开关",
+  "usingComponents": {
+    "m-switch": "/dist/switch/index",
+    "m-modal": "/dist/modal/index"
+  }
+}

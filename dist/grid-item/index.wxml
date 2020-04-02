@@ -1,0 +1,47 @@
+<view 
+  class="grid-item" 
+  hover-class="{{ url ? 'grid-item--hover' : '' }}"  
+  style="{{ grid.getItemStyle(width, height) }}" 
+  bind:tap="onClick"
+>
+  <view class="grid-item__content {{ border ? 'grid-item__content--border' : '' }}">
+
+    <block wx:if="{{ useSlot }}">
+      <slot />
+    </block>
+
+    <block wx:else>
+      <view class="grid-item__icon">
+        <m-icon wx:if="{{ icon }}" name="{{ icon }}" color="{{ iconColor }}" size="{{ iconSize }}" dot="{{ dot }}" info="{{ info }}" />
+        <slot wx:else name="icon"></slot>
+
+        <m-badge custom-class="grid-item__badge" is-dot="{{ badgeDot }}" value="{{ badgeValue }}"></m-badge>
+      </view>
+
+      <view class="grid-item__text">
+        <text wx:if="{{ text }}">{{ text }}</text>
+        <slot wx:else name="text"></slot>
+      </view>
+    </block>
+
+  </view>
+</view>
+
+<wxs module="grid">
+  function getItemStyle(width, height) {
+    var styles = []
+    if(width) {
+      styles.push('width:' + width)
+    }
+
+    if(height) {
+      styles.push('height:' + height)
+    }
+
+    return styles.join(";")
+  }
+
+  module.exports = {
+    getItemStyle: getItemStyle
+  }
+</wxs>

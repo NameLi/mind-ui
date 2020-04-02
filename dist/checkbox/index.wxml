@@ -1,0 +1,68 @@
+<view class="m-checkbox custom-class">
+
+  <view wx:if="{{ labelLeft }}" class="m-checkbox__label m-checkbox__label--left" bindtap="onClickLabel">
+    <slot></slot>
+  </view>
+
+  <view class="m-checkbox__icon-wrap" bindtap="toggle">
+    
+    <view 
+      class="m-checkbox__icon {{ check.getClass(value, disabled, prevent, round) }}"
+      style="{{ check.getStyle(value, disabled, prevent, checkedColor) }}"
+    >
+      <m-icon
+        name="confirm"
+        size="32"
+        color="{{ value ? '#fff' : 'transparent' }}"
+      ></m-icon>
+    </view>
+  </view>
+
+  <view wx:if="{{ !labelLeft }}" class="m-checkbox__label m-checkbox__label--right" bindtap="onClickLabel">
+    <slot></slot>
+  </view>
+</view>
+
+
+<wxs module="check">
+
+  function getClass(value, disabled, prevent, round) {
+    var class = []
+
+    if(!value && !disabled && prevent) {
+      class.push('m-checkbox__icon--prevent')
+    }
+
+    if(value) {
+      class.push('m-checkbox__icon--checked')
+    }
+
+    if(disabled) {
+      class.push('m-checkbox__icon--disabled')
+    }
+
+    if(round) {
+      class.push('m-checkbox__icon--round')
+    }
+
+    return class.join(" ")
+  }
+
+  function getStyle(value, disabled, prevent, checkedColor) {
+    if(!checkedColor) return
+
+    var style = []
+
+    if(value) {
+      style.push('background: ' + checkedColor)
+      style.push('border-color: ' + checkedColor)
+    }
+
+    return style.join(";")
+  }
+
+  module.exports = {
+    getClass: getClass,
+    getStyle: getStyle
+  }
+</wxs>

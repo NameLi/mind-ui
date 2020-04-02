@@ -1,0 +1,12 @@
+<view class="demo-item custom-class">
+  <view class="demo-header">
+    <view class="demo-title">{{ title }}</view>
+    <view class="demo-desc" wx:if="{{ desc !== '' }}">{{ desc }}</view>
+    <view wx:else class="demo-desc">
+      <slot name="header-suffix"></slot>
+    </view>
+  </view>
+  <view class="demo-content custom-content-class">
+    <slot />
+  </view>
+</view>

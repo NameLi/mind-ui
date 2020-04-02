@@ -1,0 +1,32 @@
+<demo-card title="JS 调用">
+  <m-button bind:click="handleOpen6">Alert</m-button>
+  <m-button bind:click="handleOpen7">Confirm</m-button>
+  <m-button bind:click="handleOpen8">异步操作</m-button>
+</demo-card>
+
+<demo-card title="组件调用">
+  <m-button bind:click="handleOpen1">Alert</m-button>
+  <m-button bind:click="handleOpen2">Confirm</m-button>
+  <m-button bind:click="handleOpen3">无标题自定义内容</m-button>
+  <m-button bind:click="handleOpen4">异步操作</m-button>
+</demo-card>
+
+
+<m-modal title="提示" visible="{{ visible1 }}" bind:confirm="handleClose1" showCancelButton="{{ false }}" content="操作成功！"></m-modal>
+
+
+<m-modal title="提示" visible="{{ visible2 }}" bind:confirm="handleClose2">
+  确定执行此操作？
+</m-modal>
+
+<m-modal visible="{{ visible3 }}" bind:confirm="handleClose3" custom-body-class="custom-modal-body">
+  <image src="https://note-file.ixook.com/FkwInL0tWpqDeRNtYHMfmaHlioTq" style="width: 250rpx;height:250rpx;"></image>
+</m-modal>
+
+<m-modal title="删除确认" visible="{{ visible4 }}" asyncClose confirmColor="red" loading="{{ loading }}" bind:confirm="handleClose4" confirmButtonText="删除">
+  异步操作
+</m-modal>
+
+
+<m-message id="message" />
+<m-modal id="modal" />

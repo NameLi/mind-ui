@@ -1,0 +1,43 @@
+<view class="m-index-demo">
+
+  <m-index bind:change="onChange">
+
+    <m-index-item name="当前">
+      <view class="now-city">
+        <m-tag plain size="medium" color="#777" custom-class="custom-tag">苏州</m-tag>
+      </view>
+    </m-index-item>
+
+    <m-index-item name="热门">
+      <view class="hot-city">
+        <m-tag 
+          wx:for="{{ hotCities }}"
+          wx:key="index"
+          plain
+          color="#777"
+          size="medium"
+          custom-class="custom-tag"
+        >{{ item }}</m-tag>
+        </view>
+    </m-index-item>
+
+    <m-index-item 
+      wx:for="{{ cities }}" 
+      wx:for-item="item" 
+      wx:key="index" 
+      name="{{item.key}}"
+      
+    >
+      <view 
+        class="m-index-demo-item" 
+        wx:for="{{item.list}}" 
+        wx:for-index="idx" 
+        wx:key="idx" 
+        wx:for-item="sub"
+      >
+        {{ sub.name }}
+      </view>
+    </m-index-item>
+
+  </m-index>
+</view>

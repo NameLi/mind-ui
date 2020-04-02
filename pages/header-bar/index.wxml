@@ -1,0 +1,37 @@
+<m-header-bar 
+  back="{{ back }}" 
+  back-color="{{ backColor }}" 
+  title="{{ title }}" 
+  color="{{ titleColor }}" 
+  align="{{ titleAlign }}"
+  bgcolor="{{ bgcolor }}" 
+  bg-image="{{ bgImage }}"
+  loading="{{ loading }}"
+>
+  <view class="custom-title" wx:if="{{ !title }}">
+    <view class="title">自定义 Header-bar</view>
+    <view class="subtitle">副标题</view>
+  </view>
+</m-header-bar>
+
+
+
+<m-button bind:click="handleCuntomLoading">加载中</m-button>
+<m-button bind:click="handleCustomBgcolor">自定义背景色</m-button>
+
+<m-button bind:click="handleCustomBgcolorGradients">渐变背景色</m-button>
+
+<m-button bind:click="handleCustomBgImage">自定义背景图片</m-button>
+
+<m-button bind:click="handleCustomTitleColor">设置title为白色</m-button>
+
+<m-button bind:click="handleCustomTitleAlign">{{ titleAlign === 'center' ? 'title 随平台对齐' : 'title居中对齐' }}</m-button>
+
+<m-button bind:click="handleCustomBackColor">自定义返回按钮为白色</m-button>
+
+<m-button bind:click="handleCustomBack">是否显示返回按钮</m-button>
+
+<m-button bind:click="handleCuntomTitle">自定义title区域内容</m-button>
+
+
+<m-button bind:click="handleReset" type="primary" plain>重置</m-button>

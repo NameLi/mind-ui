@@ -1,0 +1,129 @@
+.m-tag {
+  position: relative;
+  display: inline-block;
+  height: 38rpx;
+  line-height: 38rpx;
+  padding: 0 12rpx;
+  border-radius: 4rpx;
+  background: #f3f4f5;
+  font-size: 24rpx;
+  vertical-align: middle;
+  letter-spacing: 2rpx;
+  text-align: center;
+  color: #ffffff;
+}
+
+.m-tag--large {
+	height: 64rpx;
+  line-height: 64rpx;
+  padding: 0 24rpx;
+  font-size: 36rpx;
+  border-radius: 6rpx;
+}
+.m-tag--medium {
+	height: 56rpx;
+  line-height: 56rpx;
+  padding: 0 16rpx;
+  font-size: 28rpx;
+  border-radius: 6rpx;
+}
+.m-tag--small {
+	height: 42rpx;
+  line-height: 42rpx;
+  padding: 0 12rpx;
+  font-size: 20rpx;
+}
+.m-tag--mini {
+	height: 32rpx;
+  line-height: 32rpx;
+  padding: 0 8rpx;
+  font-size: 18rpx;
+}
+
+.none {
+  border-color: #fff;
+}
+
+
+/* 类型 type */
+.m-tag--primary {
+  color: #fff;
+  background: var(--color-primary);
+}
+
+.m-tag--success {
+  color: #fff;
+  background: var(--color-success);
+}
+
+.m-tag--info {
+  color: #fff;
+  background: var(--color-info);
+}
+
+.m-tag--warning {
+  color: #fff;
+  background: var(--color-warning);
+}
+
+.m-tag--danger {
+  color: #fff;
+  background: var(--color-danger);
+}
+
+/* plain */
+.is-plain {
+  background: #fff;
+}
+
+.is-plain::after {
+	content: " ";
+	display: block;
+	width: 200%;
+	height: 200%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid;
+	transform: scale(0.5);
+	transform-origin: 0 0;
+	box-sizing: border-box;
+	border-radius: 8rpx;
+	z-index: 1;
+	pointer-events: none;
+  opacity: .85;
+}
+
+.is-plain.is-round::after {
+	border-radius: 100rpx;
+}
+
+
+.m-tag--primary.is-plain {
+  color: var(--color-primary);
+}
+
+.m-tag--success.is-plain {
+  color: var(--color-success);
+}
+
+.m-tag--warning.is-plain {
+  color: var(--color-warning);
+}
+
+.m-tag--info.is-plain {
+  color: var(--color-info);
+}
+
+.m-tag--danger.is-plain {
+  color: var(--color-danger);
+}
+
+/* 自定义颜色 */
+.m-tag:not(.is-plain) {
+  color: #fff important;
+}
+
+.is-round {
+  border-radius: 100rpx;
+}

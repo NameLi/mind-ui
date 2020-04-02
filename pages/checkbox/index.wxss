@@ -1,0 +1,7 @@
+.custom-checkbox {
+  margin-bottom: 6px !important;
+}
+
+.custom-card-class {
+  margin: 0 -32rpx;
+}

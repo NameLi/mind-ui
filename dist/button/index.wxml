@@ -1,0 +1,42 @@
+<button
+  class="m-button {{ full ? 'm-button--full' : '' }} {{ 'm-button--' + size }} {{ 'm-button--' + type }} {{ round ? 'is-round' : '' }} {{ plain ? 'is-plain' : '' }} {{ loading ? 'is-loading' : '' }} {{ disabled ? 'is-disabled' : ''}} {{ inline ? 'is-inline' : '' }} custom-class"
+  style="{{ button.getButtonStyle(color, bgcolor) }}"
+  hover-class="{{ loading || disabled ? '' : plain ? 'is-plain-hover' : 'is-hover' }}"
+  bind:tap="onTap"
+  open-type="{{ openType }}"
+  hover-stop-propagation="{{ hoverStopPropagation }}"
+  hover-start-time="{{ hoverStartTime }}"
+  hover-stay-time="{{ hoverStayTime }}"
+  send-message-title="{{ sendMessageTitle }}"
+  send-message-path="{{ sendMessagePath }}"
+  send-message-img="{{ sendMessageImg }}"
+  show-message-card="{{ showMessageCard }}"
+  bindcontact="contact"
+  bindgetuserinfo="getuserinfo"
+  bindgetphonenumber="getphonenumber"
+  binderror="error"
+  plain="true"
+>
+  <view wx:if="{{ loading }}" class="m-button__loading"></view>
+  <slot wx:else></slot>
+</button>
+
+<wxs module="button">
+  function getButtonStyle(color, bgcolor) {
+
+    var styles = []
+    if(color) {
+      styles.push('color:' + color)
+    }
+
+    if(bgcolor) {
+      styles.push('background-color:' + bgcolor)
+    }
+
+    return styles.join(";")
+  }
+
+  module.exports = {
+    getButtonStyle: getButtonStyle
+  }
+</wxs>

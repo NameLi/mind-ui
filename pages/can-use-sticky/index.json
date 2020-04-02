@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "是否支持 position: sticky",
+  "usingComponents": {
+    "m-can-use-sticky": "/dist/can-use-sticky/index"
+  }
+}

@@ -1,0 +1,14 @@
+.custom-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 30rpx;
+}
+
+.subtitle {
+  font-size: 24rpx;
+  color: #aaa;
+}

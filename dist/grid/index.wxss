@@ -1,0 +1,22 @@
+.m-grid {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+}
+
+.m-grid.m-grid--border::after {
+  z-index: 1;
+  content:" ";
+  position:absolute;
+  top:0;
+  left:0;
+  width:200%;
+  height:200%;
+  transform: scale(0.5);
+  transform-origin:0 0;
+  box-sizing: border-box;
+  border: 1px solid transparent; 
+  border-top-color: var(--color-border); 
+  border-left-color: var(--color-border); 
+}

@@ -1,0 +1,14 @@
+.sticky-title {
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #f5f5f5;
+}
+
+.item {
+  height: 400rpx;
+  border-bottom: 1px solid #eee;
+}
+/* 
+.m-sticky-demo {
+  padding-top: 16rpx;
+} */

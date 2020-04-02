@@ -1,0 +1,12 @@
+.m-index-item__header {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  padding-left: 20rpx;
+  background: #eee;
+  box-sizing: border-box;
+}
+
+.m-index-item__content {
+  font-size: 28rpx;
+}

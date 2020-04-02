@@ -1,0 +1,54 @@
+<view class="logo__wrap">
+  <image class="logo" src="https://note-file.ixook.com/FkwInL0tWpqDeRNtYHMfmaHlioTq"></image>
+</view>
+
+<view class="title">Mind UI</view>
+<view class="desc">原生、轻量、高效的微信小程序UI组件库</view>
+<view class="desc" bindtap='copyText' data-text="https://mind-ui.ixook.com">文档地址：https://mind-ui.ixook.com</view>
+
+
+<m-cell-group title="基础组件" border card>
+  <m-cell title="Color" url="/pages/color/index"></m-cell>
+  <m-cell title="Button" url="/pages/button/index"></m-cell>
+  <m-cell title="Icon" url="/pages/icon/index"></m-cell>
+  <m-cell title="Cell" url="/pages/cell/index"></m-cell>
+  <m-cell title="Grid" url="/pages/grid/index"></m-cell>
+</m-cell-group>
+
+<m-cell-group title="操作反馈" border card>
+  <m-cell title="Message" url="/pages/message/index"></m-cell>
+  <m-cell title="Toast" url="/pages/toast/index"></m-cell>
+  <m-cell title="ActionSheet" url="/pages/action-sheet/index"></m-cell>
+  <m-cell title="Modal" url="/pages/modal/index"></m-cell>
+  <m-cell title="Spinner" url="/pages/spinner/index"></m-cell>
+  <m-cell title="Drawer" url="/pages/drawer/index"></m-cell>
+  <m-cell title="Swipeout" url="/pages/swipeout/index"></m-cell>
+</m-cell-group>
+
+<m-cell-group title="视图" border card>
+  <m-cell title="Tag" url="/pages/tag/index"></m-cell>
+  <m-cell title="Badge" url="/pages/badge/index"></m-cell>
+  <m-cell title="Swiper" url="/pages/swiper/index"></m-cell>
+  <m-cell title="Collapse" url="/pages/collapse/index"></m-cell>
+  <m-cell title="Progress" url="/pages/progress/index"></m-cell>
+  <m-cell title="Divider" url="/pages/divider/index"></m-cell>
+  <m-cell title="Loadmore" url="/pages/loadmore/index"></m-cell>
+  <m-cell title="Timeline" url="/pages/timeline/index"></m-cell>
+</m-cell-group>
+
+<m-cell-group title="导航" border card>
+  <m-cell title="HeaderBar" url="/pages/header-bar/index"></m-cell>
+  <m-cell title="Navbar" url="/pages/navbar/index"></m-cell>
+  <m-cell title="NoticeBar" url="/pages/notice-bar/index"></m-cell>
+  <m-cell title="Sticky" url="/pages/sticky/index"></m-cell>
+  <m-cell title="Index" url="/pages/index/index"></m-cell>
+  <m-cell title="StickyButton" url="/pages/sticky-button/index"></m-cell>
+</m-cell-group>
+
+<m-cell-group title="表单" border card>
+  <m-cell title="Slider" url="/pages/slider/index"></m-cell>
+  <m-cell title="Switch" url="/pages/switch/index"></m-cell>
+  <m-cell title="Radio" url="/pages/radio/index"></m-cell>
+  <m-cell title="Checkbox" url="/pages/checkbox/index"></m-cell>
+  <m-cell title="Rate" url="/pages/rate/index"></m-cell>
+</m-cell-group>

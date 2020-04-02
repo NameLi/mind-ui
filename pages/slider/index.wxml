@@ -1,0 +1,30 @@
+
+<demo-card title="基础用法" desc="{{ value1 }}" custom-content-class="content-class">
+  <m-slider value="{{ value1 }}" bind:change="onChange1"></m-slider>
+</demo-card>
+
+<demo-card title="预设值" desc="{{ value2 }}" custom-content-class="content-class">
+  <m-slider value="{{ value2 }}" bind:change="onChange2"></m-slider>
+</demo-card>
+
+<demo-card title="定义步长10" desc="{{ value3 }}" custom-content-class="content-class">
+  <m-slider value="{{ value3 }}" step="10" bind:change="onChange3"></m-slider>
+</demo-card>
+
+<demo-card title="定义区间 100-200" desc="{{ value4 }}" custom-content-class="content-class">
+  <m-slider value="{{ value4 }}" min="100" max="200" bind:change="onChange4"></m-slider>
+</demo-card>
+
+<demo-card title="定义线宽与颜色" desc="{{ value5 }}" custom-content-class="content-class">
+  <m-slider value="{{ value5 }}" active-color="#ee0a24" bar-height="10" bind:change="onChange5"></m-slider>
+</demo-card>
+
+<demo-card title="禁用" desc="50" custom-content-class="content-class">
+  <m-slider value="50" disabled></m-slider>
+</demo-card>
+
+<demo-card title="自定义按钮" desc="{{ value6 }}" custom-content-class="content-class">
+  <m-slider value="{{ value6 }}" use-slot bind:input="onChange6">
+    <view class="custom-button">{{ value6 }}</view>
+  </m-slider>
+</demo-card>

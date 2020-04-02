@@ -1,0 +1,62 @@
+.custom-card {
+  margin: 0 -12rpx;
+}
+
+.color-item {
+  flex: 1;
+  margin: 12rpx;
+  padding: 24rpx 0;
+  color: #fff;
+  text-align: center;
+  border-radius: 6rpx;
+}
+
+.color-item .label {
+  font-size: 32rpx;
+}
+
+.color-item .value {
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+
+.grid {
+  display: flex;
+}
+
+.color-item.primary {
+  background-color: var(--color-primary);
+}
+
+
+.color-item.success {
+  background-color: var(--color-success);
+}
+
+.color-item.warning {
+  background-color: var(--color-warning);
+}
+
+.color-item.danger {
+  background-color: var(--color-danger);
+}
+
+.color-item.text-primary {
+  background-color: var(--color-text-primary);
+}
+
+.color-item.text-regular {
+  background-color: var(--color-text-regular);
+}
+
+.color-item.text-secondary {
+  background-color:  var(--color-text-secondary);
+}
+
+.color-item.border {
+  background-color: var(--color-border);
+}
+
+.color-item.mask {
+  background-color: var(--color-mask);
+}

@@ -1,0 +1,11 @@
+<view
+  class="switch {{ checked === activeValue ? 'switch--on': '' }} {{ disabled ? 'switch--disabled':'' }} custom-class"
+  style="background-color: {{ checked === activeValue ?  activeColor : inactiveColor }}"
+  bind:tap="onClick"
+>
+  <input type="text" name="{{ name }}" value="{{ value }}" class="switch-input"></input>
+
+  <view class="switch__node">
+    <view wx:if="{{ loading }}" style="color: {{ activeColor }}" class="m-spinner__snake"></view>
+  </view>
+</view>

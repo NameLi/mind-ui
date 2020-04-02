@@ -1,0 +1,8 @@
+<view class="m-divider custom-class" style="{{ color ? 'color:' + color : '' }}">
+  <view class="m-divider__content" wx:if="{{content !== ''}}">
+    {{content}}
+  </view>
+  <view class="m-divider__content" wx:else>
+    <slot></slot>
+  </view>
+</view>

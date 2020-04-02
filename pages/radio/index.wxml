@@ -1,0 +1,40 @@
+<demo-card title="基础用法" desc="{{ radio }}">
+  <m-radio-group value="{{ radio }}" bind:change="onChange">
+    <m-radio name="选项1" custom-class="custom-radio">选项1</m-radio>
+    <m-radio name="选项2">选项2</m-radio>
+  </m-radio-group>
+</demo-card>
+
+
+<demo-card title="禁用" desc="{{ radio }}">
+  <m-radio-group disabled value="{{ radio }}" bind:change="onChange">
+    <m-radio name="选项1" custom-class="custom-radio">选项1</m-radio>
+    <m-radio name="选项2">选项2</m-radio>
+  </m-radio-group>
+</demo-card>
+
+<demo-card title="自定义选中颜色" desc="{{ radio }}">
+  <m-radio-group checked-color="#00CDA2" value="{{ radio }}" bind:change="onChange">
+    <m-radio name="选项1" custom-class="custom-radio">选项1</m-radio>
+    <m-radio checked-color="red" name="选项2">选项2</m-radio>
+  </m-radio-group>
+</demo-card>
+
+<demo-card title="label 在左边" desc="{{ radio }}">
+  <m-radio-group label-left value="{{ radio }}" bind:change="onChange">
+    <m-radio name="选项1" custom-class="custom-radio">选项1</m-radio>
+    <m-radio name="选项2">选项2</m-radio>
+  </m-radio-group>
+</demo-card>
+
+
+<demo-card title="单元格" desc="{{ radio }}" custom-content-class="custom-card-content">
+  <m-radio-group checked-color="#00CDA2" value="{{ radio }}" bind:change="onChange">
+    <m-cell icon="feed" icon-color="#00CDA2" title="选项1">
+      <m-radio name="选项1"></m-radio>
+    </m-cell>
+    <m-cell icon="feed" icon-color="#00CDA2" title="选项2">
+      <m-radio name="选项2"></m-radio>
+    </m-cell>
+  </m-radio-group>
+</demo-card>

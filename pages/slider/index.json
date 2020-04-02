@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Slider 滑块",
+  "usingComponents": {
+    "m-slider": "/dist/slider/index"
+  }
+}

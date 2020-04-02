@@ -1,0 +1,3 @@
+<view class="m-grid {{ border ? 'm-grid--border' : '' }}">
+  <slot></slot>
+</view>

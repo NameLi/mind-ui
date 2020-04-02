@@ -1,0 +1,21 @@
+<view 
+  bindtap="onClick"
+  class="m-cell custom-class {{ border ? 'border-bottom':'' }}"
+  hover-class="{{ url ? 'm-cell--hover' : '' }}"  
+>
+
+  <view wx:if="{{ icon }}" class="icon m-cell__header">
+    <m-icon name="{{ icon }}" size="38" color="{{ iconColor ? iconColor : '' }}"></m-icon>
+  </view>
+
+  <view wx:if="{{ title }}" class="m-cell__title">{{ title }}</view>
+  <slot wx:else name="title"></slot>
+
+  <view wx:if="{{ value }}" class="m-cell__desc">{{ value }}</view>
+
+  <view wx:else class="slot">
+    <slot></slot>
+  </view>
+
+  <m-icon wx:if="{{ url }}" class="icon m-cell__footer" catchtap="navigateTo" name="arrow-right" size="32" color="#999"></m-icon>
+</view>

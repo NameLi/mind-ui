@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Collapse 折叠面板",
+  "usingComponents": {
+    "m-collapse": "/dist/collapse/index"
+  }
+}

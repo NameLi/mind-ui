@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Badge 徽章",
+  "usingComponents": {
+    "m-badge": "/dist/badge/index",
+    "m-navbar-group": "/dist/navbar-group/index",
+    "m-navbar": "/dist/navbar/index"
+  }
+}

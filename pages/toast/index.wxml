@@ -1,0 +1,19 @@
+
+<demo-card title="基础用法">
+  <m-button bind:click="handleToast">简单提示</m-button>
+</demo-card>
+
+<demo-card title="不同位置">
+  <m-button inline bind:click="handleTextTop">top</m-button>
+  <m-button inline bind:click="handleTextMiddle">middle</m-button>
+  <m-button inline bind:click="handleTextBottom">bottom</m-button>  
+</demo-card>
+
+<demo-card title="功能类">
+  <m-button bind:click="handleLoading">Loading</m-button>
+  <m-button bind:click="handleIcon">使用图标</m-button>
+  <m-button bind:click="handleImage">使用图片</m-button>
+  <m-button bind:click="handleMask">透明遮罩层</m-button>
+</demo-card>
+
+<m-toast id="toast" />

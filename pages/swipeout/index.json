@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Swipeout 滑动菜单",
+  "usingComponents": {
+    "m-swipeout": "/dist/swipeout/index"
+  }
+}

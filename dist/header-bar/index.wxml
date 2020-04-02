@@ -1,0 +1,21 @@
+<view class="m-header-bar" style="height: {{ customBarH }}px">
+  <view 
+    class="m-header fixed" 
+    style="padding-top: {{statusBarH}}px; height: {{customBarH}}px; {{ bgColorStyle }} {{ bgImageStyle }}">
+
+    <view wx:if="{{ back }}" class="back" bindtap="BackPage">
+      <text class="back-icon" style="{{ 'background: ' + backColor }}"></text>
+    </view>
+
+    <view class="content {{ titleAlignClass }}" style="{{ titleColorStyle }}" wx:if="{{ title }}">
+      <view class="title">{{ title }}</view>
+      <view wx:if="{{ loading }}" class="m-spinner__snake"></view>
+    </view>
+
+    <view class="content" wx:else>
+      <slot></slot>
+    </view>
+
+    <view wx:if="{{ back }}" class="back"></view>
+  </view>
+</view>

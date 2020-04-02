@@ -1,0 +1,72 @@
+<demo-card title="基础用法" custom-content-class="custom-card">
+  <view class="icon-wrap">
+    <view class="icon-item">
+      <m-icon name="love" size="60"></m-icon>
+    </view>
+  </view>
+</demo-card>
+
+<demo-card title="自定义颜色" custom-content-class="custom-card">
+  <view class="icon-wrap">
+    <view class="icon-item">
+      <m-icon name="love" size="60" color="#0181ff"></m-icon>
+    </view>
+    <view class="icon-item">
+      <m-icon name="love" size="60" color="#EE5C42"></m-icon>
+    </view>
+    <view class="icon-item">
+      <m-icon name="love" size="60" color="#67c23a"></m-icon>
+    </view>
+  </view>
+</demo-card>
+
+<demo-card title="自定义大小" custom-content-class="custom-card">
+  <view class="icon-wrap">
+    <view class="icon-item">
+      <m-icon name="love" size="48"></m-icon>
+    </view>
+    <view class="icon-item">
+      <m-icon name="love" size="60"></m-icon>
+    </view>
+    <view class="icon-item">
+      <m-icon name="love" size="84"></m-icon>
+    </view>
+  </view>
+</demo-card>
+
+<demo-card title="外链图片" custom-content-class="custom-card">
+  <view class="icon-wrap">
+    <view class="icon-item">
+      <m-icon name="https://note-file.ixook.com/FkwInL0tWpqDeRNtYHMfmaHlioTq" size="80"></m-icon>
+    </view>
+  </view>
+</demo-card>
+
+<demo-card title="基础图标" custom-content-class="custom-card">
+  <m-grid column-count="4">
+    <m-grid-item icon="confirm" text="confirm"/>
+    <m-grid-item icon="cross" text="cross"/>
+    <m-grid-item icon="plus" text="plus"/>
+    <m-grid-item icon="fail" text="fail"/>
+    <m-grid-item icon="arrow-left" text="arrow-left"/>
+    <m-grid-item icon="arrow-up" text="arrow-up"/>
+    <m-grid-item icon="arrow-right" text="arrow-right"/>
+    <m-grid-item icon="arrow-down" text="arrow-down"/>
+  </m-grid>
+</demo-card>
+
+<demo-card title="内置图标" custom-content-class="custom-card">
+  <m-grid column-count="4">
+    <m-grid-item wx:for="{{list}}" wx:key="index" icon="{{item}}" text="{{item}}"/>
+  </m-grid>
+</demo-card>
+
+
+<!-- <demo-card title="内置图标" custom-content-class="custom-card">
+  <view class="icon-wrap">
+    <view class="icon-item">
+        <m-icon name="" size="{{60}}"></m-icon>
+        <view class="icon-name">{{item}}</view>
+    </view>
+  </view>
+</demo-card> -->

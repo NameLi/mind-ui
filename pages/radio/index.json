@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Radio 单选框",
+  "usingComponents": {
+    "m-radio-group": "/dist/radio-group/index",
+    "m-radio": "/dist/radio/index"
+  }
+}

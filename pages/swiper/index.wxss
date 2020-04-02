@@ -1,0 +1,52 @@
+/* 轮播图 */
+.swiper__wrap {
+  margin-top: 20rpx;
+  position: relative;
+}
+
+.swiper__wrap swiper {
+  height: 380rpx;
+}
+
+.swiper__wrap .slide-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 8rpx;
+  overflow: hidden;
+  transform: scaleY(.92); 
+  transition: transform .5s;
+}
+
+.swiper__wrap  swiper-item {
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+
+.swiper__wrap .is-actived {
+  transform: scaleY(1);
+  transition: transform .5s;
+}
+
+/* 轮播图进度条 */
+.swiper__wrap .indicator-wrapper {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 14rpx;
+  height: 6rpx;
+  text-align: center;
+}
+
+.swiper__wrap .indicator-wrapper text {
+  display: inline-block;
+  margin: 0 2px;
+  width: 30rpx;
+  height: 6rpx;
+  background: #fff;
+  vertical-align: top;
+  border-radius: 2rpx;
+}
+
+.swiper__wrap .indicator-wrapper .dotfocus {
+  background-color: var(--color-warning);
+}

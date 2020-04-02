@@ -1,0 +1,13 @@
+.content-class {
+  padding: 24rpx;
+}
+
+.custom-button {
+  width: 26px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 100px;
+  background-color: var(--color-success);
+}

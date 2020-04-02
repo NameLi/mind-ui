@@ -1,0 +1,7 @@
+.custom-card-content {
+  margin: 0 -32rpx;
+}
+
+.custom-group {
+  background: #fff !important;
+}

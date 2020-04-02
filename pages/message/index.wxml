@@ -1,0 +1,19 @@
+<demo-card title="基础用法">
+  <m-button bind:click="handleDefault">默认提示</m-button>
+</demo-card>
+
+<demo-card title="不同类型">
+  <m-button bind:click="handleDefault">默认提示</m-button>
+  <m-button bind:click="handleSuccess">成功提示</m-button>
+  <m-button bind:click="handleWarning">警告提示</m-button>
+  <m-button bind:click="handleError">错误提示</m-button>
+</demo-card>
+
+<demo-card title="自定义配置">
+  <m-button bind:click="handleDuration">自定义提示时间</m-button>
+  <m-button bind:click="handleShowClose">显示关闭按钮</m-button>
+  <m-button bind:click="handleOpen" wx:if="{{ !isOpen }}">需手动关闭提示</m-button>
+  <m-button type="warning" plain bind:click="handleClose" wx:else>手动关闭提示</m-button>
+</demo-card>
+
+<m-message id="message" />

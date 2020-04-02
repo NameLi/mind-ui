@@ -1,0 +1,16 @@
+<view class="m-sticky-item custom-class">
+
+  <view 
+    class="sticky" 
+    style="{{ headerH ? 'height: ' + headerH + 'px;' : '' }} top: {{ offsetTop }}px; {{ 'z-index: ' + zIndex }}"
+  >
+    <view 
+      class="m-sticky-item__header {{ isFixed === true ? 'm-sticky__is-fixed' : '' }}" 
+      style="top: {{ offsetTop }}px;{{ 'z-index: ' + zIndex }}"
+    >
+      <slot name="title"></slot>
+    </view>
+  </view>
+
+  <slot name="content"></slot>
+</view>

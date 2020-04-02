@@ -1,0 +1,27 @@
+<view 
+  class="m-toast-mask" 
+  style="{{ 'z-index:' + zIndex + ';' + ghost ? 'opacity: 0' : '' }}" 
+  wx:if="{{ visible && mask }}" 
+  bindtap="handleHide"
+></view>
+
+<view 
+  class="custom-class m-toast-wrapper {{ position }} {{ visible ? 'toast-show' : '' }}" 
+  style="{{ 'z-index:' + zIndex }}" 
+  hidden="{{ !visible }}"
+>
+  <view class="m-toast">
+
+    <view wx:if="{{ icon }}" class="m-toast__icon">
+      <m-icon size="{{ iconSize }}" name="{{ icon }}" color="{{ iconColor }}"></m-icon>
+    </view>
+
+    <view wx:elif="{{ image }}" class="m-toast__image">
+      <image src="{{ image }}"></image>
+    </view>
+
+    <view wx:if="{{ type === 'loading' }}" class="m-toast__loading"></view>
+    <view wx:if="{{ message }}">{{ message }}</view>
+    
+  </view>
+</view>

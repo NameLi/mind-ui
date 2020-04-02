@@ -1,0 +1,61 @@
+.m-progress__wrap {
+  padding: 20rpx 0;
+}
+
+.m-progress {
+  position: relative;
+  height: 6rpx;
+  border-radius: 100px;
+  background-color: #e5e5e5;
+}
+
+.m-progress__portion {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  border-radius: inherit;
+  background-color: var(--color-primary);
+}
+
+.m-progress__portion--primary {
+  background-color: var(--color-primary);
+}
+.m-progress__portion--success {
+  background-color: var(--color-success);
+}
+.m-progress__portion--warning {
+  background-color: var(--color-warning);
+}
+.m-progress__portion--danger {
+  background-color: var(--color-danger);
+}
+
+.m-progress__point {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  box-sizing: border-box;
+  min-width: 40rpx;
+  line-height: 1.5;
+  text-align: center;
+  word-break: keep-all;
+  border-radius: 100px;
+  transform: translateY(-50%);
+  color: #fff;
+  padding: 0 8rpx;
+  font-size: 20rpx;
+  background-color: var(--color-primary);
+}
+
+.m-progress__point--primary {
+  background-color: var(--color-primary);
+}
+.m-progress__point--success {
+  background-color: var(--color-success);
+}
+.m-progress__point--warning {
+  background-color: var(--color-warning);
+}
+.m-progress__point--danger {
+  background-color: var(--color-danger);
+}

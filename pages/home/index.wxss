@@ -1,0 +1,29 @@
+page {
+  background-color: #F4F4F4;
+}
+
+.logo__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30rpx;
+}
+
+.logo {
+  width: 280rpx;
+  height: 280rpx;
+}
+
+.title {
+  text-align: center;
+  font-size: 42rpx;
+  padding-bottom: 20rpx;
+  color: var(--color-text-primary);
+}
+
+.desc {
+  text-align: center;
+  font-size: 28rpx;
+  padding-bottom: 20rpx;
+  color: var(--color-text-secondary);
+}

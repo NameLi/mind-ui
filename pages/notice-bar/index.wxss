@@ -1,0 +1,12 @@
+.custom-card-content {
+  margin: 0 -32rpx;
+}
+
+
+.split-line {
+  height: 30rpx;
+}
+
+.preifx, .suffix {
+  padding: 0 20rpx;
+}

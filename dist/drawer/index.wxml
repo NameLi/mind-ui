@@ -1,0 +1,14 @@
+<view class="custom-class m-drawer {{ visible ? 'm-drawer-show' : '' }} {{ 'm-drawer--' + position }}">
+  <view 
+    wx:if="{{ mask }}" 
+    class="m-drawer-mask" 
+    style="{{ 'z-index: ' + zIndex }}"
+    bindtap="handleMaskClick"
+    ></view>
+  <view 
+    class="m-drawer__content" 
+    style="{{ 'z-index: ' + zIndex }}"
+  >
+    <slot></slot>
+  </view>
+</view>

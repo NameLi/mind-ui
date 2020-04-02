@@ -1,0 +1,93 @@
+page {
+  overflow-x: hidden;
+}
+
+.swipeout-demo-item {
+  border-bottom: #eee solid 1px;
+}
+
+.cell-padding {
+  padding: 5px 0px !important;
+  font-size: 14px;
+}
+
+.custom-content-class {
+  margin: 0 -32rpx !important;
+}
+
+.demo-content {
+  display: flex;
+  padding: 5rpx 20rpx;
+  height: 150rpx;
+  align-items: center;
+}
+
+.demo-content .name {
+  width: 100rpx;
+  height: 100rpx;
+  color: #fff;
+  font-size: 36rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background: #ccc;
+  border-radius: 6rpx;
+}
+
+.demo-content .content {
+  flex: 1;
+  width: 0;
+  padding-left: 20rpx;
+}
+
+.demo-content .content .title {
+  font-size: 32rpx;
+  height: 55rpx;
+  vertical-align: top;
+  color: #111;
+}
+
+.demo-content .content .desc {
+  font-size: 28rpx;
+  height: 45rpx;
+  line-height: 50rpx;
+  color: #888;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.demo-content .info {
+  width: 120rpx;
+  height: 100rpx;
+  text-align: right;
+}
+
+.demo-content .info .time {
+  color: #999;
+  font-size: 28rpx;
+  vertical-align: top;
+}
+
+
+.btn-group {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.btn-group .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+}
+
+.btn-group .up {
+  background: #ccc;
+}
+
+.btn-group .delete {
+  background: red;
+}

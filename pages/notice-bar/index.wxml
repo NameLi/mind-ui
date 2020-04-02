@@ -1,0 +1,46 @@
+<demo-card title="基础用法" custom-content-class="custom-card-content">
+  <m-notice-bar>
+    练得身形似鹤形，千株松下两函经。
+    我来问道无馀说，云在青霄水在瓶。
+    选得幽居惬野情，终年无送亦无迎。
+    有时直上孤峰顶，月下披云啸一声。
+  </m-notice-bar>
+</demo-card>
+
+
+<demo-card title="内容超出不滚动" custom-content-class="custom-card-content">
+  <m-notice-bar scrollable="{{ false }}">
+    练得身形似鹤形，千株松下两函经。
+    我来问道无馀说，云在青霄水在瓶。
+    选得幽居惬野情，终年无送亦无迎。
+    有时直上孤峰顶，月下披云啸一声。
+  </m-notice-bar>
+</demo-card>
+
+<demo-card title="多行显示" custom-content-class="custom-card-content">
+  <m-notice-bar multiline>
+    练得身形似鹤形，千株松下两函经。
+    我来问道无馀说，云在青霄水在瓶。
+    选得幽居惬野情，终年无送亦无迎。
+    有时直上孤峰顶，月下披云啸一声。
+  </m-notice-bar>
+</demo-card>
+
+<demo-card title="自定义两端内容" custom-content-class="custom-card-content">
+  <m-notice-bar>
+    <view class="preifx" slot="preifx">
+      <m-icon name="notice" size="32" color="#ed6a0c"></m-icon>
+    </view>
+
+    <view>
+      练得身形似鹤形，千株松下两函经。
+      我来问道无馀说，云在青霄水在瓶。
+      选得幽居惬野情，终年无送亦无迎。
+      有时直上孤峰顶，月下披云啸一声。
+    </view>
+
+    <view class="suffix" slot="suffix">
+      <m-icon name="cross" size="32" color="#ed6a0c"></m-icon>
+    </view>
+  </m-notice-bar>
+</demo-card>

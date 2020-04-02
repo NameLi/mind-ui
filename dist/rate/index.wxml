@@ -1,0 +1,29 @@
+<view class="m-rate">
+  <view class="m-rate__content {{ actived === index ? 'is-actived' : '' }}" wx:for="{{ max }}" wx:key="index" >
+    <m-icon 
+      name="{{ icon }}" 
+      size="{{ size }}" 
+      color="{{ disabled ? disabledColor : index + 1 <= value ? color : voidColor }}"
+      data-score="{{ index + 1 }}"
+      bindtap="handleClick"
+    ></m-icon>
+
+    <m-icon 
+      wx:if="{{ allowHalf }}"
+      name="{{ voldIcon }}" 
+      size="{{ size }}" 
+      custom-class="half-icon"
+      data-score="{{ index + 0.5 }}"
+      color="{{ disabled ? disabledColor : index + 0.5 <= value ? color : voidColor }}"
+      bindtap="handleClick"
+    ></m-icon>
+  </view>
+
+  <view 
+    wx:if="{{ text }}" 
+    class="score" 
+    style="font-size: {{ size/1.2 }}rpx;color: {{ textColor }}"
+  >
+    {{ text }}
+  </view>
+</view>

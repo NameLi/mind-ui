@@ -1,0 +1,44 @@
+.m-cell__group {
+  position: relative;
+  margin: 0;
+  background: #fff;
+  transition: margin .2s;
+}
+
+.m-cell__group--card {
+  margin: 32rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+
+.m-cell__group__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 32rpx;
+  height: 100rpx;
+  font-size: 32rpx;
+  color: #999;
+  background: #fcfcfc;
+}
+
+.m-cell__group__title {
+  flex: 1;
+  width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.m-cell__title::after {
+	content: " ";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 1px;
+	background: #ebedf0;
+	transform: scaleY(.5);
+}

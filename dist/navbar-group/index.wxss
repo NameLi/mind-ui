@@ -1,0 +1,31 @@
+.tabs {
+  position: relative;
+}
+
+.tabs__wrap {
+  justify-content: center;
+  height: 88rpx;
+  overflow: hidden;
+}
+
+.tabs__scroll {
+  height: 88rpx;
+  margin-bottom: 10rpx;
+}
+
+
+.tabs__nav {
+  position: relative;
+  display: flex;
+}
+
+.tabs__line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 6rpx;
+  border-radius: 12rpx;
+  background-color: var(--color-primary);
+  transition-duration: 0.3s;
+}

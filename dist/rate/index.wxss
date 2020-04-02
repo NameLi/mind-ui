@@ -1,0 +1,39 @@
+.m-rate {
+  display: inline-flex;
+  align-items: center;
+}
+
+.m-rate__content {
+  margin-right: 12rpx;
+  position: relative;
+}
+
+.is-actived {
+  animation: jump 0.4s ease-in-out;
+}
+
+@keyframes jump {
+  0% {
+    transform: scale(1);
+  }
+
+  60% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.half-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.score {
+  margin-left: 12rpx;
+}

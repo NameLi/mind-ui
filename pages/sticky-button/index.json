@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "StickyButton 粘滞按钮",
+  "usingComponents": {
+    "m-sticky-button": "/dist/sticky-button/index",
+    "m-sticky-button-item": "/dist/sticky-button-item/index"
+  }
+}

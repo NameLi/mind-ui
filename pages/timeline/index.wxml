@@ -1,0 +1,36 @@
+<m-timeline>
+  <m-timeline-item text="start">
+    <view class="content">时光荏苒</view>
+  </m-timeline-item>
+
+  <m-timeline-item icon="boy" color="#0181ff">
+    <view class="content" style="background: #0181ff;color: #fff">
+      <text>力拔山兮气盖世。
+        时不利兮骓不逝。
+        骓不逝兮可奈何！
+        虞兮虞兮奈若何！
+      </text>
+    </view>
+  </m-timeline-item>
+
+  <m-timeline-item icon="love" color="#EE5C42">
+    <view class="content" style="background: #EE5C42;color: #fff">
+      仕宦当作执金吾，娶妻当得阴丽华。
+    </view>
+  </m-timeline-item>
+
+  <m-timeline-item icon="girl" color="#e54d42">
+    <view class="content" style="background: #e54d42;color: #fff">
+      桃之夭夭，灼灼其华。
+    </view>
+  </m-timeline-item>
+
+  <m-timeline-item text="12:00">
+    <view class="content">百川东到海，何时复西归。</view>
+    <view class="content" style="margin-top: 20rpx">少壮不努力，老大徒伤悲。</view>
+  </m-timeline-item>
+
+  <m-timeline-item text="end">
+    <view class="content">岁月如梭</view>
+  </m-timeline-item>
+</m-timeline>

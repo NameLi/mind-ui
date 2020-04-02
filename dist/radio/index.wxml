@@ -1,0 +1,24 @@
+<view class="m-radio custom-class {{ disabled ? 'm-radio--disabled' : '' }}">
+  <view
+    wx:if="{{ labelLeft }}"
+    class="radio__label radio__label--left"
+    bindtap="onClickLabel"
+  >
+    <slot></slot>
+  </view>
+
+  <view class="radio__icon-wrap" bindtap="onChange">
+    <view 
+      class="radio__icon {{ disabled ? 'radio__icon--disabled' : '' }} {{ value === name ? 'radio__icon--checked' :'' }}"
+      style="{{ checkedColor ? 'color: ' + checkedColor : '' }}"
+    ></view>
+  </view>
+
+  <view
+    wx:if="{{ !labelLeft }}"
+    class="radio__label radio__label--right"
+    bindtap="onClickLabel"
+  >
+    <slot></slot>
+  </view>
+</view>

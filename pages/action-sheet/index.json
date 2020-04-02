@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "ActionSheet 动作面板",
+  "usingComponents": {
+    "m-action-sheet": "/dist/action-sheet/index",
+    "m-message": "/dist/message/index"
+  }
+}

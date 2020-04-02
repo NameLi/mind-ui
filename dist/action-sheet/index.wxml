@@ -1,0 +1,57 @@
+<view 
+  class="custom-mask-class m-mask {{ visible ? '' : 'is-hidden' }}"  
+  style="{{ 'z-index: ' + zIndex }}"
+  bindtap="handleMaskClick"
+></view>
+
+<view 
+  class="custom-class m-sheet {{ visible ? '' : 'is-hidden' }}"
+  style="{{ 'z-index: ' + zIndex }}"
+>
+  <view class="m-sheet__header custom-class__header">
+    <slot name="header"></slot>
+  </view>
+
+  <view class="m-sheet__content">
+
+    <view class="m-sheet__item" wx:for="{{ actions }}" wx:key="name">
+
+      <button 
+        class="m-button {{ item.loading ? 'is-loading' : '' }} {{ item.disabled ? 'is-disabled' : ''}}"
+        hover-class="{{ !item.loading && !item.disabled ? 'is-hover' : '' }}"
+        bind:click="handleItemClick" 
+        data-index="{{ index }}" 
+        open-type="{{ item.openType }}" 
+        send-message-title="{{ sendMessageTitle }}"
+        send-message-path="{{ sendMessagePath }}"
+        send-message-img="{{ sendMessageImg }}"
+        show-message-card="{{ showMessageCard }}"
+        bindcontact="contact"
+        bindgetuserinfo="getuserinfo"
+        bindgetphonenumber="getphonenumber"
+        binderror="error"
+        plain="true"
+        style="{{ item.color ? 'color:' + item.color : '' }}"
+      >
+        <view wx:if="{{ item.loading }}" class="m-button__loading"></view>
+        <view wx:else class="m-sheet__text">
+          <m-icon 
+            wx:if="{{ item.icon }}" 
+            name="{{ item.icon }}" 
+            color="{{ item.color }}" 
+            size="36"
+            class="m-sheet__btn-icon"
+          ></m-icon>
+         {{ item.name }}
+        </view>
+
+      </button>
+
+    </view>
+
+  </view>
+
+  <view class="m-sheet__cancel" wx:if="{{ showCancel }}">
+    <m-button m-class="m-sheet__button" size="large" type="ghost" full bind:click="handleCancelClick">{{ cancelText }}</m-button>
+  </view>
+</view>

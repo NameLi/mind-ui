@@ -1,0 +1,7 @@
+.custom-radio {
+  margin-bottom: 6px !important;
+}
+
+.custom-card-content {
+  margin: 0 -32rpx !important;
+}

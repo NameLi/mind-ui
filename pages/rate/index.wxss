@@ -1,0 +1,9 @@
+.item {
+  padding: 30rpx;
+}
+.title {
+  font-size: 32rpx;
+  color: #777;
+  height: 70rpx;
+  line-height: 60rpx;
+}

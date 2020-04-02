@@ -1,0 +1,10 @@
+
+.card {
+  margin: 0 20rpx;
+  padding: 20rpx;
+  background: #f5f5f5;
+  text-align: center;
+  color: #777;
+  line-height: 46rpx;
+  font-size: 28rpx;
+}

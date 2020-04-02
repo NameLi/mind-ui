@@ -1,0 +1,7 @@
+.custom-body-class {
+  max-height: 400px !important;
+}
+
+.custom-card {
+  margin: 0 -32rpx;
+}

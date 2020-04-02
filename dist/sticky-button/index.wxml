@@ -1,0 +1,13 @@
+<view class="sticky-button__wrap custom-class">
+  <view 
+    class="main-button {{ toggle ? 'is-active':'' }}"  
+    style="{{ bgcolor ? 'background-color:' + bgcolor : '' }}"
+    bindtap="toggle"
+  >
+    <m-icon name="{{ icon }}" size="{{ iconSize }}" color="{{ iconColor }}"></m-icon>
+  </view>
+
+  <view class="sub-button__container">
+    <slot></slot>
+  </view>
+</view>

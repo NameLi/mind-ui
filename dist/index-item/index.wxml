@@ -1,0 +1,6 @@
+<view class="m-index-item">
+    <view class="m-index-item__header custom-class">{{ name }}</view>
+    <view class="m-index-item__content">
+        <slot></slot>
+    </view>
+</view>

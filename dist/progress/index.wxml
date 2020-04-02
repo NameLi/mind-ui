@@ -1,0 +1,30 @@
+<view class="m-progress__wrap">
+  <view
+    class="m-progress custom-class "
+    style="height: {{ barHeight }}rpx;"
+  >
+    <view
+      class="m-progress__portion {{ type ? 'm-progress__portion--' + type : '' }}"
+      style="width: {{ percent }}%; {{ activeColor ? 'background-color: ' + activeColor : '' }}"
+    >
+      <view
+        wx:if="{{ pointVisible && porgress.text(pointText, percent) }}"
+        style="color: {{ textColor }}; background: {{ pointColor ? pointColor : activeColor }}"
+        class="m-progress__point {{ type ? 'm-progress__point--' + type : '' }}"
+      >
+        {{ porgress.text(pointText, percent) }}
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<wxs module="porgress">
+  function text(pointText, percent) {
+    return pointText || percent + '%';
+  }
+
+  module.exports = {
+    text: text
+  }
+</wxs>

@@ -1,0 +1,32 @@
+<m-button bind:click="toggleLeft">左边弹出</m-button>
+<m-button bind:click="toggleRight">右边弹出</m-button>
+<m-button bind:click="toggleTop">上边弹出</m-button>
+<m-button bind:click="toggleBottom">下边弹出</m-button>
+<m-button bind:click="toggleMaskBottom">点击蒙层不可关闭</m-button>
+
+<!-- 左边弹出 -->
+<m-drawer position="left" visible="{{showLeft}}" bind:close="toggleLeft">
+  <view class="container">左边弹出</view>
+</m-drawer>
+
+<!-- 右边弹出 -->
+<m-drawer position="right" visible="{{showRight}}" bind:close="toggleRight">
+  <view class="container">右边弹出</view>
+</m-drawer>
+
+<!-- 上边弹出 -->
+<m-drawer position="top" visible="{{showTop}}" bind:close="toggleTop">
+  <view class="container2">上边弹出</view>
+</m-drawer>
+
+<!-- 下边弹出 -->
+<m-drawer position="bottom" visible="{{showBottom}}" bind:close="toggleBottom">
+  <view class="container2">下边弹出</view>
+</m-drawer>
+
+<!-- 点击蒙层不可关闭 -->
+<m-drawer position="bottom" visible="{{showCloseBottom}}" mask-closable="{{ false }}">
+  <view class="container2" style="padding-top: 20rpx">
+    <m-button bind:click="toggleMaskBottom">点我关闭</m-button>
+  </view>
+</m-drawer>

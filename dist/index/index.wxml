@@ -1,0 +1,27 @@
+<view class="m-index custom-class">
+  <scroll-view 
+    scroll-y 
+    bindscroll="onScroll"
+    scroll-top="{{ scrollTop }}"
+    style="height: {{ height }}" 
+  >
+    <slot></slot>
+
+    <!-- 右侧索引 -->
+    <view class="m-index-fixed" 
+      catchtouchstart="onTouchMove" 
+      catchtouchmove="onTouchMove" 
+      catchtouchend="onTouchEnd"
+    >
+      <view class="m-index-fixed__item {{ currentName === item ? 'is-active' : '' }}" 
+        wx:for="{{ indexData }}" 
+        wx:key="index" 
+        data-index="{{index}}" 
+        catchtap="onClick">
+        {{ item }}
+      </view>
+    </view>
+
+    <view class="m-index-tooltip" style="{{ isTouches ? 'display:block' : 'display:none' }}">{{ currentName }}</view>
+  </scroll-view>
+</view>

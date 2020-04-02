@@ -1,0 +1,36 @@
+<demo-card title="滑动菜单" custom-content-class="custom-content-class">
+  <m-swipeout 
+    wx:for="{{ list }}"
+    wx:key="id"
+    data-id="{{ item.id }}"
+    auto-close
+    bind:onClick="handleClick"
+    bind:change="handleChange"
+  >
+
+    <view class="demo-content">
+      <view class="name">{{ item.name }}</view>
+      <view class="content">
+        <view class="title">{{ item.title }}</view>
+        <view class="desc">{{ item.desc }}</view>
+      </view>
+      <view class="info">
+        <view class="time">{{ item.time }}</view>
+      </view>
+    </view>
+
+    <view class="btn-group" slot="button">
+      <view class="btn up" style="width: 80px;" data-id="{{ item.id }}" catchtap="handleUp">
+        置顶
+      </view>
+      <view wx:if="{{ item.id === 2 }}" class="btn delete" style="width: 80px;" data-id="{{ item.id }}" bindtap="handleDelete">
+        删除
+      </view>
+    </view>
+
+  </m-swipeout>
+
+</demo-card>
+
+<m-message id="message" />
+<m-toast id="toast" />

@@ -1,0 +1,76 @@
+.m-message {
+  display: block;
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 12rpx 80rpx;
+  width: 100%;
+  min-height: 36rpx;
+  line-height: 36rpx;
+  color: #fff;
+  font-size: 28rpx;
+  text-align: center;
+  opacity: 1;
+  background: var(--color-primary);
+  transform: translate3d(0, 0, 0);
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.m-message.is-hidden {
+  opacity: 0;
+  transform: translate3d(0, -100%, 0);
+}
+
+.m-message--primary {
+  background: var(--color-primary);
+}
+
+.m-message--success {
+  background: var(--color-success);
+}
+
+.m-message--warning {
+  background: var(--color-warning);
+}
+
+.m-message--error {
+  background: var(--color-danger);
+}
+
+.close-btn {
+  position: absolute;
+  right: 10rpx;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.btn {
+  position: relative;
+  width: 40rpx;
+  height: 40rpx;
+  color: #fff;
+  border: 10rpx;
+}
+.btn::before, 
+.btn::after {
+  z-index: 1;
+  display: block;
+  content: "";
+  position: absolute;
+  left: 3rpx;
+  top: 50%;
+  color: #fff;
+  width: 32rpx;
+  height: 1px;
+  background: currentColor;
+  
+}
+
+.btn::before {
+  transform: rotate(45deg);
+}
+.btn::after {
+  transform: rotate(-45deg);
+}

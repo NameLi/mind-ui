@@ -1,0 +1,23 @@
+<demo-card title="默认">
+  <m-rate bind:change="onChange"></m-rate>
+</demo-card>
+
+<demo-card title="半选">
+  <m-rate bind:change="onChange" allow-half></m-rate>
+</demo-card>
+
+<demo-card title="自定义数量">
+  <m-rate bind:change="onChange" value="{{3.5}}" max="{{7}}"></m-rate>
+</demo-card>
+
+<demo-card title="自定义图标">
+  <m-rate bind:change="onChange" icon="like-fill" color="#f00" void-icon="like-fill" value="{{3.5}}"></m-rate>
+</demo-card>
+
+<demo-card title="只读">
+  <m-rate bind:change="onChange" value="{{3.5}}" readonly></m-rate>
+</demo-card>
+
+<demo-card title="辅助文字">
+  <m-rate bind:change="onChange" value="{{3}}" show-text texts="{{ texts }}"></m-rate>
+</demo-card>

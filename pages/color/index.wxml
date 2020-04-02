@@ -1,0 +1,66 @@
+<demo-card title="主题色" custom-content-class="custom-card">
+  <view class="grid">
+    <view class="color-item primary">
+      <view class="label">主题色</view>
+      <view class="value">#409EFF</view>
+    </view>
+    <view class="color-item"></view>
+    <view class="color-item"></view>
+  </view>
+</demo-card>
+
+<demo-card title="辅助色" custom-content-class="custom-card">
+  <view class="grid">
+    <view class="color-item success">
+      <view class="label">Success</view>
+      <view class="value">#67C23A</view>
+    </view>
+    <view class="color-item warning">
+      <view class="label">Warning</view>
+      <view class="value">#67C23A</view>
+    </view>
+    <view class="color-item danger">
+      <view class="label">Danger</view>
+      <view class="value">#67C23A</view>
+    </view>
+  </view>
+</demo-card>
+
+<demo-card title="文字色" custom-content-class="custom-card">
+  <view class="grid">
+    <view class="color-item text-primary">
+      <view class="label">主要文字</view>
+      <view class="value">#303133</view>
+    </view>
+    <view class="color-item text-regular">
+      <view class="label">常规文字</view>
+      <view class="value">#606266</view>
+    </view>
+    <view class="color-item text-secondary">
+      <view class="label">次要文字</view>
+      <view class="value">#909399</view>
+    </view>
+  </view>
+</demo-card>
+
+<demo-card title="边框色" custom-content-class="custom-card">
+  <view class="grid">
+    <view class="color-item border">
+      <view class="label">边框色</view>
+      <view class="value">#DCDEE2</view>
+    </view>
+    <view class="color-item"></view>
+    <view class="color-item"></view>
+  </view>
+</demo-card>
+
+<demo-card title="遮罩色" custom-content-class="custom-card">
+  <view class="grid">
+    <view class="color-item mask">
+      <view class="label">遮罩色</view>
+      <view class="value">rgba(0, 0, 0, 0.55)</view>
+    </view>
+    <view class="color-item"></view>
+    <view class="color-item"></view>
+  </view>
+</demo-card>

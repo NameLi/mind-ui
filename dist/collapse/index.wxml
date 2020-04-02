@@ -1,0 +1,9 @@
+<view
+  class="collapse__wrap"
+  style="height: {{ contentHeight }}px; transition-duration: {{ duration }}ms;"
+  bind:transitionend="onTransitionEnd"
+>
+  <view class="content">
+    <slot />
+  </view>
+</view>

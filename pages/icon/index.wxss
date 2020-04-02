@@ -1,0 +1,25 @@
+page {
+  background: #fff;
+}
+
+.custom-card {
+  margin-left: -32rpx;
+  margin-right: -30rpx;
+}
+
+.icon-wrap {
+  font-size: 0;
+}
+
+.icon-item {
+  display: inline-block;
+  padding: 30rpx 0;
+  min-width: 33%;
+  max-width: 33.3%;
+  text-align: center;
+}
+
+.icon-name {
+  font-size: 32rpx;
+  color: #aaa;
+}

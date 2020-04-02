@@ -1,0 +1,17 @@
+.container{
+	width:50vw;
+	height: 100vh;
+	background:#fff;
+}
+
+.container2{
+	width: 100vw;
+	height: 40vh;
+	background:#fff;
+}
+
+.container, .container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

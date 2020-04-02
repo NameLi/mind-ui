@@ -1,0 +1,48 @@
+<demo-card title="宫格" custom-content-class="custom-card">
+  <view slot="header-suffix">
+    <m-icon name="category" bindtap="handleSwitchModel"></m-icon>
+  </view>
+
+  <m-grid column-count="{{ columnCount }}" border="{{ borderSwitch }}">
+    <m-grid-item 
+      wx:for="{{ menus }}" 
+      wx:key="index"
+      icon="{{ item.icon }}" 
+      icon-color="{{ item.iconColor }}"
+      text="{{ item.text }}" 
+      url="{{ item.url }}"
+      badge-dot="{{ item.dot }}" 
+      badge-value="{{ item.badgeValue }}" 
+    ></m-grid-item>
+  </m-grid>
+</demo-card>
+
+<!-- 选项模态框 -->
+<m-modal 
+  visible="{{ visible }}" 
+  show-cancel-button="{{ false }}" 
+  show-confirm-button="{{ false }}" 
+  bind:close="handleSwitchModel"
+  custom-body-class="custom-body-class"
+>
+  <m-cell-group border>
+
+    <m-radio-group value="{{ columnCount }}" bind:change="onColumnCountChange">
+      <m-cell title="3列" data-name="{{ 3 }}" bind:click="onClick">
+        <m-radio name="{{ 3 }}"></m-radio>
+      </m-cell>
+      <m-cell title="4列" data-name="{{ 4 }}" bind:click="onClick">
+        <m-radio name="{{ 4 }}"></m-radio>
+      </m-cell>
+      <m-cell title="5列" data-name="{{ 5 }}" bind:click="onClick">
+        <m-radio name="{{ 5 }}"></m-radio>
+      </m-cell>
+    </m-radio-group>
+
+    <m-cell title="边框">
+      <m-switch value="{{ borderSwitch }}" bind:change="onBorderSwitchChange"></m-switch>
+    </m-cell>
+  </m-cell-group>
+</m-modal>
+
+<m-modal id="modal" />

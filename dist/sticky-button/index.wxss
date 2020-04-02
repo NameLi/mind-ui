@@ -1,0 +1,35 @@
+.sticky-button__wrap {
+  position: relative;
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.main-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 2;
+  font-size: 60rpx;
+  background-color: var(--color-primary);
+  transition: transform .3s ease-in-out;
+}
+
+.main-button.is-active {  
+  transform: rotate(135deg);
+}
+
+.sub-button__container {
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

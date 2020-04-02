@@ -1,0 +1,58 @@
+<demo-card title="基础用法" custom-content-class="custom-card-content">
+  <m-navbar-group bind:click="onClick" bind:change="onChange">
+    <m-navbar title="标签1" name="tab1"></m-navbar>
+    <m-navbar title="标签2" name="tab2"></m-navbar>
+    <m-navbar title="标签3" name="tab3"></m-navbar>
+  </m-navbar-group>
+</demo-card>
+
+<demo-card title="自定义" custom-content-class="custom-card-content">
+  <m-navbar-group
+    active-color="red"
+    line-color="red"
+    line-width="30"
+    line-height="6"
+    bind:click="onClick" 
+    bind:change="onChange"
+  >
+    <m-navbar title="标签1" name="tab1"></m-navbar>
+    <m-navbar title="标签2" name="tab2"></m-navbar>
+    <m-navbar title="标签3" name="tab3"></m-navbar>
+  </m-navbar-group>
+</demo-card>
+
+<demo-card title="多菜单" custom-content-class="custom-card-content">
+  <m-navbar-group bind:click="onClick" bind:change="onChange">
+    <m-navbar title="标签1" name="tab1"></m-navbar>
+    <m-navbar title="标签2" name="tab2"></m-navbar>
+    <m-navbar title="标签3" name="tab3"></m-navbar>
+    <m-navbar title="标签4" name="tab4"></m-navbar>
+    <m-navbar title="标签5" name="tab5"></m-navbar>
+    <m-navbar title="标签6" name="tab6"></m-navbar>
+    <m-navbar title="标签7" name="tab7"></m-navbar>
+    <m-navbar title="标签8" name="tab8"></m-navbar>
+    <m-navbar title="标签9" name="tab9"></m-navbar>
+  </m-navbar-group>
+</demo-card>
+
+<demo-card title="设置默认选中项" custom-content-class="custom-card-content">
+  <m-navbar-group active-name="tab4" bind:click="onClick" bind:change="onChange">
+    <m-navbar title="标签1" name="tab1"></m-navbar>
+    <m-navbar title="标签2" name="tab2"></m-navbar>
+    <m-navbar title="标签3" name="tab3"></m-navbar>
+    <m-navbar title="标签4" name="tab4"></m-navbar>
+    <m-navbar title="标签5" name="tab5"></m-navbar>
+    <m-navbar title="标签6" name="tab6"></m-navbar>
+    <m-navbar title="标签7" name="tab7"></m-navbar>
+  </m-navbar-group>
+</demo-card>
+
+<demo-card title="徽章统计" custom-content-class="custom-card-content">
+  <m-navbar-group bind:click="onClick" bind:change="onChange">
+    <m-navbar title="标签1" name="tab1"></m-navbar>
+    <m-navbar title="标签2" name="tab2" value="8"></m-navbar>
+    <m-navbar title="标签3" name="tab3"></m-navbar>
+    <m-navbar title="标签4" name="tab4" value="100"></m-navbar>
+    <m-navbar title="标签5" name="tab5"></m-navbar>
+  </m-navbar-group>
+</demo-card>
