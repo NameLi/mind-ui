@@ -10,4 +10,8 @@
 比心 ღ( ´･ᴗ･` )
 
 ### 预览
-<img src="/mini_code.jpg" width="240" height="240" style="margin-top: 30px;">
+<img src="https://mind-ui.ixook.com/mini_code.jpg" width="240" height="240" style="margin-top: 30px;">
+
+
+### 文档地址
+[Mind UI 文档](https://mind-ui.ixook.com)
