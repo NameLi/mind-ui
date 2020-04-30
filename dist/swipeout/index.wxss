@@ -13,9 +13,10 @@
 .m-swipeout__button-group {
   z-index: 1;
   position: absolute;
-  left: 100%;
+  right: 0;
   top: 0;
   height: 100%;
+  display: block;
 }
 
 .m-swipeout__button-item {

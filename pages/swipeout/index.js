@@ -47,8 +47,6 @@ Page({
   },
 
   handleDelete(e) {
-    console.log(e)
-
     let id = e.currentTarget.dataset.id
 
     Toast({
@@ -59,7 +57,7 @@ Page({
     setTimeout(()=> {
       Toast.close()
 
-      this.data.instance.$close()
+      this.data.instance.close()
 
       let data = this.data.list
 

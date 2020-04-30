@@ -15,45 +15,45 @@ Component({
     // 背景色
     bgcolor: {
       type: String,
-      default: ''
+      value: ''
     },
     // 返回按钮与字体色
     backColor: {
       type: String,
-      default: '#000'
+      value: '#000'
     },
     // 标题文字色
     color: {
       type: String,
-      default: '#000'
+      value: '#000'
     },
     // 标题
     title: {
       type: String,
-      default: ''
+      value: ''
     },
 
     // 是否显示返回按钮
     back: {
       type: Boolean,
-      default: false
+      value: false
     },
 
     delta: {
       type: Number,
-      default: 1
+      value: 1
     },
 
     // 是否显示返回按钮，默认跟随平台，ios居中对其，Android左对齐
     align: {
       type: String,
-      default: 'center'
+      value: 'center'
     },
 
     // 背景图片地址
     bgImage: {
       type: String,
-      default: ''
+      value: ''
     },
   },
 

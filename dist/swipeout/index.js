@@ -2,9 +2,6 @@ let Instances = []
 
 Component({
   externalClasses: ['custom-class'],
-  properties: {
-    
-  },
 
   options: {
     multipleSlots: true // 在组件定义时的选项中启用多slot支持
@@ -14,16 +11,32 @@ Component({
     btnWidth: 0,
     preventTouch: false,
     isMoving: false,
-    touchStart: {},   // 记录滑动起始位置，模拟tap使用
-    startX: 0,        // 滑动起始pageX
-    offset: 0,        // 移动距离
-    bounceTime: .5,   // 回弹动画默认时长，单位秒
-    setStyle: '',     // 设置滑动位置的样式
+    touchStart: {}, // 记录滑动起始位置，模拟tap使用
+    startX: 0, // 滑动起始pageX
+    offset: 0, // 移动距离
+    bounceTime: .5, // 回弹动画默认时长，单位秒
+    setStyle: '', // 设置滑动位置的样式
+    buttonStyle: '', // 按钮滑动位置
   },
 
   lifetimes: {
     created() {
       Instances.push(this)
+    },
+
+    ready() {
+      const query = this.createSelectorQuery()
+      query.select('.m-swipeout__button-group').boundingClientRect()
+
+      query.exec(res => {
+        this.data.btnWidth = res[0].width
+
+        const buttonStyle = `transform: translate3d(${this.data.btnWidth}px, 0, 0);`
+
+        this.setData({
+          buttonStyle
+        })
+      })
     },
 
     detached() {
@@ -44,7 +57,7 @@ Component({
       this.triggerEvent('onSwipeEnd', false)
     },
 
-    $close() {
+    close() {
       this._closeSwipe(0)
     },
 
@@ -57,8 +70,11 @@ Component({
 
       const setStyle = transform + transition
 
+      const buttonStyle = `transform: translate3d(${this.data.btnWidth + offset}px, 0, 0);`
+
       this.setData({
-        setStyle
+        setStyle,
+        buttonStyle
       })
     },
 
@@ -103,23 +119,23 @@ Component({
       })
 
       // 如果其它组件有打开，则阻止滑动
-      if(this.data.isOpen && this.data.offset === 0) {
+      if (this.data.isOpen && this.data.offset === 0) {
         this.data.preventTouch = true
         this.triggerEvent('onSwipeStart')
         return
-      } 
+      }
 
       this.data.isMoving = true
       this.data.startOffset = this.data.offset
       const touch = e.touches[0]
-      this.data.touchStart = e  // 记录起始点击信息，模拟点击事件
+      this.data.touchStart = e // 记录起始点击信息，模拟点击事件
       this.data.startX = touch.pageX
     },
 
     // 拖动
     handleTouchmove(e) {
 
-      if(this.data.preventTouch) return // 如果其它组件有打开，则阻止滑动
+      if (this.data.preventTouch) return // 如果其它组件有打开，则阻止滑动
 
       const touch = e.touches[0]
       const direction = this.data.startX > touch.pageX ? 'left' : 'right'
@@ -129,28 +145,28 @@ Component({
 
       // 解决滑动不彻底导致位置瑕疵，
       // 例如：向右关闭滑动过快，offset 已超出范围，但实际未到达边缘时，重置位置
-      if(direction === 'right' && offset > 0 && this.data.offset !== 0) {
+      if (direction === 'right' && offset > 0 && this.data.offset !== 0) {
         this._closeSwipe()
       } else if (direction === 'left' && Math.abs(offset) > this.data.btnWidth && offset !== -this.data.btnWidth) {
         this._openSwipe()
       }
 
       // 已展开或关闭状态，向滑动时重写起始位置的pageX值，以便向滑动时能立即响应滑动效果
-      if(
-        (direction === 'left' && Math.abs(this.data.startOffset) === this.data.btnWidth) || 
+      if (
+        (direction === 'left' && Math.abs(this.data.startOffset) === this.data.btnWidth) ||
         (direction === 'right' && Math.abs(this.data.startOffset) === 0)
-        ) {
+      ) {
         this.data.startX = touch.pageX
         return
       }
 
       // 向左滑动后又向右滑动，且超出范围时重写起始位置值，以便再向左滑动时能立即响应
-      if(direction === 'left' && offset >= 0) {
+      if (direction === 'left' && offset >= 0) {
         this.data.startX = touch.pageX
         return
       }
 
-      if(offset > 0 || Math.abs(offset) > this.data.btnWidth) return
+      if (offset > 0 || Math.abs(offset) > this.data.btnWidth) return
 
       this.swipeMove(offset)
     },
@@ -159,9 +175,9 @@ Component({
     handleTouchend(e) {
 
       // 如果其它组件有打开，则阻止滑动
-      if(this.data.preventTouch) {
+      if (this.data.preventTouch) {
         this.data.preventTouch = false
-        return        
+        return
       }
 
       this.data.isMoving = false
@@ -178,10 +194,10 @@ Component({
       const absX = Math.abs(start.touches[0].pageX - touch.pageX)
       const absY = Math.abs(start.touches[0].pageY - touch.pageY)
       const stamp = Math.abs(e.timeStamp - start.timeStamp)
-  
-      if ( absX < 10 && absY < 10 && stamp <= 300) {
-        if(this.data.offset === 0) {
-          this.triggerEvent('click')  
+
+      if (absX < 10 && absY < 10 && stamp <= 300) {
+        if (this.data.offset === 0) {
+          this.triggerEvent('click')
           this._closeSwipe(0)
         } else {
           this._closeSwipe()
@@ -190,13 +206,13 @@ Component({
       }
 
       // 设置回弹动画时长
-      const bounceTime = this.data.bounceTime         // 回弹动画默认时长
-      let moveDistance = Math.abs(touch.pageX - this.data.startX)      //  移动距离
-      let bounceSec = parseInt(moveDistance / this.data.btnWidth * bounceTime)  // 回弹动画时间，单位秒
-      if(bounceSec > bounceTime / 2) bounceSec = bounceTime - bounceSec       // 时长过半则取反
+      const bounceTime = this.data.bounceTime // 回弹动画默认时长
+      let moveDistance = Math.abs(touch.pageX - this.data.startX) //  移动距离
+      let bounceSec = parseInt(moveDistance / this.data.btnWidth * bounceTime) // 回弹动画时间，单位秒
+      if (bounceSec > bounceTime / 2) bounceSec = bounceTime - bounceSec // 时长过半则取反
       bounceSec = bounceSec.toFixed(2)
 
-      const ratio = direction == 'left' ? .4 : .6   // 划开时滑动过40%离开时就展开，关闭时右划超40%离开时关闭
+      const ratio = direction == 'left' ? .4 : .6 // 划开时滑动过40%离开时就展开，关闭时右划超40%离开时关闭
 
       this.touchEndSwipe(bounceSec, ratio)
     }
