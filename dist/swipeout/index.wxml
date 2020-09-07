@@ -1,6 +1,7 @@
-<view class="m-swipeout custom-class" style="{{ setStyle }}">
+<view class="m-swipeout custom-class">
   <view 
     class="m-swipeout__content"
+    style="{{ setStyle }}"
     bindtouchstart="handleTouchstart"
     bindtouchmove="handleTouchmove"
     bindtouchend="handleTouchend"
@@ -9,7 +10,10 @@
     <slot></slot>
   </view>
 
-  <view class="m-swipeout__button-group">
+  <view 
+    class="m-swipeout__button-group"
+    style="{{ buttonStyle }}"
+  >
     <slot name="button"></slot>
   </view>
 </view>
