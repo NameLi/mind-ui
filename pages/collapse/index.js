@@ -6,9 +6,9 @@ Page({
   },
 
   onReady() {
-this.setData({
-  switch1: true
-})
+    this.setData({
+      switch1: true
+    })
   },
 
   handleSwitch1(e) {

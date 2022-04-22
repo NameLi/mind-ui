@@ -21,6 +21,7 @@ Page({
     this.setData({
       visible1: false
     });
+    Message.success('确定')
   },
 
   handleOpen2() {
@@ -33,6 +34,8 @@ Page({
     this.setData({
       visible2: false
     });
+
+    Message.success('确定')
   },
 
   handleOpen3() {
@@ -45,6 +48,8 @@ Page({
     this.setData({
       visible3: false
     });
+
+    Message.success('确定')
   },
 
   handleOpen4() {
@@ -82,6 +87,7 @@ Page({
           type: 'success'
         })
       })
+      console.log(modal)
   },
 
   handleOpen7() {

@@ -45,7 +45,6 @@ Component({
   },
 
   methods: {
-
     _reset() {
       this.setData({
         title: '',
@@ -79,6 +78,8 @@ Component({
     },
 
     onCancel() {
+      if (this.data.loading) return
+
       this.setData({
         visible: false
       })
