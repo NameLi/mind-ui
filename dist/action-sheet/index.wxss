@@ -151,7 +151,7 @@ button.m-button::after {
   box-sizing: border-box;
 }
 
-.m-button-icon {
+.m-sheet__btn-icon {
   display: inline-block;
   font-size: 28rpx;
   width: 24rpx;

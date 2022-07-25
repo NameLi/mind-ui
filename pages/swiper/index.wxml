@@ -1,16 +1,14 @@
-<demo-card title="官方 swiper 组件实现"></demo-card>
+<demo-card title="官方 swiper 组件实现" />
 
 <view class="swiper__wrap">
   <swiper previous-margin="40rpx" next-margin="40rpx" autoplay circular interval="4000" duration="500" bindchange="swiperIdxHandle">
-      <block wx:for="{{swiperList}}" wx:key="index">
-        <swiper-item>
-           <view style="background-color: {{ item.bgcolor }}" class="slide-image {{ index == currentDot ? 'is-actived' : '' }}"></view>
-          <!-- <image src="{{item.url}}" mode="aspectFill" class="slide-image {{ index == currentDot ? 'is-actived' : '' }}"></image> -->
-        </swiper-item>
-      </block>
-    </swiper>
-
-    <view class='indicator-wrapper'>
-      <text wx:for="{{swiperList}}" wx:key="index" class="{{index == currentDot ? 'dotfocus': ''}}"></text>
-    </view>
+    <block wx:for="{{swiperList}}" wx:key="index">
+      <swiper-item>
+        <view style="background-color: {{ item.bgcolor }}" class="slide-image {{ index == currentDot ? 'is-active' : '' }}"></view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='indicator-wrapper'>
+    <text wx:for="{{swiperList}}" wx:key="index" class="{{index == currentDot ? 'dotfocus': ''}}"></text>
+  </view>
 </view>

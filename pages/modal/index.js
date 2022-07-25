@@ -78,23 +78,23 @@ Page({
   // js 调用
   handleOpen6() {
     let modal = Modal.alert({
-        title: '提示',
-        content: '操作成功！'
-      })
+      title: '提示',
+      content: '操作成功！'
+    })
       .then(() => {
         Message({
           content: '确认回调',
           type: 'success'
         })
       })
-      console.log(modal)
+    console.log(modal)
   },
 
   handleOpen7() {
     Modal.confirm({
-        title: '提示',
-        content: '操作成功！'
-      })
+      title: '提示',
+      content: '操作成功！'
+    })
       .then(() => {
         Message({
           content: '确认回调',
@@ -110,12 +110,12 @@ Page({
 
   handleOpen8() {
     Modal({
-        title: '异步操作',
-        content: '异步操作',
-        confirmTextColor: "red",
-        confirmButtonText: "删除",
-        asyncClose: true
-      })
+      title: '异步操作',
+      content: '异步操作',
+      confirmTextColor: "red",
+      confirmButtonText: "删除",
+      asyncClose: true
+    })
       .then(() => {
         setTimeout(() => {
           Message({

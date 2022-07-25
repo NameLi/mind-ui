@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "自定义 Header-bar",
+  "navigationBarTitleText": "自定义 Header Bar",
   "navigationStyle": "custom", 
   "usingComponents": {
     "m-header-bar": "/dist/header-bar/index"

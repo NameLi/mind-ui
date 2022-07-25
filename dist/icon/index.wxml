@@ -7,7 +7,7 @@
     src="{{ name }}"
     mode="aspectFit"
     class="icon__image"
-  ></image>
+   />
 </view>
 
 <wxs module="icon">

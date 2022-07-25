@@ -13,14 +13,14 @@
     <block wx:else>
       <view class="grid-item__icon">
         <m-icon wx:if="{{ icon }}" name="{{ icon }}" color="{{ iconColor }}" size="{{ iconSize }}" dot="{{ dot }}" info="{{ info }}" />
-        <slot wx:else name="icon"></slot>
+        <slot wx:else name="icon" />
 
-        <m-badge custom-class="grid-item__badge" is-dot="{{ badgeDot }}" value="{{ badgeValue }}"></m-badge>
+        <m-badge custom-class="grid-item__badge" is-dot="{{ badgeDot }}" value="{{ badgeValue }}" />
       </view>
 
       <view class="grid-item__text">
         <text wx:if="{{ text }}">{{ text }}</text>
-        <slot wx:else name="text"></slot>
+        <slot wx:else name="text" />
       </view>
     </block>
 

@@ -69,7 +69,6 @@ Page({
       })
 
       Toast('删除成功')
-
     }, 1200)
     
     this.setData({

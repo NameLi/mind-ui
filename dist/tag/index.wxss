@@ -40,11 +40,6 @@
   font-size: 18rpx;
 }
 
-.none {
-  border-color: #fff;
-}
-
-
 /* 类型 type */
 .m-tag--primary {
   color: #fff;

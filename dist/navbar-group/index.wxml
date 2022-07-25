@@ -1,12 +1,12 @@
-<view class="tabs__wrap custom-class">
+<view class="m-tabs__wrap custom-class">
   <scroll-view
     scroll-x="{{ true }}"
     scroll-with-animation
     scroll-left="{{ scrollLeft }}"
-    class="tabs__scroll"
+    class="m-tabs__scroll"
   >
-    <view class="tabs__nav">
-      <view class="tabs__line" wx:if="{{ lineHeight }}" style="{{ tabs.getLineStyle(lineLeft, activeLineWidth, lineHeight, lineColor) }}"></view>
+    <view class="m-tabs__nav">
+      <view class="m-tabs__line" wx:if="{{ lineHeight }}" style="{{ tabs.getLineStyle(lineLeft, activeLineWidth, lineHeight, lineColor) }}"></view>
       <slot />
     </view>
   </scroll-view>

@@ -2,7 +2,7 @@
   flex: 1;
 }
 
-.tabs__item {
+.m-tab-item {
   position: relative;
   flex: 1;
   box-sizing: border-box;
@@ -15,16 +15,17 @@
   font-size: 28rpx;
   -webkit-tap-highlight-color: transparent
 }
-.tabs__item__content {
+
+.m-tab-item__content {
   white-space: nowrap;
   margin: 0 20rpx;
 }
 
-.tabs__item__text {
+.m-tab-item__text {
   display: inline-block;
 }
 
-.tabs__item--is-active {
+.m-tab-item.is-active {
   font-weight: 500;
   color: #323233;
 }

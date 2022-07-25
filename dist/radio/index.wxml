@@ -4,7 +4,7 @@
     class="radio__label radio__label--left"
     bindtap="onClickLabel"
   >
-    <slot></slot>
+    <slot />
   </view>
 
   <view class="radio__icon-wrap" bindtap="onChange">
@@ -19,6 +19,6 @@
     class="radio__label radio__label--right"
     bindtap="onClickLabel"
   >
-    <slot></slot>
+    <slot />
   </view>
 </view>

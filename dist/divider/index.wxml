@@ -3,6 +3,6 @@
     {{content}}
   </view>
   <view class="m-divider__content" wx:else>
-    <slot></slot>
+    <slot />
   </view>
 </view>

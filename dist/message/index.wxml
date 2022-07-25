@@ -3,7 +3,7 @@
   style="{{ 'z-index:' + zIndex }}" 
 >
   {{ content }}
-  <view class="close-btn" wx:if="{{showClose}}">
+  <view class="m-message__close-btn" wx:if="{{showClose}}">
     <view class="btn" bindtap="onClose"></view>
   </view>
 </view>

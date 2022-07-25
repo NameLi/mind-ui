@@ -28,8 +28,6 @@
   </m-checkbox>
 </demo-card>
 
-
-
 <demo-card title="group 基础用法" desc="{{ result }}">
   <m-checkbox-group value="{{ result }}" bind:change="onGroupChange">
     <m-checkbox name="a" custom-class="custom-checkbox">复选框a</m-checkbox>
@@ -40,7 +38,7 @@
 </demo-card>
 
 <demo-card title="限制个数3个" desc="{{ result2 }}">
-  <m-checkbox-group value="{{ result2 }}" max="3" bind:change="onGroupChange2">
+  <m-checkbox-group value="{{ result2 }}" max="{{ 3 }}" bind:change="onGroupChange2">
     <m-checkbox name="e" custom-class="custom-checkbox">复选框e</m-checkbox>
     <m-checkbox name="f" custom-class="custom-checkbox">复选框f</m-checkbox>
     <m-checkbox name="g" custom-class="custom-checkbox">复选框g</m-checkbox>
@@ -53,13 +51,13 @@
   <m-cell-group border>
     <m-checkbox-group value="{{ result }}" max="{{ 3 }}" bind:change="onGroupChange">
       <m-cell title="复选框a" data-name="a" bind:click="onClick">
-        <m-checkbox name="a"></m-checkbox>
+        <m-checkbox name="a" />
       </m-cell>
       <m-cell title="复选框b" data-name="b" bind:click="onClick">
-        <m-checkbox name="b"></m-checkbox>
+        <m-checkbox name="b" />
       </m-cell>
       <m-cell title="复选框d" data-name="c" bind:click="onClick">
-        <m-checkbox name="c"></m-checkbox>
+        <m-checkbox name="c" />
       </m-cell>
     </m-checkbox-group>
   </m-cell-group>

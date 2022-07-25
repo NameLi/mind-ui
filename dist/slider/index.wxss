@@ -1,11 +1,10 @@
-
-.slider {
+.m-slider {
   position: relative;
   border-radius: 999px;
   background-color: #e5e5e5;
 }
 
-.slider:before {
+.m-slider:before {
   position: absolute;
   right: 0;
   left: 0;
@@ -14,14 +13,14 @@
   bottom: -8px;
 }
 
-.slider__bar {
+.m-slider__bar {
   position: relative;
   border-radius: inherit;
   transition: width .2s;
   background-color: #1989fa;
 }
 
-.slider__button {
+.m-slider__button {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -29,13 +28,13 @@
   background-color: #fff;
 }
 
-.slider__button-wrapper {
+.m-slider__button-wrap {
   position: absolute;
   top: 50%;
   right: 0;
   transform: translate3d(50%, -50%, 0);
 }
 
-.slider--disabled {
+.m-slider--disabled {
   opacity: .7;
 }

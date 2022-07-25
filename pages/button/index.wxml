@@ -1,79 +1,79 @@
 <demo-card title="形状">
   <m-button custom-class="my-button" inline type="primary">Default</m-button>
-  <m-button custom-class="m-button" bind:click="handleClick" inline round type="primary">Round</m-button>
+  <m-button custom-class="m-button" inline round type="primary">Round</m-button>
 </demo-card>
 
 <demo-card title="自定义颜色">
-  <m-button custom-class="my-button" bind:click="handleClick" inline color="#fff" bgcolor="#ff3621">Custom Color</m-button>
-  <m-button bind:click="handleClick" inline color="#ff3621" plain>Custom Color</m-button>
+  <m-button custom-class="my-button" inline color="#fff" bgcolor="#ff3621">Custom Color</m-button>
+  <m-button inline color="#ff3621" plain>Custom Color</m-button>
 </demo-card>
 
 <demo-card title="块级">
-  <m-button custom-class="my-button" bind:click="handleClick" inline type="primary">Inline</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary">Default</m-button>
-  <m-button bind:click="handleClick" full type="primary">Full</m-button>
+  <m-button custom-class="my-button" inline type="primary">Inline</m-button>
+  <m-button custom-class="my-button" type="primary">Default</m-button>
+  <m-button full type="primary">Full</m-button>
 </demo-card>
 
 <!-- type -->
 <demo-card title="类型">
-  <m-button custom-class="my-button" bind:click="handleClick" type="ghost">Ghost</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick">Default / White</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary">Primary</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="info">Info</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="success">Success</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="warning">Warning</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="danger">Danger</m-button>
+  <m-button custom-class="my-button" type="ghost">Ghost</m-button>
+  <m-button custom-class="my-button">Default / White</m-button>
+  <m-button custom-class="my-button" type="primary">Primary</m-button>
+  <m-button custom-class="my-button" type="info">Info</m-button>
+  <m-button custom-class="my-button" type="success">Success</m-button>
+  <m-button custom-class="my-button" type="warning">Warning</m-button>
+  <m-button custom-class="my-button" type="danger">Danger</m-button>
 </demo-card>
 
 
 <!-- plain -->
 <demo-card title="朴素">
-  <m-button custom-class="my-button" bind:click="handleClick">Default</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" plain>Primary</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="info" plain>Info</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="success" plain>Success</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="warning" plain>Warning</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="danger" plain>Danger</m-button>
+  <m-button custom-class="my-button">Default</m-button>
+  <m-button custom-class="my-button" type="primary" plain>Primary</m-button>
+  <m-button custom-class="my-button" type="info" plain>Info</m-button>
+  <m-button custom-class="my-button" type="success" plain>Success</m-button>
+  <m-button custom-class="my-button" type="warning" plain>Warning</m-button>
+  <m-button custom-class="my-button" type="danger" plain>Danger</m-button>
 </demo-card>
 
 <!-- size -->
 <demo-card title="大小">
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" size="large" inline>Large</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" size="default" inline>Default</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" size="small" inline>Small</m-button>
+  <m-button custom-class="my-button" type="primary" size="large" inline>Large</m-button>
+  <m-button custom-class="my-button" type="primary" size="default" inline>Default</m-button>
+  <m-button custom-class="my-button" type="primary" size="small" inline>Small</m-button>
 
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" size="large" inline plain>Large</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" size="default" inline plain>Default</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" size="small" inline plain>Small</m-button>
+  <m-button custom-class="my-button" type="primary" size="large" inline plain>Large</m-button>
+  <m-button custom-class="my-button" type="primary" size="default" inline plain>Default</m-button>
+  <m-button custom-class="my-button" type="primary" size="small" inline plain>Small</m-button>
 
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" size="large" inline round>Large</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" size="default" inline round>Default</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" size="small" inline round>Small</m-button>
+  <m-button custom-class="my-button" type="primary" size="large" inline round>Large</m-button>
+  <m-button custom-class="my-button" type="primary" size="default" inline round>Default</m-button>
+  <m-button custom-class="my-button" type="primary" size="small" inline round>Small</m-button>
 
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" size="large" inline round plain>Large</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" size="default" inline round plain>Default</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" size="small" inline round plain>Small</m-button>
+  <m-button custom-class="my-button" type="primary" size="large" inline round plain>Large</m-button>
+  <m-button custom-class="my-button" type="primary" size="default" inline round plain>Default</m-button>
+  <m-button custom-class="my-button" type="primary" size="small" inline round plain>Small</m-button>
 </demo-card>
 
 
 <!-- disabled -->
 <demo-card title="禁用">
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" disabled>Primary</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="info" disabled>Info</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="success" disabled>Success</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="warning" disabled>Warning</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="danger" disabled>Danger</m-button>
+  <m-button custom-class="my-button" type="primary" disabled>Primary</m-button>
+  <m-button custom-class="my-button" type="info" disabled>Info</m-button>
+  <m-button custom-class="my-button" type="success" disabled>Success</m-button>
+  <m-button custom-class="my-button" type="warning" disabled>Warning</m-button>
+  <m-button custom-class="my-button" type="danger" disabled>Danger</m-button>
 </demo-card>
 
 
 <!-- loading -->
 <demo-card title="加载中">
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" inline loading>Default</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" inline plain round loading>Default</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" inline loading>Default</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" inline round loading>Default</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" plain loading>Loading</m-button>
-  <m-button custom-class="my-button" bind:click="handleClick" type="primary" loading>Loading</m-button>
+  <m-button custom-class="my-button" type="primary" inline loading>Default</m-button>
+  <m-button custom-class="my-button" type="primary" inline plain round loading>Default</m-button>
+  <m-button custom-class="my-button" type="primary" inline loading>Default</m-button>
+  <m-button custom-class="my-button" type="primary" inline round loading>Default</m-button>
+  <m-button custom-class="my-button" type="primary" plain loading>Loading</m-button>
+  <m-button custom-class="my-button" type="primary" loading>Loading</m-button>
 </demo-card>
 
 <!-- 开放能力 -->

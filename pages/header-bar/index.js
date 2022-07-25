@@ -9,9 +9,7 @@ const default_data = {
   loading: false
 }
 
-
 Page({
-
   data: {
     ...default_data
   },

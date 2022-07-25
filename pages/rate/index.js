@@ -3,7 +3,7 @@ Page({
     texts: ['极差', '较差', '一般', '不错', '很棒']
   },
 
-  onChange(e) {
-    let value = e.detail
+  onChange({ detail }) {
+    console.log(detail)
   },
 })

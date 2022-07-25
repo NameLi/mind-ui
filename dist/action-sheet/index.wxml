@@ -9,7 +9,7 @@
   style="{{ 'z-index: ' + zIndex }}"
 >
   <view class="m-sheet__header custom-class__header">
-    <slot name="header"></slot>
+    <slot name="header" />
   </view>
 
   <view class="m-sheet__content">
@@ -41,8 +41,8 @@
             color="{{ item.color }}" 
             size="36"
             class="m-sheet__btn-icon"
-          ></m-icon>
-         {{ item.name }}
+          />
+          {{ item.name }}
         </view>
 
       </button>

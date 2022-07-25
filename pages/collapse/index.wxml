@@ -1,6 +1,5 @@
 <m-button bind:click="handleSwitch1">默认展开</m-button>
 
-
 <m-collapse visible="{{ switch1 }}">
   <view class="card">
     <text>《赠药山高僧惟俨》
@@ -11,7 +10,6 @@
     </text>
   </view>
 </m-collapse>
-
 
 <m-button bind:click="handleSwitch2">默认折叠</m-button>
 
@@ -29,7 +27,6 @@
     </text>
   </view>
 </m-collapse>
-
 
 
 <m-button bind:click="handleSwitch3">默认折叠(动画时长100ms)</m-button>

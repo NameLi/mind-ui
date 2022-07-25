@@ -1,6 +1,3 @@
-<view 
-  class="m-tag custom-class {{ 'm-tag--' + size }} {{ round ? 'is-round' : '' }} {{ 'm-tag--' + type }} {{ plain ? 'is-plain' : '' }}" 
-  style="{{ plain ? 'color: ' + color : 'background-color: ' + color }}"
->
-  <slot></slot>
+<view class="m-tag custom-class {{ 'm-tag--' + size }} {{ round ? 'is-round' : '' }} {{ type ? 'm-tag--' + type : '' }} {{ plain ? 'is-plain' : '' }}" style="{{ plain ? 'color: ' + color : 'background-color: ' + color }}">
+  <slot />
 </view>

@@ -43,8 +43,8 @@ Component({
 
       const query = this.createSelectorQuery()
 
-      query.select('.tabs__item').boundingClientRect()
-      query.select('.tabs__item__text').boundingClientRect()
+      query.select('.m-tab-item').boundingClientRect()
+      query.select('.m-tab-item__text').boundingClientRect()
 
       query.exec(res => {
         const offsetLeft = ev ? ev.currentTarget.offsetLeft : res[0].left - baseLeft

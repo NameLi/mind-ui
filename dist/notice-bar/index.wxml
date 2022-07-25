@@ -1,6 +1,6 @@
 <view class="notice-bar__wrap custom-class">
 
-  <slot name="preifx"></slot>
+  <slot name="preifx" />
 
   <view class="notice-bar">
     <view 
@@ -11,7 +11,7 @@
     </view>
   </view>
 
-  <slot name="suffix"></slot>
+  <slot name="suffix" />
 </view>
 
 

@@ -1,11 +1,11 @@
-.sticky-button__wrap {
+.m-sticky-button__wrap {
   position: relative;
   width: 100rpx;
   height: 100rpx;
   line-height: 100rpx;
 }
 
-.main-button {
+.m-sticky-button {
   position: absolute;
   left: 0;
   top: 0;
@@ -20,11 +20,11 @@
   transition: transform .3s ease-in-out;
 }
 
-.main-button.is-active {  
+.m-sticky-button.is-active {
   transform: rotate(135deg);
 }
 
-.sub-button__container {
+.m-sticky-button__container {
   position: absolute;
   width: 80rpx;
   height: 80rpx;

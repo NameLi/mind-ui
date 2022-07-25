@@ -7,13 +7,13 @@
     bindtouchend="handleTouchend"
     bindtouchcancel="handleTouchend"
   >
-    <slot></slot>
+    <slot />
   </view>
 
   <view 
-    class="m-swipeout__button-group"
+    class="m-swipeout__button--group"
     style="{{ buttonStyle }}"
   >
-    <slot name="button"></slot>
+    <slot name="button" />
   </view>
 </view>

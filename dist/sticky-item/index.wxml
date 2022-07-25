@@ -8,9 +8,9 @@
       class="m-sticky-item__header {{ isFixed === true ? 'm-sticky__is-fixed' : '' }}" 
       style="top: {{ offsetTop }}px;{{ 'z-index: ' + zIndex }}"
     >
-      <slot name="title"></slot>
+      <slot name="title" />
     </view>
   </view>
 
-  <slot name="content"></slot>
+  <slot name="content" />
 </view>

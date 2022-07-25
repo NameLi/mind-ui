@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.is-actived {
+.is-active {
   animation: jump 0.4s ease-in-out;
 }
 

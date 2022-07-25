@@ -3,7 +3,8 @@ import Message from '../../dist/message/message'
 Page({
   data: {
     visible1: false,
-    actions1: [{
+    actions1: [
+      {
         name: '选项1'
       },
       {
@@ -27,10 +28,12 @@ Page({
     ],
 
     visible2: false,
-    actions2: [{
-      name: '删除',
-      color: '#ed3f14'
-    }],
+    actions2: [
+      {
+        name: '删除',
+        color: '#ed3f14'
+      }
+    ],
 
     visible3: false,
     actions3: [
@@ -116,11 +119,7 @@ Page({
   },
 
 
-  handleClickItem3({
-    detail
-  }) {
-    const index = detail.index + 1;
-    
+  handleClickItem3() {
     this.setData({
       visible3: false
     })

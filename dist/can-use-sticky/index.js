@@ -1,7 +1,7 @@
 Component({
   lifetimes: {
     ready() {
-      const className = '.sticky-check-dom'
+      const className = '.m-sticky__check-dom'
 
       const query = wx.createSelectorQuery().in(this)
 

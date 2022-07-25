@@ -1,7 +1,7 @@
 <demo-card title="基础用法" custom-content-class="custom-card">
   <view class="icon-wrap">
     <view class="icon-item">
-      <m-icon name="love" size="60"></m-icon>
+      <m-icon name="love" size="60" />
     </view>
   </view>
 </demo-card>
@@ -9,13 +9,13 @@
 <demo-card title="自定义颜色" custom-content-class="custom-card">
   <view class="icon-wrap">
     <view class="icon-item">
-      <m-icon name="love" size="60" color="#0181ff"></m-icon>
+      <m-icon name="love" size="60" color="#0181ff" />
     </view>
     <view class="icon-item">
-      <m-icon name="love" size="60" color="#EE5C42"></m-icon>
+      <m-icon name="love" size="60" color="#EE5C42" />
     </view>
     <view class="icon-item">
-      <m-icon name="love" size="60" color="#67c23a"></m-icon>
+      <m-icon name="love" size="60" color="#67c23a" />
     </view>
   </view>
 </demo-card>
@@ -23,13 +23,13 @@
 <demo-card title="自定义大小" custom-content-class="custom-card">
   <view class="icon-wrap">
     <view class="icon-item">
-      <m-icon name="love" size="48"></m-icon>
+      <m-icon name="love" size="48" />
     </view>
     <view class="icon-item">
-      <m-icon name="love" size="60"></m-icon>
+      <m-icon name="love" size="60" />
     </view>
     <view class="icon-item">
-      <m-icon name="love" size="84"></m-icon>
+      <m-icon name="love" size="84" />
     </view>
   </view>
 </demo-card>
@@ -37,7 +37,7 @@
 <demo-card title="外链图片" custom-content-class="custom-card">
   <view class="icon-wrap">
     <view class="icon-item">
-      <m-icon name="https://note-file.ixook.com/FkwInL0tWpqDeRNtYHMfmaHlioTq" size="80"></m-icon>
+      <m-icon name="https://note-file.ixook.com/FkwInL0tWpqDeRNtYHMfmaHlioTq" size="80" />
     </view>
   </view>
 </demo-card>
@@ -65,7 +65,7 @@
 <!-- <demo-card title="内置图标" custom-content-class="custom-card">
   <view class="icon-wrap">
     <view class="icon-item">
-        <m-icon name="" size="{{60}}"></m-icon>
+        <m-icon name="" size="{{60}}" />
         <view class="icon-name">{{item}}</view>
     </view>
   </view>

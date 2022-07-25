@@ -2,7 +2,6 @@
   margin: 0 -32rpx;
 }
 
-
 .split-line {
   height: 30rpx;
 }

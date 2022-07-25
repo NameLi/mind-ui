@@ -1,7 +1,5 @@
-<view class="m-index-demo">
-
+<view class="index-demo">
   <m-index bind:change="onChange">
-
     <m-index-item name="当前">
       <view class="now-city">
         <m-tag plain size="medium" color="#777" custom-class="custom-tag">苏州</m-tag>
@@ -26,7 +24,6 @@
       wx:for-item="item" 
       wx:key="index" 
       name="{{item.key}}"
-      
     >
       <view 
         class="m-index-demo-item" 
@@ -38,6 +35,5 @@
         {{ sub.name }}
       </view>
     </m-index-item>
-
   </m-index>
 </view>

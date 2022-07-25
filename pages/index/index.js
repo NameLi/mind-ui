@@ -4,7 +4,6 @@ import { cities } from './city'
 Page({
   data: {
     cities: [],
-
     hotCities: ["杭州", "北京", "上海", "广州", "深圳", "成都", "重庆", "天津", "南京", "苏州", "武汉", "西安"]
   },
 
@@ -21,7 +20,7 @@ Page({
         list: []
       }
     })
-    
+
     cities.forEach((item) => {
       let firstName = item.pinyin.substring(0, 1);
       let index = words.indexOf(firstName);

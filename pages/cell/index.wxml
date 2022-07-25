@@ -1,13 +1,13 @@
 <m-cell-group title="单元格分组" border="{{ borderSwitch }}" card="{{ cardSwitch }}">
   <view slot="group-suffix">
-    <m-icon name="category" bindtap="handleSwitchModel"></m-icon>
+    <m-icon name="category" bindtap="handleSwitchModel" />
   </view>
 
-  <m-cell icon="love" icon-color="#e54d42" title="图标+标题"></m-cell>
+  <m-cell icon="love" icon-color="#e54d42" title="图标+标题" />
 
-  <m-cell icon="https://note-file.ixook.com/FkwInL0tWpqDeRNtYHMfmaHlioTq" title="图片+标题"></m-cell>
+  <m-cell icon="https://note-file.ixook.com/FkwInL0tWpqDeRNtYHMfmaHlioTq" title="图片+标题" />
 
-  <m-cell icon="location" icon-color="#00CDA2" title="跳转" url="/pages/home/index" link-type="navigateTo"></m-cell>
+  <m-cell icon="location" icon-color="#00CDA2" title="跳转" url="/pages/home/index" link-type="navigateTo" />
 
   <m-cell icon="tag" icon-color="#00CDA2" title="标签">
     <view class="tag-group">
@@ -18,14 +18,14 @@
   </m-cell>
 
   <m-cell icon="feed" icon-color="#00CDA2" title="表单组件">
-    <m-switch value="{{ switch }}" bind:change="onSwitchChange"></m-switch>
+    <m-switch value="{{ switch }}" bind:change="onSwitchChange" />
   </m-cell>
 
   <m-cell icon="feed" icon-color="#00CDA2" title="表单组件">
-    <m-checkbox value="{{ switch }}" bind:change="onSwitchChange"></m-checkbox>
+    <m-checkbox value="{{ switch }}" bind:change="onSwitchChange" />
   </m-cell>
 
-  <m-cell icon="edit" data-name="detail" bind:click="onClick" icon-color="#00CDA2" title="文本" value="内容区"></m-cell>
+  <m-cell icon="edit" data-name="detail" bind:click="onClick" icon-color="#00CDA2" title="文本" value="内容区" />
 </m-cell-group>
 
 
@@ -39,10 +39,10 @@
 >
   <m-cell-group border>
     <m-cell title="卡片式">
-      <m-switch value="{{ cardSwitch }}" bind:change="onCardSwitchChange"></m-switch>
+      <m-switch value="{{ cardSwitch }}" bind:change="onCardSwitchChange" />
     </m-cell>
     <m-cell title="下边框">
-      <m-switch value="{{ borderSwitch }}" bind:change="onBorderSwitchChange"></m-switch>
+      <m-switch value="{{ borderSwitch }}" bind:change="onBorderSwitchChange" />
     </m-cell>
   </m-cell-group>
 </m-modal>

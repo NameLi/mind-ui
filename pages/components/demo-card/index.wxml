@@ -3,7 +3,7 @@
     <view class="demo-title">{{ title }}</view>
     <view class="demo-desc" wx:if="{{ desc !== '' }}">{{ desc }}</view>
     <view wx:else class="demo-desc">
-      <slot name="header-suffix"></slot>
+      <slot name="header-suffix" />
     </view>
   </view>
   <view class="demo-content custom-content-class">

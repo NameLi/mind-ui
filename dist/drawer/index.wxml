@@ -9,6 +9,6 @@
     class="m-drawer__content" 
     style="{{ 'z-index: ' + zIndex }}"
   >
-    <slot></slot>
+    <slot />
   </view>
 </view>

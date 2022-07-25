@@ -1,5 +1,4 @@
 Page({
-
   data: {
     menus: [
       {
@@ -19,7 +18,7 @@ Page({
       }, {
         icon: 'star-fill',
         text: '跳转链接',
-        url: '/pages/home/index', 
+        url: '/pages/home/index',
         iconColor: '#f27a1d'
       }, {
         icon: 'star',

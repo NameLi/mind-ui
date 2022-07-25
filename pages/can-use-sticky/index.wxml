@@ -1,4 +1,3 @@
-<m-can-use-sticky bind:canUseCssSticky="canUseCssSticky"></m-can-use-sticky>
-
+<m-can-use-sticky bind:canUseCssSticky="canUseCssSticky" />
 
 {{ canUseCssSticky }}

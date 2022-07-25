@@ -38,7 +38,7 @@
   background: var(--color-danger);
 }
 
-.close-btn {
+.m-message__close-btn {
   position: absolute;
   right: 10rpx;
   top: 0;
@@ -46,6 +46,7 @@
   display: flex;
   align-items: center;
 }
+
 .btn {
   position: relative;
   width: 40rpx;
@@ -53,7 +54,8 @@
   color: #fff;
   border: 10rpx;
 }
-.btn::before, 
+
+.btn::before,
 .btn::after {
   z-index: 1;
   display: block;
@@ -65,12 +67,13 @@
   width: 32rpx;
   height: 1px;
   background: currentColor;
-  
+
 }
 
 .btn::before {
   transform: rotate(45deg);
 }
+
 .btn::after {
   transform: rotate(-45deg);
 }

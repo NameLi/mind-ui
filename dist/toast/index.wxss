@@ -1,4 +1,4 @@
-.m-toast-mask {
+.m-toast__mask {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -8,23 +8,23 @@
   z-index: 2000;
 }
 
-.m-toast-wrapper {
+.m-toast__wrap {
   z-index: 2001;
   position: fixed;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.m-toast-wrapper.top {
+.m-toast__wrap.top {
 	top: 110rpx;
   animation: toast-top 0.25s ease-in-out;
 }
 
-.m-toast-wrapper.middle {
+.m-toast__wrap.middle {
 	top: 45%;
 }
 
-.m-toast-wrapper.bottom {
+.m-toast__wrap.bottom {
 	bottom: 110rpx;
 	animation: toast-bottom 0.25s ease-in-out;
 }

@@ -37,7 +37,7 @@
   height: 50rpx;
 }
 
-.bounce {
+.m-bounce {
   position: absolute;
   left: 0;
   top: 0;
@@ -49,7 +49,7 @@
   background-color: currentColor;
 }
 
-.bounce2 {
+.m-bounce2 {
   animation-delay: -1s;
 }
 
@@ -75,7 +75,7 @@
   animation-timing-function: steps(12);
 }
 
-.circle {
+.m-circle {
   z-index: 9;
   position: absolute;
   top: 0;
@@ -85,7 +85,7 @@
   box-sizing: border-box;
 }
 
-.circle::before {
+.m-circle::before {
   width: 4rpx;
   height: 25%;
   border-radius: 2rpx;
@@ -113,14 +113,14 @@
   text-align: center;
 }
 
-.triple {
+.m-triple {
   margin: 0 5rpx;
   height: 24rpx;
   width: 10rpx;
   display: inline-block;
 }
 
-.triple .rect {
+.m-triple .m-rect {
   height: 24rpx;
   width: 100%;
   border-radius: 10rpx;
@@ -130,14 +130,14 @@
   background-color: currentColor;
 }
 
-/* .triple .rect0 {
+/* .m-triple .m-rect0 {
 } */
 
-.triple .rect1 {
+.m-triple .m-rect1 {
   animation-delay: 0.2s;
 }
 
-.triple .rect2 {
+.m-triple .m-rect2 {
   animation-delay: 0.4s;
 }
 
@@ -162,12 +162,12 @@
   text-align: center;
 }
 
-.dot {
+.m-dot {
   display: inline-block;
   padding: 0 4rpx;
 }
 
-.dot::after {
+.m-dot::after {
   display: inline-block;
   margin-left: 6rpx;
   content: "";

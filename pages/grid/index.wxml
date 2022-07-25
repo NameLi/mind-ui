@@ -1,6 +1,6 @@
 <demo-card title="宫格" custom-content-class="custom-card">
   <view slot="header-suffix">
-    <m-icon name="category" bindtap="handleSwitchModel"></m-icon>
+    <m-icon name="category" bindtap="handleSwitchModel" />
   </view>
 
   <m-grid column-count="{{ columnCount }}" border="{{ borderSwitch }}">
@@ -13,7 +13,7 @@
       url="{{ item.url }}"
       badge-dot="{{ item.dot }}" 
       badge-value="{{ item.badgeValue }}" 
-    ></m-grid-item>
+    />
   </m-grid>
 </demo-card>
 
@@ -26,7 +26,6 @@
   custom-body-class="custom-body-class"
 >
   <m-cell-group border>
-
     <m-radio-group value="{{ columnCount }}" bind:change="onColumnCountChange">
       <m-cell title="3列" data-name="{{ 3 }}" bind:click="onClick">
         <m-radio name="{{ 3 }}"></m-radio>
@@ -40,7 +39,7 @@
     </m-radio-group>
 
     <m-cell title="边框">
-      <m-switch value="{{ borderSwitch }}" bind:change="onBorderSwitchChange"></m-switch>
+      <m-switch value="{{ borderSwitch }}" bind:change="onBorderSwitchChange" />
     </m-cell>
   </m-cell-group>
 </m-modal>

@@ -50,7 +50,6 @@ Component({
   },
 
   methods: {
-
     _updateChildren() {
       // 防抖减少重复触发
       if (this.data.timer) {
@@ -65,7 +64,7 @@ Component({
         const len = children.length
 
         // 渲染完成后更新内容区域宽度
-        if(len) {
+        if (len) {
           this._updateWrapInfo(children)
         }
       }, 60)
@@ -76,8 +75,8 @@ Component({
     _updateWrapInfo(children) {
       wx.nextTick(() => {
         const query = this.createSelectorQuery()
-        query.select('.tabs__wrap').boundingClientRect()
-        query.select('.tabs__scroll').scrollOffset()
+        query.select('.m-tabs__wrap').boundingClientRect()
+        query.select('.m-tabs__scroll').scrollOffset()
 
         query.exec(res => {
           this.data.baseLeft = res[0].left

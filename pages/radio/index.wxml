@@ -5,7 +5,6 @@
   </m-radio-group>
 </demo-card>
 
-
 <demo-card title="禁用" desc="{{ radio }}">
   <m-radio-group disabled value="{{ radio }}" bind:change="onChange">
     <m-radio name="选项1" custom-class="custom-radio">选项1</m-radio>
@@ -27,14 +26,13 @@
   </m-radio-group>
 </demo-card>
 
-
 <demo-card title="单元格" desc="{{ radio }}" custom-content-class="custom-card-content">
   <m-radio-group checked-color="#00CDA2" value="{{ radio }}" bind:change="onChange">
     <m-cell icon="feed" icon-color="#00CDA2" title="选项1">
-      <m-radio name="选项1"></m-radio>
+      <m-radio name="选项1" />
     </m-cell>
     <m-cell icon="feed" icon-color="#00CDA2" title="选项2">
-      <m-radio name="选项2"></m-radio>
+      <m-radio name="选项2" />
     </m-cell>
   </m-radio-group>
 </demo-card>

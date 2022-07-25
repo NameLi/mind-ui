@@ -13,7 +13,7 @@
     </view>
 
     <view class="content" wx:else>
-      <slot></slot>
+      <slot />
     </view>
 
     <view wx:if="{{ back }}" class="back"></view>

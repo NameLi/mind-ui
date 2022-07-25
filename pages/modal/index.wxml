@@ -12,7 +12,7 @@
 </demo-card>
 
 
-<m-modal title="提示" visible="{{ visible1 }}" bind:confirm="handleClose1" showCancelButton="{{ false }}" content="操作成功！"></m-modal>
+<m-modal title="提示" visible="{{ visible1 }}" bind:confirm="handleClose1" show-cancel-button="{{ false }}" content="操作成功！"></m-modal>
 
 
 <m-modal title="提示" visible="{{ visible2 }}" bind:confirm="handleClose2">
@@ -20,10 +20,10 @@
 </m-modal>
 
 <m-modal visible="{{ visible3 }}" bind:confirm="handleClose3" custom-body-class="custom-modal-body">
-  <image src="https://note-file.ixook.com/FkwInL0tWpqDeRNtYHMfmaHlioTq" style="width: 250rpx;height:250rpx;"></image>
+  <image src="https://note-file.ixook.com/FkwInL0tWpqDeRNtYHMfmaHlioTq" style="width: 250rpx;height:250rpx;" />
 </m-modal>
 
-<m-modal title="删除确认" visible="{{ visible4 }}" asyncClose confirmColor="red" loading="{{ loading }}" bind:confirm="handleClose4" confirmButtonText="删除">
+<m-modal title="删除确认" visible="{{ visible4 }}" async-close confirm-color="red" loading="{{ loading }}" bind:confirm="handleClose4" confirm-button-text="删除">
   异步操作
 </m-modal>
 

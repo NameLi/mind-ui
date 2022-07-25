@@ -46,7 +46,7 @@ Component({
     ready() {
       // 获取滑块dom宽度
       const query = this.createSelectorQuery()
-      query.select('.slider').boundingClientRect()
+      query.select('.m-slider').boundingClientRect()
 
       query.exec(res => {
         this.data.sliderWitdh = res[0].width
@@ -94,7 +94,7 @@ Component({
     onTouchEnd() {
       if (this.data.disabled)
         return;
-        
+
       if (this.data.dragStatus === 'draging') {
         this.updateValue(this.data.newValue, true);
         this.triggerEvent('drag-end');

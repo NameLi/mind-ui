@@ -1,4 +1,4 @@
-<m-can-use-sticky bind:canUseCssSticky="canUseCssSticky"></m-can-use-sticky>
+<m-can-use-sticky bind:canUseCssSticky="canUseCssSticky" />
 
 
 <view style="height: 60px;background: #f5f5f5"></view>
@@ -7,53 +7,41 @@
 
   <m-sticky-item name="a">
     <view class="sticky-title" slot="title">
-      <m-cell icon="love" icon-color="#00CDA2" title="2020-03-25" value="浪淘沙令"></m-cell>
+      <m-cell icon="love" icon-color="#00CDA2" title="2020-03-25" value="浪淘沙令" />
     </view>
 
     <view class="content" slot="content">
-      <m-cell wx:for="123456789012" wx:key="index" title="梦里不知身是客"></m-cell>
+      <m-cell wx:for="123456789012" wx:key="index" title="梦里不知身是客" />
     </view>
   </m-sticky-item>
 
   <m-sticky-item name="b">
     <view class="sticky-title" slot="title">
-      <m-cell icon="love" icon-color="#00CDA2" title="2020-03-26" value="虞美人"></m-cell>
+      <m-cell icon="love" icon-color="#00CDA2" title="2020-03-26" value="虞美人" />
     </view>
 
     <view class="content" slot="content">
-      <m-cell wx:for="123456789012" wx:key="index" title="雕栏玉砌应犹在"></m-cell>
+      <m-cell wx:for="123456789012" wx:key="index" title="雕栏玉砌应犹在" />
     </view>
   </m-sticky-item>
 
   <m-sticky-item name="c">
     <view class="sticky-title" slot="title">
-      <m-cell icon="love" icon-color="#00CDA2" title="2020-03-27" value="念奴娇"></m-cell>
+      <m-cell icon="love" icon-color="#00CDA2" title="2020-03-27" value="念奴娇" />
     </view>
 
     <view class="content" slot="content">
-      <m-cell wx:for="123456789012" wx:key="index" title="人生如梦"></m-cell>
+      <m-cell wx:for="123456789012" wx:key="index" title="人生如梦" />
     </view>
   </m-sticky-item>
 
   <m-sticky-item name="c">
     <view class="sticky-title" slot="title">
-      <m-cell icon="love" icon-color="#00CDA2" title="2020-03-28" value="渔家傲"></m-cell>
+      <m-cell icon="love" icon-color="#00CDA2" title="2020-03-28" value="渔家傲" />
     </view>
 
     <view class="content" slot="content">
-      <m-cell wx:for="1234567890123" wx:key="index" title="将军白发征夫泪"></m-cell>
+      <m-cell wx:for="1234567890123" wx:key="index" title="将军白发征夫泪" />
     </view>
   </m-sticky-item>
-
 </m-sticky>
-<!-- <view style="height: 200px"></view>
-  <m-sticky offset-top="100px" scrollTop="{{ scrollTop }}" zIndex="{{ 99 }}" bind:canUseCssSticky="canUseCssSticky" bind:change="onChange">
-    <m-sticky-item>
-      <view class="sticky-title" slot="title">
-        1231321
-      </view>
-    </m-sticky-item>
-  </m-sticky>
-
-  <view style="height: 20px;background: pink;position:sticky;top: 100px;"></view>
-  <view style="height: 700px"></view> -->

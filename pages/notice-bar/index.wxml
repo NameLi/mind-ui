@@ -29,7 +29,7 @@
 <demo-card title="自定义两端内容" custom-content-class="custom-card-content">
   <m-notice-bar>
     <view class="preifx" slot="preifx">
-      <m-icon name="notice" size="32" color="#ed6a0c"></m-icon>
+      <m-icon name="notice" size="32" color="#ed6a0c" />
     </view>
 
     <view>
@@ -40,7 +40,7 @@
     </view>
 
     <view class="suffix" slot="suffix">
-      <m-icon name="cross" size="32" color="#ed6a0c"></m-icon>
+      <m-icon name="cross" size="32" color="#ed6a0c" />
     </view>
   </m-notice-bar>
 </demo-card>

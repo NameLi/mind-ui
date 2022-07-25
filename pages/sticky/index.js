@@ -5,7 +5,7 @@ Page({
   },
 
   onChange({ detail }) {
-    // console.log(detail)
+    console.log(detail)
   },
 
   canUseCssSticky({ detail }) {

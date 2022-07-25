@@ -5,7 +5,7 @@
     scroll-top="{{ scrollTop }}"
     style="height: {{ height }}" 
   >
-    <slot></slot>
+    <slot />
 
     <!-- 右侧索引 -->
     <view class="m-index-fixed" 

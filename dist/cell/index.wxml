@@ -5,17 +5,17 @@
 >
 
   <view wx:if="{{ icon }}" class="icon m-cell__header">
-    <m-icon name="{{ icon }}" size="38" color="{{ iconColor ? iconColor : '' }}"></m-icon>
+    <m-icon name="{{ icon }}" size="38" color="{{ iconColor ? iconColor : '' }}" />
   </view>
 
   <view wx:if="{{ title }}" class="m-cell__title">{{ title }}</view>
-  <slot wx:else name="title"></slot>
+  <slot wx:else name="title" />
 
   <view wx:if="{{ value }}" class="m-cell__desc">{{ value }}</view>
 
   <view wx:else class="slot">
-    <slot></slot>
+    <slot />
   </view>
 
-  <m-icon wx:if="{{ url }}" class="icon m-cell__footer" catchtap="navigateTo" name="arrow-right" size="32" color="#999"></m-icon>
+  <m-icon wx:if="{{ url }}" class="icon m-cell__footer" catchtap="navigateTo" name="arrow-right" size="32" color="#999" />
 </view>

@@ -1,5 +1,3 @@
-import Modal from '../../dist/modal/modal'
-
 Page({
   data: {
     checked: false,

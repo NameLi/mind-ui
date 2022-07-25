@@ -26,7 +26,7 @@ Component({
 
     ready() {
       const query = this.createSelectorQuery()
-      query.select('.m-swipeout__button-group').boundingClientRect()
+      query.select('.m-swipeout__button--group').boundingClientRect()
 
       query.exec(res => {
         this.data.btnWidth = res[0].width
@@ -99,7 +99,7 @@ Component({
     handleTouchstart(e) {
       if (!this.data.btnWidth) {
         const query = this.createSelectorQuery()
-        query.select('.m-swipeout__button-group').boundingClientRect()
+        query.select('.m-swipeout__button--group').boundingClientRect()
 
         query.exec(res => {
           const btnWidth = res[0].width

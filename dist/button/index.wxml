@@ -1,7 +1,7 @@
 <button
-  class="m-button {{ full ? 'm-button--full' : '' }} {{ 'm-button--' + size }} {{ 'm-button--' + type }} {{ round ? 'is-round' : '' }} {{ plain ? 'is-plain' : '' }} {{ loading ? 'is-loading' : '' }} {{ disabled ? 'is-disabled' : ''}} {{ inline ? 'is-inline' : '' }} custom-class"
+  class="m-button {{ full ? 'm-button--full' : '' }} {{ size ? 'm-button--' + size : '' }} {{ 'm-button--' + type }} {{ round ? 'is-round' : '' }} {{ plain ? 'is-plain' : '' }} {{ loading ? 'is-loading' : '' }} {{ disabled ? 'is-disabled' : ''}} {{ inline ? 'is-inline' : '' }} custom-class"
   style="{{ button.getButtonStyle(color, bgcolor) }}"
-  hover-class="{{ loading || disabled ? '' : plain ? 'is-plain-hover' : 'is-hover' }}"
+  hover-class="{{ loading || disabled ? '' : plain ? 'is-plain--hover' : 'is-hover' }}"
   bind:tap="onTap"
   open-type="{{ openType }}"
   hover-stop-propagation="{{ hoverStopPropagation }}"
@@ -18,7 +18,7 @@
   plain="true"
 >
   <view wx:if="{{ loading }}" class="m-button__loading"></view>
-  <slot wx:else></slot>
+  <slot wx:else />
 </button>
 
 <wxs module="button">

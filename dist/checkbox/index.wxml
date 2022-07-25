@@ -1,7 +1,7 @@
 <view class="m-checkbox custom-class">
 
   <view wx:if="{{ labelLeft }}" class="m-checkbox__label m-checkbox__label--left" bindtap="onClickLabel">
-    <slot></slot>
+    <slot />
   </view>
 
   <view class="m-checkbox__icon-wrap" bindtap="toggle">
@@ -14,18 +14,17 @@
         name="confirm"
         size="32"
         color="{{ value ? '#fff' : 'transparent' }}"
-      ></m-icon>
+      />
     </view>
   </view>
 
   <view wx:if="{{ !labelLeft }}" class="m-checkbox__label m-checkbox__label--right" bindtap="onClickLabel">
-    <slot></slot>
+    <slot />
   </view>
 </view>
 
 
 <wxs module="check">
-
   function getClass(value, disabled, prevent, round) {
     var class = []
 

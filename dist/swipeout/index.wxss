@@ -10,21 +10,11 @@
   overflow: hidden;
 }
 
-.m-swipeout__button-group {
+.m-swipeout__button--group {
   z-index: 1;
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
   display: block;
-}
-
-.m-swipeout__button-item {
-  height: 100%;
-  float: left;
-  white-space: nowrap;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

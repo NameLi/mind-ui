@@ -27,10 +27,9 @@
         删除
       </view>
     </view>
-
   </m-swipeout>
-
 </demo-card>
 
 <m-message id="message" />
+
 <m-toast id="toast" />

@@ -1,6 +1,6 @@
 <view class="m-timeline {{ isLast ? 'is-last':'' }}">
   <view class="m-time">
-    <m-icon wx:if="{{ icon }}" name="{{ icon }}" color="{{ color }}"></m-icon>
+    <m-icon wx:if="{{ icon }}" name="{{ icon }}" color="{{ color }}" />
     <text wx:else style="{{ color ? 'color:' + color : '' }}">{{ text }}</text>
   </view>
   

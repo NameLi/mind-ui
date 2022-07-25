@@ -1,4 +1,4 @@
-.sticky-check-dom {
+.m-sticky__check-dom {
   z-index: -1;
   position: -webkit-sticky;
   position: sticky;

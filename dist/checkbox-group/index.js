@@ -51,7 +51,7 @@ Component({
         const len = children.length
 
         if (len > 0) {
-          let lastIndex = len - 1
+          // let lastIndex = len - 1
 
           children.forEach((child, index) => {
             this._updateChild(child)

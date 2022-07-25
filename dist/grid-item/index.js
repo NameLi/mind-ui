@@ -54,7 +54,6 @@ Component({
       const url = this.data.url
       if (!url) return
 
-
       wx[this.data.linkType].call(wx, {
         url
       })

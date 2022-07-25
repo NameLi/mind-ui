@@ -18,7 +18,7 @@ button.m-button {
   transition: opacity .16s, background-color .16s;
 }
 
-.m-button-icon {
+.m-button__icon {
   display: inline-block;
   font-size: 28rpx;
   width: 24rpx;
@@ -29,7 +29,7 @@ button.m-button {
   opacity: 0.8;
 }
 
-.m-button:not(.is-disabled).is-plain-hover::before, .m-button:not(.is-loading).is-plain-hover::before {
+.m-button:not(.is-disabled).is-plain--hover::before, .m-button:not(.is-loading).is-plain--hover::before {
   display: block;
   position: absolute;
   left: 0;
@@ -41,7 +41,7 @@ button.m-button {
   background-color: currentColor;
 }
 
-.m-button.is-round.is-plain-hover::before {
+.m-button.is-round.is-plain--hover::before {
   border-radius: 100rpx;
 }
 
