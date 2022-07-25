@@ -13,10 +13,13 @@
     "m-cell-group": "dist/cell-group/index",
     "m-cell": "dist/cell/index",
     "m-modal": "dist/modal/index",
-    "m-badge": "dist/badge/index"
+    "m-badge": "dist/badge/index",
+    "m-transition": "dist/transition/index"
   },
   "pages": [
     "pages/home/index",
+    "pages/style/index",
+    "pages/transition/index",
     "pages/modal/index",
     "pages/button/index",
     "pages/checkbox/index",
@@ -48,7 +51,8 @@
     "pages/drawer/index",
     "pages/slider/index",
     "pages/notice-bar/index",
-    "pages/switch/index"
+    "pages/switch/index",
+    "pages/changelog/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

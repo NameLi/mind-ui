@@ -1,0 +1,93 @@
+/* 1px */
+[class*='m-hairline'] {
+  position: relative;
+}
+
+/* 1倍屏 */
+[class*='m-hairline']::after {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 0;
+  border-color: --color-border;
+  border-style: solid;
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+
+.m-hairline--top::after {
+  border-top-width: 1px;
+}
+
+.m-hairline--right:after {
+  border-right-width: 1px;
+}
+
+.m-hairline--bottom:after {
+  border-bottom-width: 1px;
+}
+
+.m-hairline--left:after {
+  border-left-width: 1px;
+}
+
+.m-hairline--lt::after {
+  border-top-width: 1px;
+  border-left-width: 1px;
+}
+
+.m-hairline--tr::after {
+  border-top-width: 1px;
+  border-right-width: 1px;
+}
+
+.m-hairline--rb::after {
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.m-hairline--lb::after {
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.m-hairline--lr::after {
+  z-index: 1;
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+.m-hairline--tb::after {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.m-hairline--surround:after {
+  border-width: 1px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  [class*='m-hairline']::after {
+    width: 150%;
+    height: 150%;
+    transform: scale(0.66666667);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  [class*='m-hairline']::after {
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+  [class*='m-hairline']::after {
+    width: 300%;
+    height: 300%;
+    transform: scale(0.33333333);
+  }
+}

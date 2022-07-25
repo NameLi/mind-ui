@@ -1,0 +1,19 @@
+page {
+  background-color: #fff;
+}
+
+.content {
+  padding: 24rpx;
+  background-color: #67c23a;
+  border-radius: 6rpx;
+}
+.date {
+  color: #fff;
+  font-size: 14px;
+}
+.text {
+  padding-top: 6px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #f1f1f1;
+}

@@ -1,0 +1,13 @@
+page {
+  background-color: #f4f4f4 !important;
+}
+
+.custom-card {
+  margin: 32rpx;
+  background-color: #fff;
+  border-radius: 12rpx;
+}
+
+.demo-border {
+  margin-top: 20rpx;
+}

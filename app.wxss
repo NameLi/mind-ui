@@ -1,4 +1,5 @@
 @import "./static/font/iconfont.wxss";
+@import "./static/style/border.wxss";
 
 view,
 scroll-view,

@@ -1,0 +1,9 @@
+<m-cell-group title="动画" border card>
+  <m-cell title="Fade" bind:tap="animationTap" data-type="fade" />
+  <m-cell title="Slide Up" bind:tap="animationTap" data-type="slide-up" />
+  <m-cell title="Slide Down" bind:tap="animationTap" data-type="slide-down" />
+  <m-cell title="Slide Left" bind:tap="animationTap" data-type="slide-left" />
+  <m-cell title="Slide Right" bind:tap="animationTap" data-type="slide-right" />
+</m-cell-group>
+
+<m-transition show="{{ isShow }}" name="{{ animation }}" m-class="demo-style__toast" />

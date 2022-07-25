@@ -1,0 +1,3 @@
+<demo-card title="1px 边框" custom-class="custom-card">
+  <view class="demo-border m-hairline--top"></view>
+</demo-card>

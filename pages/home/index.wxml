@@ -9,6 +9,8 @@
 
 <m-cell-group title="基础组件" border card>
   <m-cell title="Color" url="/pages/color/index" />
+  <m-cell title="Style" url="/pages/style/index" />
+  <m-cell title="Transition" url="/pages/transition/index" />
   <m-cell title="Button" url="/pages/button/index" />
   <m-cell title="Icon" url="/pages/icon/index" />
   <m-cell title="Cell" url="/pages/cell/index" />
@@ -51,4 +53,8 @@
   <m-cell title="Radio" url="/pages/radio/index" />
   <m-cell title="Checkbox" url="/pages/checkbox/index" />
   <m-cell title="Rate" url="/pages/rate/index" />
+</m-cell-group>
+
+<m-cell-group title="日志" border card>
+  <m-cell title="更新日志" url="/pages/changelog/index" />
 </m-cell-group>
