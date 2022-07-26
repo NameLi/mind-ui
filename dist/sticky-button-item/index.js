@@ -19,7 +19,7 @@ Component({
     },
     iconColor: {
       type: String,
-      value: ''
+      value: '#fff'
     },
     iconSize: {
       type: Number,

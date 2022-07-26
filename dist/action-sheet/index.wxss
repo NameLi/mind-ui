@@ -121,7 +121,7 @@
 }
 
 
-button.m-button {
+.m-button {
   position: relative;
   text-align: center;
   vertical-align: middle;
@@ -130,15 +130,16 @@ button.m-button {
   height: 96rpx;
   line-height: 96rpx;
   font-size: 32rpx;
-  border: 0;
+  border: 0 !important;
   border-radius: 0;
   color: #495060;
   overflow: visible;
   background-color: #fff;
+  box-sizing: border-box;
   transition: opacity .16s, background-color .16s;
 }
 
-button.m-button::after {
+.m-button::after {
   border: none;
   content: " ";
   height: 1px;

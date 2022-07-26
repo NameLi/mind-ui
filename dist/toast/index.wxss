@@ -48,7 +48,7 @@
 .m-toast__image {
   padding-bottom: 20rpx;
 }
-.m-toast__image image {
+.m-toast__image .toast__image__inner {
   max-width: 110rpx;
   max-height: 110rpx;
 }

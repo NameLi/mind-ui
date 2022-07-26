@@ -41,12 +41,12 @@ Component({
   methods: {
     _updateChildren() {
       // 防抖减少重复触发
-      if (this.data.timer) {
-        clearTimeout(this.data.timer)
-        this.data.timer = null
+      if (this.timer) {
+        clearTimeout(this.timer)
+        this.timer = null
       }
 
-      this.data.timer = setTimeout(() => {
+      this.timer = setTimeout(() => {
 
         let children = this.getRelationNodes('../radio/index')
 

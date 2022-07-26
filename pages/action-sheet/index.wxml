@@ -12,7 +12,7 @@
   bind:cancel="handleCancel1" 
   bind:click="handleClickItem1"
   bind:getuserinfo="getuserinfo"
-></m-action-sheet>
+/>
 
 
 <!-- 自定义头部 -->
@@ -36,7 +36,6 @@
   actions="{{ actions3 }}" 
   bind:cancel="handleCancel3" 
   bind:click="handleClickItem3" 
->
-</m-action-sheet>
+/>
 
 <m-message id="message" />

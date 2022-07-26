@@ -1,4 +1,4 @@
-button {
+.m-sticky-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,10 +13,11 @@ button {
   border-radius: 50%;
   position: absolute;
   z-index: 1;
+  border: 0 !important;
   transition: transform .3s ease-in-out;
 }
 
-button::after {
+.m-sticky-button::after {
   display: none;
 }
 

@@ -52,7 +52,8 @@
     "pages/slider/index",
     "pages/notice-bar/index",
     "pages/switch/index",
-    "pages/changelog/index"
+    "pages/changelog/index",
+    "pages/about/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

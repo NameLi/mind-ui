@@ -39,20 +39,12 @@
 <!-- size -->
 <demo-card title="大小">
   <m-button custom-class="my-button" type="primary" size="large" inline>Large</m-button>
-  <m-button custom-class="my-button" type="primary" size="default" inline>Default</m-button>
+  <m-button custom-class="my-button" type="primary" size="normal" inline>Normal</m-button>
   <m-button custom-class="my-button" type="primary" size="small" inline>Small</m-button>
 
   <m-button custom-class="my-button" type="primary" size="large" inline plain>Large</m-button>
-  <m-button custom-class="my-button" type="primary" size="default" inline plain>Default</m-button>
+  <m-button custom-class="my-button" type="primary" size="normal" inline plain>Normal</m-button>
   <m-button custom-class="my-button" type="primary" size="small" inline plain>Small</m-button>
-
-  <m-button custom-class="my-button" type="primary" size="large" inline round>Large</m-button>
-  <m-button custom-class="my-button" type="primary" size="default" inline round>Default</m-button>
-  <m-button custom-class="my-button" type="primary" size="small" inline round>Small</m-button>
-
-  <m-button custom-class="my-button" type="primary" size="large" inline round plain>Large</m-button>
-  <m-button custom-class="my-button" type="primary" size="default" inline round plain>Default</m-button>
-  <m-button custom-class="my-button" type="primary" size="small" inline round plain>Small</m-button>
 </demo-card>
 
 

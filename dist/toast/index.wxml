@@ -17,7 +17,7 @@
     </view>
 
     <view wx:elif="{{ image }}" class="m-toast__image">
-      <image src="{{ image }}" />
+      <image class="m-toast__image__inner" src="{{ image }}" />
     </view>
 
     <view wx:if="{{ type === 'loading' }}" class="m-toast__loading"></view>

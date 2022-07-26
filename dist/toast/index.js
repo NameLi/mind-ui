@@ -18,7 +18,6 @@ Component({
 
   data: {
     ...defaults_data,
-    timer: null
   },
 
   methods: {
@@ -46,12 +45,12 @@ Component({
         zIndex
       })
 
-      if (this.data.timer) clearTimeout(this.data.timer)
+      if (this.timer) clearTimeout(this.timer)
 
       if (duration) {
-        this.data.timer = setTimeout(() => {
+        this.timer = setTimeout(() => {
           this.onClose()
-          this.data.timer = null
+          this.timer = null
         }, duration)
       }
     },

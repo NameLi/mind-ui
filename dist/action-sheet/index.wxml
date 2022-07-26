@@ -19,7 +19,7 @@
       <button 
         class="m-button {{ item.loading ? 'is-loading' : '' }} {{ item.disabled ? 'is-disabled' : ''}}"
         hover-class="{{ !item.loading && !item.disabled ? 'is-hover' : '' }}"
-        bind:click="handleItemClick" 
+        bindtap="handleItemClick" 
         data-index="{{ index }}" 
         open-type="{{ item.openType }}" 
         send-message-title="{{ sendMessageTitle }}"

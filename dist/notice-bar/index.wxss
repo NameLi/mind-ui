@@ -34,6 +34,7 @@
   position: static;
   overflow: auto;
   white-space: normal;
+  -webkit-overflow-scrolling: touch;
 }
 
 @keyframes once{

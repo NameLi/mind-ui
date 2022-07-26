@@ -1,66 +1,77 @@
 <m-timeline>
-  <m-timeline-item text="v0.3.0">
-    <view class="content">
-      <view class="date">2022-07-25</view>
-      <view class="text">
-        <view>1.优化元素类名，采用 BEM 命名规范</view>
-        <view>2.优化部分组件代码</view>
-        <view>3.优化组件示例代码</view>
-        <view>4.增加 1px 边框</view>
-        <view>5.增加动画组件 m-transition</view>
-        <view>6.增加更新日志页面</view>
-      </view>
-    </view>
-  </m-timeline-item>
+	<m-timeline-item text="v0.3.1">
+		<view class="content">
+			<view class="date">2022-07-26</view>
+			<view class="text">
+				<view>1.优化 button 组件样式</view>
+				<view>2.修复 action sheet 组件 click 事件无效问题</view>
+				<view>3.修复一些样式使用警告</view>
+			</view>
+		</view>
+	</m-timeline-item>
 
-  <m-timeline-item text="v0.2.0">
-    <view class="content">
-      <view class="date">2022-04-22</view>
-      <view class="text">优化按钮等组件样式</view>
-    </view>
-  </m-timeline-item>
+	<m-timeline-item text="v0.3.0">
+		<view class="content">
+			<view class="date">2022-07-25</view>
+			<view class="text">
+				<view>1.优化元素类名，采用 BEM 命名规范</view>
+				<view>2.优化部分组件代码</view>
+				<view>3.优化组件示例代码</view>
+				<view>4.增加 1px 边框</view>
+				<view>5.增加动画组件 m-transition</view>
+				<view>6.增加更新日志页面</view>
+			</view>
+		</view>
+	</m-timeline-item>
 
-  <m-timeline-item text="v0.1.4">
-    <view class="content">
-      <view class="date">2020-06-01</view>
-      <view class="text">增加组件H5版示例，地址：<view>https://mind-ui.ixook.com/vue/</view>
-      </view>
-    </view>
-  </m-timeline-item>
+	<m-timeline-item text="v0.2.0">
+		<view class="content">
+			<view class="date">2022-04-22</view>
+			<view class="text">优化按钮等组件样式</view>
+		</view>
+	</m-timeline-item>
 
-  <m-timeline-item text="v0.1.4">
-    <view class="content">
-      <view class="date">2020-05-21</view>
-      <view class="text">增加组件使用文档，地址：<view>https://mind-ui.ixook.com</view>
-      </view>
-    </view>
-  </m-timeline-item>
+	<m-timeline-item text="v0.1.4">
+		<view class="content">
+			<view class="date">2020-06-01</view>
+			<view class="text">增加组件H5版示例，地址：<view>https://mind-ui.ixook.com/vue/</view>
+			</view>
+		</view>
+	</m-timeline-item>
 
-  <m-timeline-item text="v0.1.4">
-    <view class="content">
-      <view class="date">2020-05-01</view>
-      <view class="text">修复 header bar 组件默认值错误</view>
-    </view>
-  </m-timeline-item>
+	<m-timeline-item text="v0.1.4">
+		<view class="content">
+			<view class="date">2020-05-21</view>
+			<view class="text">增加组件使用文档，地址：<view>https://mind-ui.ixook.com</view>
+			</view>
+		</view>
+	</m-timeline-item>
 
-  <m-timeline-item text="v0.1.3">
-    <view class="content">
-      <view class="date">2020-05-01</view>
-      <view class="text">修复 swipeout 组件内容溢出问题</view>
-    </view>
-  </m-timeline-item>
+	<m-timeline-item text="v0.1.4">
+		<view class="content">
+			<view class="date">2020-05-01</view>
+			<view class="text">修复 header bar 组件默认值错误</view>
+		</view>
+	</m-timeline-item>
 
-  <m-timeline-item text="v0.1.2">
-    <view class="content">
-      <view class="date">2020-04-03</view>
-      <view class="text">更新说明文件</view>
-    </view>
-  </m-timeline-item>
+	<m-timeline-item text="v0.1.3">
+		<view class="content">
+			<view class="date">2020-05-01</view>
+			<view class="text">修复 swipeout 组件内容溢出问题</view>
+		</view>
+	</m-timeline-item>
 
-  <m-timeline-item text="v0.1.1">
-    <view class="content">
-      <view class="date">2020-04-02</view>
-      <view class="text">组件库发布</view>
-    </view>
-  </m-timeline-item>
+	<m-timeline-item text="v0.1.2">
+		<view class="content">
+			<view class="date">2020-04-03</view>
+			<view class="text">更新说明文件</view>
+		</view>
+	</m-timeline-item>
+
+	<m-timeline-item text="v0.1.1">
+		<view class="content">
+			<view class="date">2020-04-02</view>
+			<view class="text">组件库发布</view>
+		</view>
+	</m-timeline-item>
 </m-timeline>

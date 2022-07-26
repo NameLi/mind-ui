@@ -49,7 +49,6 @@ Component({
   },
 
   data: {
-    timer: null,
     itemLength: 0,
     children: [],
     childLength: 0,
@@ -96,12 +95,12 @@ Component({
 
 
       // 防抖减少重复触发
-      if (this.data.timer) {
-        clearTimeout(this.data.timer)
-        this.data.timer = null
+      if (this.timer) {
+        clearTimeout(this.timer)
+        this.timer = null
       }
 
-      this.data.timer = setTimeout(() => {
+      this.timer = setTimeout(() => {
         const { zIndex } = this.data
 
         const children = this.getRelationNodes('../sticky-item/index')

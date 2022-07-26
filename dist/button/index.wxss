@@ -1,202 +1,207 @@
-button.m-button {
-  position: relative;
-  margin: 10px;
-  width: auto;
-  height: 86rpx;
-  line-height: 86rpx;
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
-  letter-spacing: 4rpx;
-  font-size: 28rpx;
-  font-weight: normal;
-  border-radius: 6rpx;
-  border: 0;
-  color: var(--color-text-primary);
-  overflow: visible;
-  background-color: #fff;
-  transition: opacity .16s, background-color .16s;
+.m-button {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	padding: 0 27rpx;
+	width: auto;
+	height: 86rpx;
+	line-height: 86rpx;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	letter-spacing: 4rpx;
+	font-size: 28rpx;
+	font-weight: normal;
+	border-radius: 6rpx;
+	border: 0 !important;
+	color: var(--color-text-primary);
+	overflow: visible;
+	box-sizing: border-box;
+	background-color: #fff;
+	transition: opacity .16s, background-color .16s;
 }
 
 .m-button__icon {
-  display: inline-block;
-  font-size: 28rpx;
-  width: 24rpx;
-  height: 24rpx;
+	font-size: 28rpx;
+	width: 24rpx;
+	height: 24rpx;
 }
 
 .m-button.is-hover {
-  opacity: 0.8;
+	opacity: 0.8;
 }
 
-.m-button:not(.is-disabled).is-plain--hover::before, .m-button:not(.is-loading).is-plain--hover::before {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  opacity: .15;
-  content: " ";
-  background-color: currentColor;
+.m-button:not(.is-disabled).is-plain--hover::before,
+.m-button:not(.is-loading).is-plain--hover::before {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: .15;
+	content: " ";
+	background-color: currentColor;
 }
 
 .m-button.is-round.is-plain--hover::before {
-  border-radius: 100rpx;
+	border-radius: 100rpx;
 }
 
 .m-button.m-button--full {
-  margin: 0;
-  border-radius: 0;
-  box-shadow: none;
+	margin: 0;
+	border-radius: 0;
+	box-shadow: none;
 }
 
 .m-button.m-button--large {
-  height: 96rpx;
-  line-height: 96rpx;
-  font-size: 32rpx;
+	padding: 0 32rpx;
+	height: 96rpx;
+	line-height: 96rpx;
+	font-size: 32rpx;
 }
 
 .m-button.m-button--small {
-  height: 68rpx;
-  line-height: 68rpx;
+	padding: 0 18rpx;
+	height: 68rpx;
+	line-height: 68rpx;
 }
 
 .m-button.m-button--primary {
-  color: #fff;
-  background-color: var(--color-primary);
+	color: #fff;
+	background-color: var(--color-primary);
 }
 
 .m-button.m-button--default {
-  background-color: transparent;
-  color: var(--color-text-primary);
+	background-color: transparent;
+	color: var(--color-text-primary);
 }
 
 .m-button.m-button--default.is-hover {
-  background-color: rgba(0, 0, 0, .07);
+	background-color: rgba(0, 0, 0, .07);
 }
 
 .m-button.m-button--default::after {
-  content: " ";
-  display: block;
-  width: 200%;
-  height: 200%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 1px solid #dcdfe6;
-  transform: scale(0.5);
-  transform-origin: 0 0;
-  box-sizing: border-box;
-  border-radius: 6rpx;
-  z-index: 1;
-  pointer-events: none;
+	content: " ";
+	display: block;
+	width: 200%;
+	height: 200%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid #dcdfe6;
+	transform: scale(0.5);
+	transform-origin: 0 0;
+	box-sizing: border-box;
+	border-radius: 6rpx;
+	z-index: 1;
+	pointer-events: none;
 }
 
 .m-button.m-button--ghost {
-  background-color: transparent;
-  color: var(--color-text-primary);
+	background-color: transparent;
+	color: var(--color-text-primary);
 }
 
 .m-button.m-button--success {
-  color: #fff;
-  background-color: var(--color-success);
+	color: #fff;
+	background-color: var(--color-success);
 }
 
 .m-button.m-button--warning {
-  color: #fff;
-  background-color: var(--color-warning);
+	color: #fff;
+	background-color: var(--color-warning);
 }
 
 .m-button.m-button--danger {
-  color: #fff;
-  background-color: var(--color-danger);
+	color: #fff;
+	background-color: var(--color-danger);
 }
 
 .m-button.m-button--info {
-  color: #fff;
-  background-color: var(--color-info);
+	color: #fff;
+	background-color: var(--color-info);
 }
 
 /* plain */
 
 .m-button--primary.is-plain {
-  color: var(--color-primary);
-  background-color: #fff;
+	color: var(--color-primary);
+	background-color: #fff;
 }
 
 .m-button--success.is-plain {
-  color: var(--color-success);
-  background-color: #fff;
+	color: var(--color-success);
+	background-color: #fff;
 }
 
 .m-button--warning.is-plain {
-  color: var(--color-warning);
-  background-color: #fff;
+	color: var(--color-warning);
+	background-color: #fff;
 }
 
 .m-button--danger.is-plain {
-  color: var(--color-danger);
-  background-color: #fff;
+	color: var(--color-danger);
+	background-color: #fff;
 }
 
 .m-button--info.is-plain {
-  color: var(--color-info);
-  background-color: #fff;
+	color: var(--color-info);
+	background-color: #fff;
 }
 
 .m-button.is-plain::after {
-  content: " ";
-  display: block;
-  width: 200%;
-  height: 200%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 1px solid currentColor;
-  transform: scale(0.5);
-  transform-origin: 0 0;
-  box-sizing: border-box;
-  border-radius: 6rpx;
-  z-index: 1;
-  pointer-events: none;
+	content: " ";
+	display: block;
+	width: 200%;
+	height: 200%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid currentColor;
+	transform: scale(0.5);
+	transform-origin: 0 0;
+	box-sizing: border-box;
+	border-radius: 6rpx;
+	z-index: 1;
+	pointer-events: none;
 }
 
 .m-button.is-round {
-  border-radius: 100rpx;
+	border-radius: 100rpx;
 }
 
 .m-button.is-round.is-plain::after {
-  border-radius: 100rpx;
+	border-radius: 100rpx;
 }
 
 .m-button.is-loading {
-  opacity: 0.9;
+	opacity: 0.85;
 }
 
 .m-button__loading {
-  display: inline-block;
-  vertical-align: middle;
-  width: 32rpx;
-  height: 32rpx;
-  background-color: 0 0;
-  border-radius: 50%;
-  border: 4rpx solid currentColor;
-  border-left-color: transparent;
-  animation: btn-spinner 0.8s linear;
-  animation-iteration-count: infinite;
+	width: 32rpx;
+	height: 32rpx;
+	background-color: 0 0;
+	border-radius: 50%;
+	border: 4rpx solid currentColor;
+	border-left-color: transparent;
+	animation: btn-spinner 0.8s linear;
+	animation-iteration-count: infinite;
 }
 
 .m-button.is-disabled {
-  opacity: 0.65;
+	opacity: 0.65;
 }
 
 .m-button.is-inline {
-  display: inline-block;
+	display: inline-flex;
 }
 
 @keyframes btn-spinner {
-  100% {
-    transform: rotate(360deg);
-  }
+	100% {
+		transform: rotate(360deg);
+	}
 }

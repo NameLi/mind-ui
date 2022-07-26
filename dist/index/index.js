@@ -24,7 +24,6 @@ Component({
   },
 
   data: {
-    timer: null,
     scrollTop: 0,       // 滚动距离
     indexData: [],      // 索引数据
     startTop: 0,        // 索引距离顶部距离
@@ -41,12 +40,12 @@ Component({
     _updateChildren() {
 
       // 防抖减少重复触发
-      if (this.data.timer) {
-        clearTimeout(this.data.timer)
-        this.data.timer = null
+      if (this.timer) {
+        clearTimeout(this.timer)
+        this.timer = null
       }
 
-      this.data.timer = setTimeout(() => {
+      this.timer = setTimeout(() => {
 
         const children = this.getRelationNodes('../index-item/index')
         const len = children.length
@@ -102,7 +101,6 @@ Component({
     },
 
     onClick(ev) {
-      console.log(ev.currentTarget.dataset)
       const { index, current } = ev.currentTarget.dataset
 
       const currentChildData = this.data.children[index].data // 当前选中的 child 数据

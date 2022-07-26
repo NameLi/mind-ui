@@ -26,7 +26,7 @@
       name="{{item.key}}"
     >
       <view 
-        class="m-index-demo-item" 
+        class="index-demo__item" 
         wx:for="{{item.list}}" 
         wx:for-index="idx" 
         wx:key="idx" 

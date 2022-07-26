@@ -10,4 +10,5 @@ page {
 
 .demo-border {
   margin-top: 20rpx;
+    height: 2px;
 }

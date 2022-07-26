@@ -6,7 +6,6 @@
 <view class="desc">原生、轻量、高效的微信小程序UI组件库</view>
 <view class="desc" bindtap='copyText' data-text="https://mind-ui.ixook.com">文档地址：https://mind-ui.ixook.com</view>
 
-
 <m-cell-group title="基础组件" border card>
   <m-cell title="Color" url="/pages/color/index" />
   <m-cell title="Style" url="/pages/style/index" />
@@ -55,6 +54,7 @@
   <m-cell title="Rate" url="/pages/rate/index" />
 </m-cell-group>
 
-<m-cell-group title="日志" border card>
+<m-cell-group title="其它" border card>
   <m-cell title="更新日志" url="/pages/changelog/index" />
+  <m-cell title="关于项目" url="/pages/about/index" />
 </m-cell-group>

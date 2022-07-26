@@ -22,6 +22,6 @@
       </view>
     </view>
 
-    <view class="m-index-tooltip" style="{{ isTouches ? 'display:block' : 'display:none' }}">{{ currentName }}</view>
+    <view class="m-index__tooltip" style="{{ isTouches ? 'display:block' : 'display:none' }}">{{ currentName }}</view>
   </scroll-view>
 </view>
