@@ -36,7 +36,8 @@ Component({
     },
 
     barHeight: {
-      type: [Number, String],
+      type: Number,
+      optionalTypes: [String],
       value: 6
     }
   }

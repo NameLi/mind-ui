@@ -12,7 +12,7 @@
   font-size: 28rpx;
   text-align: center;
   opacity: 1;
-  background: var(--color-primary);
+  background: var(--color-primary, #409EFF);
   transform: translate3d(0, 0, 0);
   transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
 }
@@ -23,19 +23,19 @@
 }
 
 .m-message--primary {
-  background: var(--color-primary);
+  background: var(--color-primary, #409EFF);
 }
 
 .m-message--success {
-  background: var(--color-success);
+  background: var(--color-success, #67C23A);
 }
 
 .m-message--warning {
-  background: var(--color-warning);
+  background: var(--color-warning, #E6A23C);
 }
 
 .m-message--error {
-  background: var(--color-danger);
+  background: var(--color-danger, #F56C6C);
 }
 
 .m-message__close-btn {

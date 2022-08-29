@@ -8,7 +8,8 @@ Component({
     },
 
     value: {
-      type: [Boolean, String, Number],
+      type: Boolean,
+      optionalTypes: [String, Number],
       value: false,
 
       observer(val) {
@@ -39,12 +40,14 @@ Component({
     },
 
     activeValue: {
-      type: [Boolean, String, Number],
+      type: Boolean,
+      optionalTypes: [String, Number],
       value: true
     },
     
     inactiveValue: {
-      type: [Boolean, String, Number],
+      type: Boolean,
+      optionalTypes: [String, Number],
       value: false
     }
   },

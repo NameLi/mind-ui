@@ -7,7 +7,7 @@
   bottom: 0;
   opacity: 1;
   visibility: visible;
-  background: var(--color-mask);
+  background: var(--color-mask, rgba(0, 0, 0, 0.55));
   transition: all 0.2s ease-in-out;
 }
 
@@ -57,7 +57,7 @@
   transform-origin: 0 0;
   pointer-events: none;
   box-sizing: border-box;
-  border: 0 solid var(--color-border);
+  border: 0 solid var(--color-border, #dcdee2);
   border-bottom-width: 1px;
 }
 
@@ -76,7 +76,7 @@
   transform-origin: 0 0;
   pointer-events: none;
   box-sizing: border-box;
-  border: 0 solid var(--color-border);
+  border: 0 solid var(--color-border, #dcdee2);
   border-bottom-width: 1px;
 }
 

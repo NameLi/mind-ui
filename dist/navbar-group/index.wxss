@@ -26,6 +26,6 @@
   z-index: 1;
   height: 6rpx;
   border-radius: 12rpx;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary, #409EFF);
   transition-duration: 0.3s;
 }

@@ -48,5 +48,5 @@
 }
 
 .swiper__wrap .indicator-wrapper .dotfocus {
-  background-color: var(--color-warning);
+  background-color: var(--color-warning, #E6A23C);
 }

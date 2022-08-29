@@ -9,7 +9,7 @@
   left: 0;
   top: 0;
   color: #ffff;
-  background: var(--color-primary);
+  background: var(--color-primary, #409EFF);
   border-radius: 50%;
   position: absolute;
   z-index: 1;

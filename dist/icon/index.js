@@ -12,7 +12,8 @@ Component({
     },
     
     size: {
-      type: [Number, String],
+      type: Number,
+      optionalTypes: [String],
       value: 36,
       observer(val) {
         this.setData({

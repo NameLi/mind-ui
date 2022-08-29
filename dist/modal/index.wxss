@@ -7,7 +7,7 @@
   bottom: 0;
   opacity: 1;
   visibility: visible;
-  background: var(--color-mask);
+  background: var(--color-mask, rgba(0, 0, 0, 0.55));
   transition: all 0.2s ease-in-out;
 }
 

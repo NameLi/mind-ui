@@ -24,7 +24,8 @@ Component({
       value: ''
     },
     value: {
-      type: [Number, String],
+      type: Number,
+      optionalTypes: [String],
       value: ''
     }
   },

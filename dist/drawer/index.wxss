@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--color-mask);
+  background: var(--color-mask, rgba(0, 0, 0, 0.55));
   transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
 }
 

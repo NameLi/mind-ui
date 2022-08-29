@@ -3,5 +3,5 @@ page {
 }
 
 .content {
-    color: var(--color-text-secondary);
+    color: var(--color-text-secondary, #909399);
 }

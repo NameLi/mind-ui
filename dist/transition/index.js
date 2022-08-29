@@ -46,7 +46,8 @@ Component({
     },
 
     duration: {
-      type: [Number, String, Object],
+      type: Number,
+      optionalTypes: [String, Object],
       value: 300,
     },
   },

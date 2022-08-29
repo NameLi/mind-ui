@@ -43,27 +43,27 @@
 /* 类型 type */
 .m-tag--primary {
   color: #fff;
-  background: var(--color-primary);
+  background: var(--color-primary, #409EFF);
 }
 
 .m-tag--success {
   color: #fff;
-  background: var(--color-success);
+  background: var(--color-success, #67C23A);
 }
 
 .m-tag--info {
   color: #fff;
-  background: var(--color-info);
+  background: var(--color-info, #909399);
 }
 
 .m-tag--warning {
   color: #fff;
-  background: var(--color-warning);
+  background: var(--color-warning, #E6A23C);
 }
 
 .m-tag--danger {
   color: #fff;
-  background: var(--color-danger);
+  background: var(--color-danger, #F56C6C);
 }
 
 /* plain */
@@ -95,23 +95,23 @@
 
 
 .m-tag--primary.is-plain {
-  color: var(--color-primary);
+  color: var(--color-primary, #409EFF);
 }
 
 .m-tag--success.is-plain {
-  color: var(--color-success);
+  color: var(--color-success, #67C23A);
 }
 
 .m-tag--warning.is-plain {
-  color: var(--color-warning);
+  color: var(--color-warning, #E6A23C);
 }
 
 .m-tag--info.is-plain {
-  color: var(--color-info);
+  color: var(--color-info, #909399);
 }
 
 .m-tag--danger.is-plain {
-  color: var(--color-danger);
+  color: var(--color-danger, #F56C6C);
 }
 
 /* 自定义颜色 */

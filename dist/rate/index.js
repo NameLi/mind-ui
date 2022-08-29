@@ -4,6 +4,10 @@ Component({
       type: Number,
       value: 5
     },
+    step: {
+      type: Number,
+      value: 1
+    },
     size: {
       type: Number,
       value: 40
@@ -60,17 +64,30 @@ Component({
   },
 
   data: {
+    starNum: 5,
+    tValue: 0,
     actived: -1,
     text: ''
   },
 
-  ready() {
-    this._setShowText()
+  observers: {
+    'max, step': function (max, step) {
+      this.setData({
+        starNum: Math.ceil(max / step)
+      })
+    },
+
+    value: function (value) {
+      this.setData({
+        tValue: parseInt(value) / this.data.step
+      })
+      this._setShowText();
+    }
   },
 
   methods: {
     _setShowText() {
-      let score = this.data.value
+      let score = this.data.tValue
 
       if (score > 0 && (this.data.showScore || this.data.showText)) {
         let text = score
@@ -105,14 +122,14 @@ Component({
 
       setTimeout(() => {
         this.setData({
-          value: score,
+          tValue: score,
           actived: Math.floor(score - .5)
         })
 
         this._setShowText()
       }, 20)
 
-      this.triggerEvent('change', score)
+      this.triggerEvent('change', score * this.data.step)
     },
   }
 })

@@ -15,7 +15,8 @@ Component({
 
   properties: {
     activeName: {
-      type: [Number, String],
+      type: Number,
+      optionalTypes: [String],
       value: ''
     },
 
@@ -25,7 +26,8 @@ Component({
     },
 
     lineWidth: {
-      type: [Number, String],
+      type: Number,
+      optionalTypes: [String],
       value: 0
     },
 

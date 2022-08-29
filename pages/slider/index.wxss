@@ -9,5 +9,5 @@
   line-height: 18px;
   text-align: center;
   border-radius: 100px;
-  background-color: var(--color-success);
+  background-color: var(--color-success, #67C23A);
 }

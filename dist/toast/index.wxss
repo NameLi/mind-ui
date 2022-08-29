@@ -4,7 +4,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--color-mask);
+  background-color: var(--color-mask, rgba(0, 0, 0, 0.55));
   z-index: 2000;
 }
 

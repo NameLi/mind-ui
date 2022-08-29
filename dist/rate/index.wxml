@@ -1,9 +1,9 @@
 <view class="m-rate">
-  <view class="m-rate__content {{ actived === index ? 'is-active' : '' }}" wx:for="{{ max }}" wx:key="index" >
+  <view class="m-rate__content {{ actived === index ? 'is-active' : '' }}" wx:for="{{ starNum }}" wx:key="index" >
     <m-icon 
       name="{{ icon }}" 
       size="{{ size }}" 
-      color="{{ disabled ? disabledColor : index + 1 <= value ? color : voidColor }}"
+      color="{{ disabled ? disabledColor : index + 1 <= tValue ? color : voidColor }}"
       data-score="{{ index + 1 }}"
       bindtap="handleClick"
     />
@@ -14,7 +14,7 @@
       size="{{ size }}" 
       custom-class="half-icon"
       data-score="{{ index + 0.5 }}"
-      color="{{ disabled ? disabledColor : index + 0.5 <= value ? color : voidColor }}"
+      color="{{ disabled ? disabledColor : index + 0.5 <= tValue ? color : voidColor }}"
       bindtap="handleClick"
     />
   </view>

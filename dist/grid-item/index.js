@@ -23,7 +23,8 @@ Component({
       value: false
     },
     badgeValue: {
-      type: [Number, String]
+      type: Number,
+      optionalTypes: [String]
     },
     text: {
       type: String,

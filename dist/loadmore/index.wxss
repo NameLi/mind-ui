@@ -1,13 +1,13 @@
 .m-loadmore {
   height: 60rpx;
   line-height: 60rpx;
-  color: var(--color-text-secondary);
+  color: var(--color-text-secondary, #909399);
   text-align: center;
   font-size: 28rpx;
 }
 
 .m-loadmore__end {
-  color: var(--color-text-secondary);
+  color: var(--color-text-secondary, #909399);
 }
 
 .m-loadmore__snake {

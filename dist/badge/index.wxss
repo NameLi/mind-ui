@@ -13,7 +13,7 @@
   height: 28rpx;
   border-radius: 40rpx;
   min-width: 20rpx;
-  background-color: var(--color-danger);
+  background-color: var(--color-danger, #F56C6C);
   border: 1px solid transparent;
   color: #fff;
   line-height: 28rpx;
@@ -41,7 +41,7 @@
   height: 18rpx;
   width: 18rpx;
   border-radius: 50%;
-  background-color: var(--color-danger);
+  background-color: var(--color-danger, #F56C6C);
   z-index: 1;
   box-shadow: 0 0 0 1px #fff;
 }

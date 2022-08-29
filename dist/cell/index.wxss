@@ -37,7 +37,7 @@
   display: flex;
   align-items: center;
 	flex: 1;
-	color: var(--color-text-primary);
+	color: var(--color-text-primary, #303133);
   vertical-align: middle;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -46,7 +46,7 @@
 .m-cell__desc {
   margin-left: 20rpx;
   max-width: 260rpx;
-	color: var(--color-text-secondary);
+	color: var(--color-text-secondary, #909399);
 	font-size: 28rpx;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -65,6 +65,6 @@
 	bottom: 0;
 	right: 20rpx;
 	height: 1px;
-	background: var(--color-border);
+	background: var(--color-border, #dcdee2);
 	transform: scaleY(.5);
 }

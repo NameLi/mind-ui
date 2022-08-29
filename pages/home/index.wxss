@@ -18,12 +18,12 @@ page {
   text-align: center;
   font-size: 42rpx;
   padding-bottom: 20rpx;
-  color: var(--color-text-primary);
+  color: var(--color-text-primary, #303133);
 }
 
 .desc {
   text-align: center;
   font-size: 28rpx;
   padding-bottom: 20rpx;
-  color: var(--color-text-secondary);
+  color: var(--color-text-secondary, #909399);
 }

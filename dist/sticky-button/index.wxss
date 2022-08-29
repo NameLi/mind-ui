@@ -16,7 +16,7 @@
   text-align: center;
   z-index: 2;
   font-size: 60rpx;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary, #409EFF);
   transition: transform .3s ease-in-out;
 }
 

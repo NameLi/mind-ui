@@ -17,6 +17,6 @@
   transform-origin:0 0;
   box-sizing: border-box;
   border: 1px solid transparent; 
-  border-top-color: var(--color-border); 
-  border-left-color: var(--color-border); 
+  border-top-color: var(--color-border, #dcdee2); 
+  border-left-color: var(--color-border, #dcdee2); 
 }

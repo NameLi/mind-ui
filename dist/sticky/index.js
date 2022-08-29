@@ -25,7 +25,8 @@ Component({
 
     // 吸顶时与顶部的距离
     offsetTop: {
-      type: [Number, String],
+      type: Number,
+      optionalTypes: [String],
       value: 0,
       observer(val) {
         this._updateAbsOffsetTop(val)

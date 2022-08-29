@@ -3,7 +3,8 @@ Component({
 
   properties: {
     value: {
-      type: [Number, String],
+      type: Number,
+      optionalTypes: [String],
       value: '',
       observer: '_value'
     },

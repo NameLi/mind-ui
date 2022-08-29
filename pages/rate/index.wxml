@@ -10,6 +10,10 @@
   <m-rate bind:change="onChange" value="{{3.5}}" max="{{7}}" />
 </demo-card>
 
+<demo-card title="自定义步长">
+  <m-rate bind:change="onChange" value="{{7}}" step="{{2}}" max="{{10}}" />
+</demo-card>
+
 <demo-card title="自定义图标">
   <m-rate bind:change="onChange" icon="like-fill" color="#f00" void-icon="like-fill" value="{{3.5}}" />
 </demo-card>

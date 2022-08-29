@@ -4,7 +4,7 @@
   display: inline-block;
   vertical-align: top;
   transition: color .2s;
-  color: var(--color-text-secondary);
+  color: var(--color-text-secondary, #909399);
 }
 
 .icon__image {
