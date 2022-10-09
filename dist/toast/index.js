@@ -1,5 +1,6 @@
 const defaults_data = {
   visible: false,
+  show: false,
   mask: false,
   ghost: true,
   message: '',
@@ -10,7 +11,7 @@ const defaults_data = {
   iconColor: '#fff',
   iconSize: 80,
   type: '',
-  zIndex: 2001
+  zIndex: -1
 }
 
 Component({
@@ -25,14 +26,14 @@ Component({
   },
 
   methods: {
-    handleShow(options) {
+    open(options) {
       const {
-        type = '', 
-        icon = '', 
-        image = '', 
-        duration = 2000, 
-        position = 'middle', 
-        mask = false, 
+        type = '',
+        icon = '',
+        image = '',
+        duration = 3000,
+        position = 'middle',
+        mask = false,
         ghost = true,
         zIndex = 2001
       } = options
@@ -47,13 +48,17 @@ Component({
         position,
         visible: true,
         zIndex
+      }, () => {
+        this.setData({
+          show: true
+        })
       })
 
       if (this.timer) clearTimeout(this.timer)
 
       if (duration) {
         this.timer = setTimeout(() => {
-          this.onClose()
+          this.close()
           this.timer = null
         }, duration)
       }
@@ -63,7 +68,7 @@ Component({
 
     },
 
-    onClose() {
+    close() {
       this.setData({
         ...defaults_data
       })

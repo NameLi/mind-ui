@@ -27,13 +27,18 @@ Component({
       value: false
     },
     badgeValue: {
-      type: [Number, String]
+      type: String,
+      optionalTypes: [Number, String],
+      value: ''
     },
     text: {
       type: String,
       value: ''
     },
-    useSlot: Boolean,
+    useSlot: {
+      type: Boolean,
+      value: false
+    },
 
     // 链接类型，可选值为 navigateTo，redirectTo，switchTab
     linkType: {
@@ -41,7 +46,8 @@ Component({
       value: 'navigateTo'
     },
     url: {
-      type: String
+      type: String,
+      value: ''
     }
   },
 
@@ -53,6 +59,7 @@ Component({
 
   methods: {
     onClick() {
+      console.log(this.data)
       this.triggerEvent('click')
 
       const url = this.data.url

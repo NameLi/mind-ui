@@ -53,8 +53,6 @@ Component({
         const width = `${100 / this.data.columnCount}%`;
 
         if (len > 0) {
-          let lastIndex = len - 1
-
           children.forEach((child, index) => {
             child.setData({
               width,

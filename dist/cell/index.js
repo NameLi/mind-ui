@@ -13,19 +13,28 @@ Component({
 
   properties: {
     icon: {
-      type: String
+      type: String,
+      value: ''
     },
 
     image: {
-      type: String
+      type: String,
+      value: ''
     },
 
     title: {
-      type: String
+      type: String,
+      value: ''
     },
 
     value: {
-      type: String
+      type: String,
+      value: ''
+    },
+
+    isMultiple: {
+      type: Boolean,
+      value: false
     },
 
     border: {
@@ -45,7 +54,8 @@ Component({
     },
 
     url: {
-      type: String
+      type: String,
+      value: ''
     }
   },
 

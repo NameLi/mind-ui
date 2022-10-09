@@ -1,0 +1,32 @@
+.m-cell-group {
+	position: relative;
+	margin: 0;
+	background: #fff;
+	transition: margin .2s ease-in-out;
+
+	.m-cell-group--card {
+		margin: 32rpx;
+		border-radius: 12rpx;
+		overflow: hidden;
+	}
+
+	.m-cell-group__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-shrink: 0;
+		position: relative;
+		padding: 0 32rpx;
+		height: 100rpx;
+		font-size: 32rpx;
+		color: var(--color-text-regular, #606266);
+		background-color: #fcfcfc;
+
+		.m-cell-group__title {
+			flex: 1;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+}

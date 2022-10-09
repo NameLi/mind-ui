@@ -34,6 +34,7 @@ Component({
       value: ''
     }
   },
+  
   data: {
     isImage: false,
     fsize: 36

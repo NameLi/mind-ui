@@ -1,5 +1,7 @@
 <m-cell-group title="动画" border card>
   <m-cell title="Fade" bind:tap="animationTap" data-type="fade" />
+  <m-cell title="Fade IN" bind:tap="animationTap" data-type="fade-in" />
+  <m-cell title="Fade OUT" bind:tap="animationTap" data-type="fade-out" />
   <m-cell title="Slide Up" bind:tap="animationTap" data-type="slide-up" />
   <m-cell title="Slide Down" bind:tap="animationTap" data-type="slide-down" />
   <m-cell title="Slide Left" bind:tap="animationTap" data-type="slide-left" />

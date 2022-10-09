@@ -7,9 +7,10 @@ Component({
 
   properties: {
     value: {
-      type: [Number, String],
+      type: Number,
+      optionalTypes: [Number, String],
       value: '',
-      observer: '_value'
+      observer: '_valueObserver'
     },
     max: {
       type: Number,
@@ -28,15 +29,17 @@ Component({
       value: false
     }
   },
+
   data: {
     _value: 0
   },
+
   methods: {
-    _value() {
+    _valueObserver() {
       const { value, max } = this.data
 
       let _value = ''
-      if(Number(value)) {
+      if (!isNaN(value)) {
         _value = parseInt(value) > parseInt(max) ? `${max}+` : value
       } else {
         _value = value

@@ -1,7 +1,7 @@
 <view class="custom-class m-cell-group {{ card ? 'm-cell-group--card':'' }}">
 
 	<view wx:if="{{ title }}" class="m-cell-group__header">
-    <view class="m-cell-group__title">{{ title }}</view>
+    <view class="m-cell-group__title m-hairline--bottom">{{ title }}</view>
     <slot name="group-suffix" />
   </view>
 

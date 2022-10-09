@@ -1,0 +1,50 @@
+.m-badge {
+	position: relative;
+	display: inline-block;
+	line-height: 1;
+
+	.m-badge-dot {
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 18rpx;
+		width: 18rpx;
+		transform: translate(50%, -50%);
+		transform-origin: 0;
+		border-radius: 50%;
+		background-color: var(--color-danger, #F56C6C);
+		box-shadow: 0 0 0 1px #fff;
+	}
+
+	.m-badge-count {
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0 6rpx;
+		min-width: 20rpx;
+		height: 28rpx;
+		line-height: 28rpx;
+		color: #fff;
+		font-size: 24rpx;
+		border-radius: 40rpx;
+		border: 1px solid transparent;
+		text-align: center;
+		white-space: nowrap;
+		transform: translate(80%, -50%);
+		background-color: var(--color-danger, #F56C6C);
+		box-shadow: 0 0 0 4rpx #fff;
+		box-sizing: content-box;
+
+		&.m-badge-count__static {
+			display: inline-block;
+			position: static;
+			transform: translateX(0);
+		}
+	}
+
+
+
+
+}

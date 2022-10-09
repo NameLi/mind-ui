@@ -21,8 +21,6 @@ const Message = options => {
   }
   ctx.open(options)
 
-  ctx.close = ctx.onClose
-
   return ctx
 }
 

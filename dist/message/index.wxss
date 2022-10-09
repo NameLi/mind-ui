@@ -1,12 +1,12 @@
 .m-message {
   display: block;
-  z-index: 2000;
   position: fixed;
+  margin-top: 22rpx;
   top: 0;
-  left: 0;
-  padding: 22rpx 80rpx;
-  width: 100%;
-  min-height: 36rpx;
+  left: 15rpx;
+  right: 15rpx;
+  padding: 15rpx 80rpx;
+  min-height: 66rpx;
   line-height: 36rpx;
   color: #fff;
   font-size: 28rpx;
@@ -38,7 +38,7 @@
   background: var(--color-danger, #F56C6C);
 }
 
-.m-message__close-btn {
+.m-message .m-message__close {
   position: absolute;
   right: 10rpx;
   top: 0;
@@ -47,7 +47,7 @@
   align-items: center;
 }
 
-.btn {
+.m-message .m-message__close-btn {
   position: relative;
   width: 40rpx;
   height: 40rpx;
@@ -55,8 +55,7 @@
   border: 10rpx;
 }
 
-.btn::before,
-.btn::after {
+.m-message .m-message__close-btn::before, .m-message .m-message__close-btn::after {
   z-index: 1;
   display: block;
   content: "";
@@ -67,13 +66,12 @@
   width: 32rpx;
   height: 1px;
   background: currentColor;
-
 }
 
-.btn::before {
+.m-message .m-message__close-btn::before {
   transform: rotate(45deg);
 }
 
-.btn::after {
+.m-message .m-message__close-btn::after {
   transform: rotate(-45deg);
 }

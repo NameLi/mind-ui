@@ -6,8 +6,8 @@
 ></view>
 
 <view 
-  class="custom-class m-toast__wrap {{ position }} {{ visible ? 'm-toast--show' : '' }}" 
-  style="{{ 'z-index:' + zIndex }}" 
+  class="custom-class m-toast__wrap m-toast--{{ position }} {{ show ? 'm-toast--show' : '' }}" 
+  style="z-index: {{ zIndex }}" 
   hidden="{{ !visible }}"
 >
   <view class="m-toast">

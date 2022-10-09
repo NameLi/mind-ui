@@ -64,7 +64,7 @@ Component({
       }
     },
 
-    onClose() {
+    close() {
       this.setData({
         ...defaults_data
       })

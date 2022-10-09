@@ -67,10 +67,10 @@ Component({
   },
 
   methods: {
-    observeShow(value, old) {
-      if (value === old) return;
+    observeShow(nVal, oVal) {
+      if (nVal === oVal) return;
 
-      value ? this._transitionEnter() : this._transitionLeave();
+      nVal ? this._transitionEnter() : this._transitionLeave();
     },
 
     _transitionEnter() {

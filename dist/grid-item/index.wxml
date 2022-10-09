@@ -1,24 +1,24 @@
 <view 
-  class="grid-item" 
-  hover-class="{{ url ? 'grid-item--hover' : '' }}"  
+  class="m-grid-item" 
+  hover-class="{{ url ? 'm-grid-item--hover' : '' }}"  
   style="{{ grid.getItemStyle(width, height) }}" 
   bind:tap="onClick"
 >
-  <view class="grid-item__content {{ border ? 'grid-item__content--border' : '' }}">
+  <view class="m-grid-item__content {{ border ? 'm-grid-item__content--border' : '' }}">
 
     <block wx:if="{{ useSlot }}">
       <slot />
     </block>
 
     <block wx:else>
-      <view class="grid-item__icon">
+      <view class="m-grid-item__icon">
         <m-icon wx:if="{{ icon }}" name="{{ icon }}" color="{{ iconColor }}" size="{{ iconSize }}" dot="{{ dot }}" info="{{ info }}" />
         <slot wx:else name="icon" />
 
-        <m-badge custom-class="grid-item__badge" is-dot="{{ badgeDot }}" value="{{ badgeValue }}" />
+        <m-badge custom-class="m-grid-item__badge" is-dot="{{ badgeDot }}" value="{{ badgeValue }}" />
       </view>
 
-      <view class="grid-item__text">
+      <view class="m-grid-item__text">
         <text wx:if="{{ text }}">{{ text }}</text>
         <slot wx:else name="text" />
       </view>

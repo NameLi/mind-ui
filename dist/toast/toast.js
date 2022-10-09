@@ -22,15 +22,14 @@ const Toast = options => {
       position: 'bottom'
     }
   }
-  ctx.handleShow(options)
+  ctx.open(options)
 
-  ctx.close = ctx.onClose
   return ctx
 }
 
 Toast.close = (selector = '#toast') => {
   const ctx = getCtx(selector)
-  ctx.onClose()
+  ctx.close()
 }
 
 export default Toast

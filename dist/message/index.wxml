@@ -1,9 +1,9 @@
 <view 
-  class="custom-class m-message m-message--{{type}} {{ visible ? '' : 'is-hidden' }}"
+  class="m-message m-message--{{type}} {{ visible ? '' : 'is-hidden' }} custom-class"
   style="{{ 'top:' + top  }};{{ 'z-index:' + zIndex }}" 
 >
   {{ content }}
-  <view class="m-message__close-btn" wx:if="{{showClose}}">
-    <view class="btn" bindtap="onClose"></view>
+  <view class="m-message__close" wx:if="{{showClose}}">
+    <view class="m-message__close-btn" bindtap="close"></view>
   </view>
 </view>
