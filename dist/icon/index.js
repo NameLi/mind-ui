@@ -1,6 +1,10 @@
 Component({
   externalClasses: ['custom-class'],
 
+  options: {
+    addGlobalClass: true,
+  },
+
   properties: {
     name: {
       type: String,
@@ -13,7 +17,7 @@ Component({
     
     size: {
       type: Number,
-      optionalTypes: [String],
+      optionalTypes: [Number, String],
       value: 36,
       observer(val) {
         this.setData({

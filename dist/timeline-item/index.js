@@ -1,4 +1,9 @@
 Component({
+  
+  options: {
+    addGlobalClass: true,
+  },
+
   relations: {
     '../timeline/index': {
       type: 'ancestor'

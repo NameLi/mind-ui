@@ -1,6 +1,10 @@
 Component({
   externalClasses: ['custom-class'],
 
+  options: {
+    addGlobalClass: true,
+  },
+
   relations: {
     '../checkbox-group/index': {
       type: 'ancestor',

@@ -11,7 +11,7 @@ Component({
     },
     desc: {
       type: String,
-      optionalTypes: [Number, Boolean],
+      optionalTypes: [String, Number, Boolean],
       value: ''
     }
   },

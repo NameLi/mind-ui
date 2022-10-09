@@ -1,6 +1,10 @@
 Component({
   externalClasses: ['custom-class'],
 
+  options: {
+    addGlobalClass: true,
+  },
+
   properties: {
     height: {
       type: String,

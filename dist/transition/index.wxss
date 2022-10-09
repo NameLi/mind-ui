@@ -3,14 +3,17 @@
 }
 
 .m-fade-enter-active,
-.m-fade-leave-active {
+.m-fade-leave-active,
+.m-fade-out-leave-active {
   transition-property: opacity
 }
 
 .m-fade-enter,
-.m-fade-leave-to {
+.m-fade-leave-to,
+.m-fade-out-leave-to {
   opacity: 0
 }
+
 
 .m-fade-down-enter-active,
 .m-fade-down-leave-active,

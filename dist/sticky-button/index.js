@@ -1,6 +1,10 @@
 Component({
   externalClasses: ['custom-class'],
 
+  options: {
+    addGlobalClass: true,
+  },
+
   relations: {
     '../sticky-button-item/index': {
       type: 'child',

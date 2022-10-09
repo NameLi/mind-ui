@@ -4,8 +4,8 @@
 }
 
 .m-rate__content {
-  margin-right: 12rpx;
   position: relative;
+  margin-right: 4rpx;
 }
 
 .is-active {

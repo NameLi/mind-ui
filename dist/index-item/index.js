@@ -1,6 +1,10 @@
 Component({
   externalClasses: ['custom-class'],
 
+  options: {
+    addGlobalClass: true,
+  },
+
   relations: {
     '../index/index': {
       type: 'parent'

@@ -1,4 +1,8 @@
 Component({
+  options: {
+    addGlobalClass: true,
+  },
+
   relations: {
     '../checkbox/index': {
       type: 'descendant',

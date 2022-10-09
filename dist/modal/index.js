@@ -1,6 +1,10 @@
 Component({
   externalClasses: ['custom-class', 'custom-mask-class', 'custom-body-class'],
 
+  options: {
+    addGlobalClass: true,
+  },
+
   properties: {
     visible: {
       type: Boolean,

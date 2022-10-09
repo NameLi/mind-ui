@@ -1,4 +1,8 @@
 Component({
+  options: {
+    addGlobalClass: true,
+  },
+
   properties: {
     duration: {
       type: Number,

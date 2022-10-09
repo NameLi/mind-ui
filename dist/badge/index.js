@@ -1,10 +1,13 @@
 Component({
   externalClasses: ['custom-class'],
 
+  options: {
+    addGlobalClass: true,
+  },
+
   properties: {
     value: {
-      type: Number,
-      optionalTypes: [String],
+      type: [Number, String],
       value: '',
       observer: '_value'
     },

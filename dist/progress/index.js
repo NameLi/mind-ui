@@ -1,5 +1,10 @@
 Component({
   externalClasses: ['custom-class'],
+
+  options: {
+    addGlobalClass: true,
+  },
+
   properties: {
     type: {
       type: String,
@@ -37,7 +42,7 @@ Component({
 
     barHeight: {
       type: Number,
-      optionalTypes: [String],
+      optionalTypes: [Number, String],
       value: 6
     }
   }

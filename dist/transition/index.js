@@ -32,6 +32,10 @@ Component({
     "m-leave-active-class",
     "m-leave-to-class"
   ],
+  
+  options: {
+    addGlobalClass: true,
+  },
 
   properties: {
     name: {
@@ -47,7 +51,7 @@ Component({
 
     duration: {
       type: Number,
-      optionalTypes: [String, Object],
+      optionalTypes: [Number, String, Object],
       value: 300,
     },
   },

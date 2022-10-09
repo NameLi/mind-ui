@@ -1,4 +1,8 @@
 Component({
+  options: {
+    addGlobalClass: true,
+  },
+
   relations: {
     '../grid/index': {
       type: 'parent'
@@ -23,8 +27,7 @@ Component({
       value: false
     },
     badgeValue: {
-      type: Number,
-      optionalTypes: [String]
+      type: [Number, String]
     },
     text: {
       type: String,

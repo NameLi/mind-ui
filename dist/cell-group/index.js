@@ -2,6 +2,7 @@ Component({
   externalClasses: ['custom-class'],
 
   options: {
+    addGlobalClass: true,
     multipleSlots: true
   },
 
@@ -47,7 +48,7 @@ Component({
     _updateChildren() {
 
       // 防抖减少重复触发
-      if(this.timer) {
+      if (this.timer) {
         clearTimeout(this.timer)
         this.timer = null
       }

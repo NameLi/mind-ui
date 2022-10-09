@@ -1,4 +1,9 @@
 Component({
+
+  options: {
+    addGlobalClass: true,
+  },
+
   relations: {
     '../grid-item/index': {
       type: 'child',

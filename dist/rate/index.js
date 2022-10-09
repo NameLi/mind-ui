@@ -2,7 +2,11 @@ Component({
   properties: {
     max: {
       type: Number,
-      value: 5
+      value: 5,
+    },
+    step: {
+      type: Number,
+      value: 1
     },
     step: {
       type: Number,
@@ -40,7 +44,6 @@ Component({
       type: Boolean,
       value: false
     },
-
     showScore: {
       type: Boolean,
       value: false

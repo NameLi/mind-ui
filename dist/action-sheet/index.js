@@ -2,6 +2,7 @@ Component({
   externalClasses: ['custom-class', 'custom-mask-class', 'custom-header-class'],
 
   options: {
+    addGlobalClass: true,
     multipleSlots: true
   },
 
@@ -41,13 +42,13 @@ Component({
     },
 
     // 点击事件
-    handleItemClick({ currentTarget = {}}) {
+    handleItemClick({ currentTarget = {} }) {
       const dataset = currentTarget.dataset || {}
       const { index } = dataset
 
       const item = this.data.actions[index]
 
-      if(item.loading || item.disabled) return
+      if (item.loading || item.disabled) return
 
       this.triggerEvent('click', {
         index

@@ -1,5 +1,10 @@
 Component({
   externalClasses: ['custom-class'],
+
+  options: {
+    addGlobalClass: true,
+  },
+  
   properties: {
     disabled: {
       type: Boolean,

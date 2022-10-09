@@ -16,6 +16,10 @@ const defaults_data = {
 Component({
   externalClasses: ['custom-class'],
 
+  options: {
+    addGlobalClass: true,
+  },
+
   data: {
     ...defaults_data,
   },

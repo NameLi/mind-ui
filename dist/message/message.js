@@ -9,7 +9,6 @@ function getCtx(selector) {
   return componentCtx
 }
 
-
 const Message = options => {
   const {
     selector = '#message'

@@ -1,6 +1,10 @@
 Component({
   externalClasses: ['custom-class'],
 
+  options: {
+    addGlobalClass: true,
+  },
+
   relations: {
     '../sticky-item/index': {
       type: 'child',
@@ -22,11 +26,10 @@ Component({
       value: false
     },
 
-
     // 吸顶时与顶部的距离
     offsetTop: {
       type: Number,
-      optionalTypes: [String],
+      optionalTypes: [Number, String],
       value: 0,
       observer(val) {
         this._updateAbsOffsetTop(val)

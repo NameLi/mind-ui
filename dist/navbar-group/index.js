@@ -1,6 +1,10 @@
 Component({
   externalClasses: ['custom-class'],
 
+  options: {
+    addGlobalClass: true,
+  },
+
   relations: {
     '../navbar/index': {
       type: 'child',
@@ -15,8 +19,8 @@ Component({
 
   properties: {
     activeName: {
-      type: Number,
-      optionalTypes: [String],
+      type: String,
+      optionalTypes: [Number, String],
       value: ''
     },
 
@@ -27,7 +31,7 @@ Component({
 
     lineWidth: {
       type: Number,
-      optionalTypes: [String],
+      optionalTypes: [Number, String],
       value: 0
     },
 

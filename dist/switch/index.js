@@ -1,6 +1,10 @@
 Component({
   externalClasses: ['custom-class'],
 
+  options: {
+    addGlobalClass: true,
+  },
+
   properties: {
     disabled: {
       type: Boolean,
@@ -9,9 +13,8 @@ Component({
 
     value: {
       type: Boolean,
-      optionalTypes: [String, Number],
+      optionalTypes: [Boolean, String, Number],
       value: false,
-
       observer(val) {
         this.setData({ 
           checked: val
@@ -41,13 +44,13 @@ Component({
 
     activeValue: {
       type: Boolean,
-      optionalTypes: [String, Number],
+      optionalTypes: [Boolean, String, Number],
       value: true
     },
     
     inactiveValue: {
       type: Boolean,
-      optionalTypes: [String, Number],
+      optionalTypes: [Boolean, String, Number],
       value: false
     }
   },

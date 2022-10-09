@@ -2,6 +2,7 @@ Component({
   externalClasses: ['custom-class'],
 
   options: {
+    addGlobalClass: true,
     multipleSlots: true
   },
 

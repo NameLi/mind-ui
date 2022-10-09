@@ -1,5 +1,9 @@
 Component({
   externalClasses: ['custom-class'],
+
+  options: {
+    addGlobalClass: true,
+  },
   
   relations: {
     '../radio/index': {

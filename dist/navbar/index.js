@@ -1,6 +1,10 @@
 Component({
   externalClasses: ['custom-class'],
 
+  options: {
+    addGlobalClass: true,
+  },
+
   relations: {
     '../navbar-group/index': {
       type: 'parent',
@@ -19,13 +23,12 @@ Component({
       value: ''
     },
     title: {
-      required: true,
       type: String,
       value: ''
     },
     value: {
-      type: Number,
-      optionalTypes: [String],
+      type: String,
+      optionalTypes: [Number, String],
       value: ''
     }
   },
