@@ -1,7 +1,7 @@
 <view class="m-mask custom-mask-class {{ visible ? '' : 'is-hidden' }}" bindtap="onMaskClick"></view>
 
 <view class="m-modal-wrap custom-class {{ visible ? '' : 'is-hidden' }}">
-  <view class="m-modal">
+  <view class="m-modal {{ visible ? 'is-show' : '' }}">
     <view class="m-modal__content">
       <view class="m-modal__title" wx:if="{{ title }}">{{ title }}</view>
       <view class="m-modal__body custom-body-class" wx:if="{{ content }}">{{ content }}</view>

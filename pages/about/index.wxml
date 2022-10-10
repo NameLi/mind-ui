@@ -9,8 +9,8 @@
 	<m-cell icon="tag" icon-color="#00CDA2" title="作者主页">
 		<view class="content" bindtap='copyText' data-text="https://ixook.com">https://ixook.com</view>
 	</m-cell>
-	<m-cell icon="tag" icon-color="#00CDA2" title="QQ 群">	
+	<m-cell icon="feed" icon-color="#00CDA2" title="QQ 群">	
 		<view class="content" bindtap='copyText' data-text="577133021">577133021</view>
 	</m-cell>
-	<m-cell icon="tag" icon-color="#00CDA2" title="最近更新" value="2022-10-10" />
+	<m-cell icon="date" icon-color="#00CDA2" title="最近更新" value="2022-10-10" />
 </m-cell-group>

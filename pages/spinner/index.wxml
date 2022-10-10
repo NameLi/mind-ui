@@ -1,5 +1,5 @@
 <demo-card title="不同类型">
-  <m-cell-group>
+  <m-cell-group border>
     <m-cell title="triple">
       <m-spinner type="triple" />
     </m-cell>
@@ -19,7 +19,7 @@
 </demo-card>
 
 <demo-card title="自定义颜色">
-  <m-cell-group>
+  <m-cell-group border>
     <m-cell title="triple">
       <m-spinner type="triple" color="#f60, #7fd901, #36a2e0" />
     </m-cell>

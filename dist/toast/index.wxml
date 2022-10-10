@@ -7,7 +7,7 @@
 
 <view 
   class="custom-class m-toast__wrap m-toast--{{ position }} {{ show ? 'm-toast--show' : '' }}" 
-  style="z-index: {{ zIndex }}" 
+  style="z-index: {{ zIndex }};{{ position === 'top' ? transformStyle : '' }}" 
   hidden="{{ !visible }}"
 >
   <view class="m-toast">

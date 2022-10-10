@@ -8,7 +8,7 @@
   opacity: 1;
   visibility: visible;
   background: var(--color-mask, rgba(0, 0, 0, 0.55));
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .m-mask.is-hidden {
@@ -19,16 +19,13 @@
 .m-modal-wrap {
   z-index: 1001;
   position: fixed;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  transition: transform 0.2s ease-in-out, opacity .2s ease-in-out;
-  opacity: 1;
+  top: 50%;
   visibility: visible;
+  transform: translate3d(-50%, -50%, 0);
 }
 
 .m-modal-wrap.is-hidden {
-  opacity: 0;
   visibility: hidden;
 }
 
@@ -36,21 +33,29 @@
   z-index: 9;
   position: relative;
   width: 540rpx;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity .2s ease-in-out;
 }
 
-.m-modal-wrap .m-modal__content {
+.m-modal-wrap .m-modal.is-show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.m-modal-wrap .m-modal .m-modal__content {
   position: relative;
-  border-radius: 3rpx;
   padding-top: 30rpx;
-  background-color: #fff;
-  border: 0;
-  background-clip: padding-box;
-  text-align: center;
   height: 100%;
+  border: 0;
+  border-radius: 3rpx;
+  text-align: center;
+  background-color: #fff;
+  background-clip: padding-box;
   overflow: hidden;
 }
 
-.m-modal-wrap .m-modal__title {
+.m-modal-wrap .m-modal .m-modal__title {
   margin: 0;
   padding: 12rpx 30rpx 24rpx;
   font-size: 36rpx;
@@ -59,7 +64,7 @@
   text-align: center;
 }
 
-.m-modal-wrap .m-modal__body {
+.m-modal-wrap .m-modal .m-modal__body {
   max-height: 300rpx;
   margin-bottom: 30rpx;
   padding: 20rpx 40rpx;
@@ -70,12 +75,12 @@
   -webkit-overflow-scrolling: touch;
 }
 
-.m-modal-wrap .m-modal__btn-group {
+.m-modal-wrap .m-modal .m-modal__btn-group {
   position: relative;
   display: flex;
 }
 
-.m-modal-wrap .m-modal__btn-group::after {
+.m-modal-wrap .m-modal .m-modal__btn-group::after {
   content: '';
   position: absolute;
   top: 0;
@@ -86,12 +91,12 @@
   background: #ddd;
 }
 
-.m-modal-wrap .m-modal__btn-group .m-modal__btn {
+.m-modal-wrap .m-modal .m-modal__btn-group .m-modal__btn {
   position: relative;
   flex: 1;
 }
 
-.m-modal-wrap .m-modal__btn-group .m-modal__btn.m-modal__btn--cancel::after {
+.m-modal-wrap .m-modal .m-modal__btn-group .m-modal__btn.m-modal__btn--cancel::after {
   content: '';
   position: absolute;
   top: 0;

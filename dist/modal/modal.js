@@ -13,9 +13,7 @@ function getCtx(selector) {
 const Modal = options => {
 
   return new Promise((resolve, reject) => {
-    const {
-      selector = '#modal'
-    } = options
+    const { selector = '#modal' } = options
     const modal = getCtx(selector)
     modal._reset()
 

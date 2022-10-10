@@ -56,8 +56,8 @@
     "pages/about/index"
   ],
   "window": {
+    "navigationBarBackgroundColor": "#F4F4F4",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Mind UI",
     "navigationBarTextStyle": "black"
   },

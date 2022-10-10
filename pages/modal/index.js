@@ -76,31 +76,34 @@ Page({
   },
 
   // js 调用
-  handleOpen6() {
-    let modal = Modal.alert({
+  async handleOpen6() {
+    await Modal.alert({
+      asyncClose: true,
       title: '提示',
       content: '操作成功！'
     })
-      .then(() => {
-        Message({
-          content: '确认回调',
-          type: 'success'
-        })
-      })
-    console.log(modal)
+    Modal.close()
+
+    Message({
+      content: '确认回调',
+      type: 'success'
+    })
   },
 
   handleOpen7() {
     Modal.confirm({
+      asyncClose: true,
       title: '提示',
       content: '操作成功！'
     })
       .then(() => {
+        Modal.close()
         Message({
           content: '确认回调',
           type: 'success'
         })
       }).catch(() => {
+        Modal.close()
         Message({
           content: '取消回调',
           type: 'warning'

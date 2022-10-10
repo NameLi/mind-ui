@@ -18,6 +18,10 @@ Component({
       type: String,
       value: ''
     },
+    closeOnClickModal: {
+      type: Boolean,
+      value: true
+    },
     showConfirmButton: {
       type: Boolean,
       value: true
@@ -96,10 +100,7 @@ Component({
     },
 
     onMaskClick() {
-      this.setData({
-        visible: false
-      })
-
+      if (!this.data.closeOnClickModal) return;
       this.close()
     },
 

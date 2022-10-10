@@ -6,6 +6,7 @@
 .m-rate .m-rate__content {
   position: relative;
   margin-right: 4rpx;
+  display: flex;
 }
 
 .m-rate .m-rate__content.is-active {
@@ -25,6 +26,7 @@
 }
 
 .m-rate .m-rate__content .m-rate__half-icon {
+  display: block;
   position: absolute;
   left: 0;
   top: 0;

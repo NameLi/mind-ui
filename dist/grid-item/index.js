@@ -59,7 +59,6 @@ Component({
 
   methods: {
     onClick() {
-      console.log(this.data)
       this.triggerEvent('click')
 
       const url = this.data.url

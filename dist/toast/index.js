@@ -23,6 +23,26 @@ Component({
 
   data: {
     ...defaults_data,
+    transformStyle: '',
+  },
+
+  ready() {
+    const windowInfo = wx.getWindowInfo()
+    const { screenHeight, windowHeight, statusBarHeight } = windowInfo;
+
+    // 自定义导航栏
+    if (screenHeight === windowHeight) {
+      let customBarH = 44;
+      let capsule = wx.getMenuButtonBoundingClientRect();
+
+      if (capsule) {
+        customBarH = capsule.bottom + capsule.top + 4 - statusBarHeight;
+      }
+
+      this.setData({
+        transformStyle: `margin-top: ${customBarH + 'px'}`
+      })
+    }
   },
 
   methods: {

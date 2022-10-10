@@ -8,7 +8,7 @@
   opacity: 1;
   visibility: visible;
   background: var(--color-mask, rgba(0, 0, 0, 0.55));
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .m-mask.is-hidden {
@@ -27,7 +27,7 @@
   background: #fff;
   transform: translate3d(0, 0, 0);
   transform-origin: center;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
   box-sizing: border-box;
   padding-bottom: constant(safe-area-inset-bottom);
   padding-bottom: env(safe-area-inset-bottom);

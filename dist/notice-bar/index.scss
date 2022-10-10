@@ -35,4 +35,24 @@
       -webkit-overflow-scrolling: touch;
     }
   }
+
+  @keyframes once {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes round {
+    0% {
+      transform: translateX(750rpx);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }

@@ -1,7 +1,13 @@
 .m-timeline {
   display: flex;
 
-  .m-time {
+  &.is-last {
+    .m-timeline__line::after {
+      display: none;
+    }
+  }
+
+  .m-timeline__line {
     position: relative;
     width: 120rpx;
     min-height: 80rpx;
@@ -16,20 +22,16 @@
       width: 1px;
       bottom: 10rpx;
       content: " ";
-      background: #ccc;
+      background: #cdcdcd;
       transform: translateY(.5);
     }
-
-    .m-timeline__content {
-      flex: 1;
-      width: 0;
-      margin-top: 16rpx;
-      margin-bottom: 46rpx;
-      margin-right: 32rpx;
-    }
   }
-}
 
-.is-last .m-time::after {
-  display: none;
+  .m-timeline__content {
+    flex: 1;
+    width: 0;
+    margin-top: 16rpx;
+    margin-bottom: 46rpx;
+    margin-right: 32rpx;
+  }
 }

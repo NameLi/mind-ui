@@ -31,7 +31,7 @@ Component({
       value: 'bottom' // left right top bottom
     }
   },
-  data: {},
+
   methods: {
     handleMaskClick() {
       if (!this.data.maskClosable) return

@@ -79,9 +79,8 @@ Component({
     _updateWrapInfo(children) {
       wx.nextTick(() => {
         const query = this.createSelectorQuery()
-        query.select('.m-tabs__wrap').boundingClientRect()
+        query.select('.m-tabs').boundingClientRect()
         query.select('.m-tabs__scroll').scrollOffset()
-
         query.exec(res => {
           this.data.baseLeft = res[0].left
 

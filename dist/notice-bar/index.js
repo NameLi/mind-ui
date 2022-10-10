@@ -41,25 +41,27 @@ Component({
   methods: {
     getContainerWidth() {
       const query = this.createSelectorQuery()
-      query.select('.notice-bar__content').boundingClientRect()
-      query.select('.notice-bar').boundingClientRect()
+      query.select('.m-notice-bar').boundingClientRect()
+      query.select('.m-notice-bar__content').boundingClientRect()
 
       query.exec(res => {
         const wrapW = wx.getSystemInfoSync().windowWidth  // 容器宽度
-        const containW = (res[0].width) * (750 / wrapW)   // 内容宽度（折合为rpx）
-        const noticeW = (res[1].width) * (750 / wrapW)
+        const noticeW = (res[0].width) * (750 / wrapW)
+        const containW = (res[1].width) * (750 / wrapW)   // 内容宽度（折合为rpx）
         
         // 内容宽度小于内容区域宽度，则不滚动
         if (containW <= noticeW) {
           this.setData({
             scrollable: false
           })
+
+          return;
         }
 
         const delaySec = containW / this.data.speed
 
         this.setData({
-          delaySec
+          delaySec: parseInt(delaySec)
         })
       })
     }
