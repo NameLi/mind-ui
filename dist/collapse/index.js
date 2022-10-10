@@ -52,7 +52,6 @@ Component({
         this.setData({
           contentHeight
         })
-
       })
     },
 

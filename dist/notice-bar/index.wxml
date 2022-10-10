@@ -1,10 +1,10 @@
-<view class="notice-bar__wrap custom-class">
+<view class="m-notice-bar__wrap custom-class">
 
   <slot name="preifx" />
 
-  <view class="notice-bar">
+  <view class="m-notice-bar">
     <view 
-      class="notice-bar__content {{ !scrollable ? 'm-ellipsis' : '' }} {{ multiline ? 'multiline':'' }}"
+      class="m-notice-bar__content {{ !scrollable ? 'is-ellipsis' : '' }} {{ multiline ? 'is-multiline':'' }}"
       style="{{ notice.setAnimation(scrollable, delaySec, speed, delay) }}"
     >
       <slot />

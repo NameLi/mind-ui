@@ -34,7 +34,6 @@ Component({
   },
 
   methods: {
-
     // 点击遮罩
     handleMaskClick() {
       if (!this.data.maskClosable) return
@@ -59,7 +58,6 @@ Component({
     handleCancelClick() {
       this.triggerEvent('cancel')
     },
-
 
     getuserinfo({
       detail = {}

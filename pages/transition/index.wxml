@@ -8,4 +8,4 @@
   <m-cell title="Slide Right" bind:tap="animationTap" data-type="slide-right" />
 </m-cell-group>
 
-<m-transition show="{{ isShow }}" name="{{ animation }}" m-class="demo-style__toast" />
+<m-transition show="{{ isShow }}" name="{{ animation }}" custom-class="demo-style__toast" />

@@ -12,7 +12,7 @@
       wx:if="{{ allowHalf }}"
       name="{{ voldIcon }}" 
       size="{{ size }}" 
-      custom-class="half-icon"
+      custom-class="m-rate__half-icon"
       data-score="{{ index + 0.5 }}"
       color="{{ disabled ? disabledColor : index + 0.5 <= tValue ? color : voidColor }}"
       bindtap="handleClick"
@@ -21,7 +21,7 @@
 
   <view 
     wx:if="{{ text }}" 
-    class="score" 
+    class="m-rate__score" 
     style="font-size: {{ size/1.2 }}rpx;color: {{ textColor }}"
   >
     {{ text }}

@@ -1,4 +1,4 @@
-<view class="m-spinner m-class" style="color: {{ color }}">
+<view class="m-spinner custom-class" style="color: {{ color }}">
 	<view wx:if="{{type === 'snake'}}" class="m-spinner__snake"></view>
 	<view wx:if="{{type === 'bounce'}}" class="m-spinner__bounce">
 		<view class="m-bounce  m-bounce1"></view>

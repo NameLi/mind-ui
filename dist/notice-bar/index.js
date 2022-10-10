@@ -40,7 +40,6 @@ Component({
 
   methods: {
     getContainerWidth() {
-
       const query = this.createSelectorQuery()
       query.select('.notice-bar__content').boundingClientRect()
       query.select('.notice-bar').boundingClientRect()

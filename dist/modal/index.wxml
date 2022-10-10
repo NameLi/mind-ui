@@ -1,5 +1,6 @@
 <view class="m-mask custom-mask-class {{ visible ? '' : 'is-hidden' }}" bindtap="onMaskClick"></view>
-<view class="m-modal-wrapper  custom-class {{ visible ? '' : 'is-hidden' }}">
+
+<view class="m-modal-wrap custom-class {{ visible ? '' : 'is-hidden' }}">
   <view class="m-modal">
     <view class="m-modal__content">
       <view class="m-modal__title" wx:if="{{ title }}">{{ title }}</view>
@@ -7,11 +8,11 @@
       <view class="m-modal__body custom-body-class" wx:else>
         <slot />
       </view>
-      <view class="m-btn-group">
-        <view class="m-btn-item m-btn-cancel" wx:if="{{ showCancelButton }}">
+      <view class="m-modal__btn-group">
+        <view class="m-modal__btn m-modal__btn--cancel" wx:if="{{ showCancelButton }}">
           <m-button full type="ghost" bind:click="onCancel">{{ cancelButtonText }}</m-button>
         </view>
-        <view class="m-btn-item" wx:if="{{ showConfirmButton }}">
+        <view class="m-modal__btn" wx:if="{{ showConfirmButton }}">
           <m-button full type="ghost" loading="{{ loading }}" bind:click="onConfirm" color="{{ confirmTextColor }}">
             {{ confirmButtonText }}
           </m-button>

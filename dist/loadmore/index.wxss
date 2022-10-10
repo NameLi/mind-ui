@@ -6,11 +6,11 @@
   font-size: 28rpx;
 }
 
-.m-loadmore__end {
+.m-loadmore .m-loadmore__end {
   color: var(--color-text-secondary, #909399);
 }
 
-.m-loadmore__snake {
+.m-loadmore .m-loadmore__snake {
   display: inline-block;
   margin-right: 10rpx;
   width: 18rpx;
@@ -32,21 +32,21 @@
   }
 }
 
-.m-loadmore__message {
+.m-loadmore .m-loadmore__message {
   display: inline-block;
   vertical-align: middle;
 }
 
-.m-loadmore__dot {
+.m-loadmore .m-loadmore__dot {
   vertical-align: middle;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 0 4rpx;
 }
 
-.m-loadmore__dot::after {
-  vertical-align: middle;
-  display: inline-block;
+.m-loadmore .m-loadmore__dot::after {
   content: "";
+  display: inline-flex;
   padding-left: 6rpx;
   width: 36rpx;
   height: 28rpx;
@@ -61,15 +61,12 @@
   0% {
     content: "";
   }
-
   25% {
     content: ".";
   }
-
   50% {
     content: "..";
   }
-
   75% {
     content: "...";
   }

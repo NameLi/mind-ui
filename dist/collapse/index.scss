@@ -1,0 +1,7 @@
+.m-collapse {
+  transition-property: height;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  overflow: hidden;
+  height: 0;
+}

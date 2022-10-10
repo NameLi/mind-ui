@@ -1,0 +1,38 @@
+.m-notice-bar__wrap {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 28rpx;
+  color: #ed6a0c;
+  background-color: #fffbe8;
+
+  .m-notice-bar {
+    flex: 1;
+    position: relative;
+    padding: 20rpx 16rpx;
+    min-height: 76rpx;
+    line-height: 1.4;
+    overflow: hidden;
+
+    .m-notice-bar__content {
+      z-index: 0;
+      position: absolute;
+      white-space: nowrap;
+      transform: translateX(0);
+    }
+
+    .is-ellipsis {
+      position: static;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .is-multiline {
+      position: static;
+      overflow: auto;
+      white-space: normal;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+}

@@ -8,12 +8,12 @@
     <slot />
 
     <!-- 右侧索引 -->
-    <view class="m-index-fixed" 
+    <view class="m-index__fixed" 
       catchtouchstart="onTouchMove" 
       catchtouchmove="onTouchMove" 
       catchtouchend="onTouchEnd"
     >
-      <view class="m-index-fixed__item {{ currentName === item ? 'is-active' : '' }}" 
+      <view class="m-index__fixed-item {{ currentName === item ? 'is-active' : '' }}" 
         wx:for="{{ indexData }}" 
         wx:key="index" 
         data-index="{{index}}" 

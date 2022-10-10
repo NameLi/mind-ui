@@ -12,15 +12,9 @@
   background-color: #f7f8f9;
 }
 
-.m-cell .m-cell-icon {
+.m-cell .m-cell__icon {
   width: 38rpx;
   text-align: center;
-}
-
-.m-cell .image-icon {
-  width: 30rpx;
-  height: 30rpx;
-  vertical-align: middle;
 }
 
 .m-cell .m-cell__header {
@@ -47,7 +41,7 @@
   font-size: 28rpx;
 }
 
-.m-cell .m-cell__desc.ellipsis {
+.m-cell .m-cell__desc.is-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

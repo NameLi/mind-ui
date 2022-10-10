@@ -1,25 +1,21 @@
 .m-tabs {
   position: relative;
-}
-
-.m-tabs__wrap {
   justify-content: center;
   height: 88rpx;
   overflow: hidden;
 }
 
-.m-tabs__scroll {
-  height: 88rpx;
+.m-tabs .m-tabs__scroll {
   margin-bottom: 10rpx;
+  height: 88rpx;
 }
 
-
-.m-tabs__nav {
+.m-tabs .m-tabs__scroll .m-tabs__nav {
   position: relative;
   display: flex;
 }
 
-.m-tabs__line {
+.m-tabs .m-tabs__scroll .m-tabs__nav .m-tabs__line {
   position: absolute;
   bottom: 0;
   left: 0;

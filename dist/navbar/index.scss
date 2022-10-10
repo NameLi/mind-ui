@@ -1,0 +1,35 @@
+:host {
+  flex: 1;
+}
+
+.m-tab-item {
+  position: relative;
+  flex: 1;
+  box-sizing: border-box;
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+  color: #7d7e80;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  -webkit-tap-highlight-color: transparent;
+
+  &.is-active {
+    font-weight: 500;
+    color: #323233;
+  }
+
+  .m-tab-item__content {
+    margin: 0 20rpx;
+    white-space: nowrap;
+
+    .m-tab-item__text {
+      display: inline-block;
+
+      .m-badge-custom {
+        margin-left: 6rpx;
+        vertical-align: text-top;
+      }
+    }
+  }
+}

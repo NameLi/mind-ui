@@ -3,12 +3,12 @@
   align-items: center;
 }
 
-.m-rate__content {
+.m-rate .m-rate__content {
   position: relative;
   margin-right: 4rpx;
 }
 
-.is-active {
+.m-rate .m-rate__content.is-active {
   animation: jump 0.4s ease-in-out;
 }
 
@@ -16,17 +16,15 @@
   0% {
     transform: scale(1);
   }
-
   60% {
     transform: scale(1.2);
   }
-
   100% {
     transform: scale(1);
   }
 }
 
-.half-icon {
+.m-rate .m-rate__content .m-rate__half-icon {
   position: absolute;
   left: 0;
   top: 0;
@@ -34,6 +32,6 @@
   overflow: hidden;
 }
 
-.score {
+.m-rate .m-rate__score {
   margin-left: 12rpx;
 }

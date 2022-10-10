@@ -1,5 +1,5 @@
 page {
-  background-color: #f4f4f4 !important;
+  background-color: #f4f4f4;
 }
 
 .custom-card {
@@ -10,5 +10,5 @@ page {
 
 .demo-border {
   margin-top: 20rpx;
-    height: 2px;
+  height: 2px;
 }

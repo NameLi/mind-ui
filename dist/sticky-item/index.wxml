@@ -1,7 +1,7 @@
 <view class="m-sticky-item custom-class">
 
   <view 
-    class="sticky" 
+    class="m-sticky-item__header-wrap" 
     style="{{ headerH ? 'height: ' + headerH + 'px;' : '' }} top: {{ offsetTop }}px; {{ 'z-index: ' + zIndex }}"
   >
     <view 

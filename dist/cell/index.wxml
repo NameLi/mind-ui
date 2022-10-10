@@ -4,7 +4,7 @@
   hover-class="{{ url ? 'm-cell--hover' : '' }}"  
 > 
   <!-- 头部图标 -->
-  <view wx:if="{{ icon }}" class="m-cell-icon m-cell__header">
+  <view wx:if="{{ icon }}" class="m-cell__icon m-cell__header">
     <m-icon name="{{ icon }}" size="36" color="{{ iconColor ? iconColor : '' }}" />
   </view>
 
@@ -13,7 +13,7 @@
   <slot wx:else name="title" />
 
   <!-- 描述内容 -->
-  <view wx:if="{{ value }}" class="m-cell__desc {{ isMultiple ? '':'ellipsis' }}">{{ value }}</view>
+  <view wx:if="{{ value }}" class="m-cell__desc {{ isMultiple ? '':'is-ellipsis' }}">{{ value }}</view>
 
   <!-- 自定义内容 -->
   <view wx:else class="m-cell__slot">
@@ -21,5 +21,5 @@
   </view>
 
   <!-- 右侧跳转箭头 -->
-  <m-icon wx:if="{{ url }}" class="m-cell-icon m-cell__footer" catchtap="navigateTo" name="arrow-right" size="32" color="#999" />
+  <m-icon wx:if="{{ url }}" class="m-cell__icon m-cell__footer" catchtap="navigateTo" name="arrow-right" size="32" color="#999" />
 </view>

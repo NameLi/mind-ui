@@ -33,7 +33,6 @@ Component({
       type: String,
       value: ''
     },
-
     labelLeft: {
       type: Boolean,
       value: false

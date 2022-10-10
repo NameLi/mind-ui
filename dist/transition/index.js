@@ -24,7 +24,7 @@ const requestAnimationFrame = (cb) => {
 
 Component({
   externalClasses: [
-    "m-class",
+    "custom-class",
     "m-enter-class",
     "m-enter-active-class",
     "m-enter-to-class",
@@ -32,7 +32,7 @@ Component({
     "m-leave-active-class",
     "m-leave-to-class"
   ],
-  
+
   options: {
     addGlobalClass: true,
   },
@@ -110,10 +110,7 @@ Component({
     _transitionLeave() {
       if (!this.data.display) return;
 
-      const {
-        duration,
-        name
-      } = this.data;
+      const { duration, name } = this.data;
       const classNames = getClassNames(name);
       const currentDuration = duration.leave || duration;
 

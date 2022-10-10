@@ -44,7 +44,6 @@ Component({
 
   methods: {
     emitChange(value) {
-
       const instance = this.parent || this;
       
       instance.triggerEvent('input', value);

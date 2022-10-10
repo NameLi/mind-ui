@@ -1,0 +1,20 @@
+.m-swipeout {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+
+  .m-swipeout__content {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .m-swipeout__button--group {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: block;
+  }
+}

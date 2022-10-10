@@ -9,20 +9,10 @@
   padding: 0 5px;
   display: flex;
   justify-content: center;
-  cursor: pointer;
   color: #7d7e80;
   line-height: 88rpx;
   font-size: 28rpx;
-  -webkit-tap-highlight-color: transparent
-}
-
-.m-tab-item__content {
-  white-space: nowrap;
-  margin: 0 20rpx;
-}
-
-.m-tab-item__text {
-  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .m-tab-item.is-active {
@@ -30,7 +20,16 @@
   color: #323233;
 }
 
-.badge-custom {
-  vertical-align: text-top;
+.m-tab-item .m-tab-item__content {
+  margin: 0 20rpx;
+  white-space: nowrap;
+}
+
+.m-tab-item .m-tab-item__content .m-tab-item__text {
+  display: inline-block;
+}
+
+.m-tab-item .m-tab-item__content .m-tab-item__text .m-badge-custom {
   margin-left: 6rpx;
+  vertical-align: text-top;
 }

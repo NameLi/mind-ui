@@ -75,7 +75,7 @@ Component({
         }
       } else {
         if (this._confirm) {
-          this.onClose()
+          this.close()
         }
       }
       this.triggerEvent('confirm')
@@ -91,7 +91,7 @@ Component({
 
       if (this._cancel) {
         this._cancel()
-        this.onClose()
+        this.close()
       }
     },
 
@@ -100,7 +100,7 @@ Component({
         visible: false
       })
 
-      this.onClose()
+      this.close()
     },
 
     _show(options) {
@@ -111,7 +111,7 @@ Component({
     },
 
     // 关闭并重置默认参数
-    onClose() {
+    close() {
       this.setData({
         visible: false
       })

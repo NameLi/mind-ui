@@ -1,4 +1,4 @@
-<view class="m-tabs__wrap custom-class">
+<view class="m-tabs custom-class">
   <scroll-view
     scroll-x="{{ true }}"
     scroll-with-animation

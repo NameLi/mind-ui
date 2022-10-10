@@ -88,7 +88,7 @@
   border-top: 24rpx solid #e3e3e3;
 }
 
-.m-sheet__loading {
+.m-sheet .m-sheet__loading {
   display: inline-block;
   vertical-align: middle;
   margin-right: 20rpx;
@@ -101,12 +101,12 @@
   animation: btn-spin 0.6s linear infinite;
 }
 
-.m-sheet__text {
+.m-sheet .m-sheet__text {
   display: inline-block;
   vertical-align: middle;
 }
 
-.m-sheet__btn-icon {
+.m-sheet .m-sheet__btn-icon {
   margin-right: 8rpx;
 }
 
@@ -119,14 +119,14 @@
   }
 }
 
-.m-button {
+.m-sheet .m-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  text-align: center;
-  vertical-align: middle;
   white-space: nowrap;
   letter-spacing: 4rpx;
   height: 96rpx;
-  line-height: 96rpx;
   font-size: 32rpx;
   border: 0 !important;
   border-radius: 0;
@@ -137,15 +137,15 @@
   transition: opacity .16s, background-color .16s;
 }
 
-.m-button.is-hover {
+.m-sheet .m-button.is-hover {
   background-color: #f9f9f9;
 }
 
-.m-button.is-disabled {
+.m-sheet .m-button.is-disabled {
   color: #c8c9cc;
 }
 
-.m-button::after {
+.m-sheet .m-button::after {
   border: none;
   content: " ";
   height: 1px;
@@ -158,14 +158,14 @@
   box-sizing: border-box;
 }
 
-.m-button .m-sheet__btn-icon {
+.m-sheet .m-button .m-sheet__btn-icon {
   display: inline-block;
   font-size: 28rpx;
   width: 24rpx;
   height: 24rpx;
 }
 
-.m-button .m-button__loading {
+.m-sheet .m-button .m-button__loading {
   display: inline-block;
   vertical-align: middle;
   width: 32rpx;

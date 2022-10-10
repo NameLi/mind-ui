@@ -6,6 +6,6 @@
   <input type="text" name="{{ name }}" value="{{ value }}" class="m-switch__input" />
 
   <view class="m-switch__node">
-    <view wx:if="{{ loading }}" style="color: {{ activeColor }}" class="m-spinner__snake"></view>
+    <view wx:if="{{ loading }}" class="m-spinner__snake" style="color: {{ activeColor }}"></view>
   </view>
 </view>

@@ -2,27 +2,19 @@
   position: relative;
 }
 
-.m-sticky-item__header {
-  width: 100%;
-}
-
-.sticky {
-  width: 100%;
+.m-sticky-item .m-sticky-item__header-wrap {
   z-index: 9;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-}
-
-.m-sticky-item__title {
-  z-index: 1;
-  position: relative;
   width: 100%;
-  box-sizing: border-box;
-  background: #eee;
 }
 
-.m-sticky__is-fixed {
+.m-sticky-item .m-sticky-item__header-wrap .m-sticky-item__header {
+  width: 100%;
+}
+
+.m-sticky-item .m-sticky-item__header-wrap .m-sticky-item__header.m-sticky__is-fixed {
   position: fixed;
   top: 0;
 }

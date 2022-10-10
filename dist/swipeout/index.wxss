@@ -5,12 +5,12 @@
   font-size: 14px;
 }
 
-.m-swipeout__content {
+.m-swipeout .m-swipeout__content {
   white-space: nowrap;
   overflow: hidden;
 }
 
-.m-swipeout__button--group {
+.m-swipeout .m-swipeout__button--group {
   z-index: 1;
   position: absolute;
   right: 0;

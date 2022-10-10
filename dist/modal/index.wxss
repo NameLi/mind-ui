@@ -16,31 +16,29 @@
   visibility: hidden;
 }
 
-
-.m-modal-wrapper {
+.m-modal-wrap {
   z-index: 1001;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 0.2s ease-in-out, opacity .2s ease-in-out ;
+  transition: transform 0.2s ease-in-out, opacity .2s ease-in-out;
   opacity: 1;
   visibility: visible;
 }
 
-.m-modal-wrapper.is-hidden {
+.m-modal-wrap.is-hidden {
   opacity: 0;
-  /* transform: scale(0.8); */
   visibility: hidden;
 }
 
-.m-modal {
+.m-modal-wrap .m-modal {
   z-index: 9;
   position: relative;
   width: 540rpx;
 }
 
-.m-modal__content {
+.m-modal-wrap .m-modal__content {
   position: relative;
   border-radius: 3rpx;
   padding-top: 30rpx;
@@ -52,7 +50,7 @@
   overflow: hidden;
 }
 
-.m-modal__title {
+.m-modal-wrap .m-modal__title {
   margin: 0;
   padding: 12rpx 30rpx 24rpx;
   font-size: 36rpx;
@@ -61,8 +59,7 @@
   text-align: center;
 }
 
-
-.m-modal__body {
+.m-modal-wrap .m-modal__body {
   max-height: 300rpx;
   margin-bottom: 30rpx;
   padding: 20rpx 40rpx;
@@ -73,18 +70,12 @@
   -webkit-overflow-scrolling: touch;
 }
 
-
-.m-btn-group {
-	position: relative;
+.m-modal-wrap .m-modal__btn-group {
+  position: relative;
   display: flex;
 }
 
-.m-btn-item {
-	position: relative;
-	flex: 1;
-}
-
-.m-btn-group::after {
+.m-modal-wrap .m-modal__btn-group::after {
   content: '';
   position: absolute;
   top: 0;
@@ -95,7 +86,12 @@
   background: #ddd;
 }
 
-.m-btn-cancel::after {
+.m-modal-wrap .m-modal__btn-group .m-modal__btn {
+  position: relative;
+  flex: 1;
+}
+
+.m-modal-wrap .m-modal__btn-group .m-modal__btn.m-modal__btn--cancel::after {
   content: '';
   position: absolute;
   top: 0;

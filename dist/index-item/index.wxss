@@ -1,12 +1,12 @@
-.m-index-item__header {
+.m-index-item .m-index-item__header {
+  padding-left: 20rpx;
   height: 60rpx;
   line-height: 60rpx;
   font-size: 28rpx;
-  padding-left: 20rpx;
-  background: #eee;
   box-sizing: border-box;
+  background-color: #eee;
 }
 
-.m-index-item__content {
+.m-index-item .m-index-item__content {
   font-size: 28rpx;
 }

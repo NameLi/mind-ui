@@ -2,14 +2,14 @@
   padding: 20rpx 0;
 }
 
-.m-progress {
+.m-progress__wrap .m-progress {
   position: relative;
   height: 6rpx;
   border-radius: 100px;
   background-color: #e5e5e5;
 }
 
-.m-progress__portion {
+.m-progress__wrap .m-progress__portion {
   position: absolute;
   left: 0;
   height: 100%;
@@ -17,20 +17,23 @@
   background-color: var(--color-primary, #409EFF);
 }
 
-.m-progress__portion--primary {
+.m-progress__wrap .m-progress__portion--primary {
   background-color: var(--color-primary, #409EFF);
 }
-.m-progress__portion--success {
+
+.m-progress__wrap .m-progress__portion--success {
   background-color: var(--color-success, #67C23A);
 }
-.m-progress__portion--warning {
+
+.m-progress__wrap .m-progress__portion--warning {
   background-color: var(--color-warning, #E6A23C);
 }
-.m-progress__portion--danger {
+
+.m-progress__wrap .m-progress__portion--danger {
   background-color: var(--color-danger, #F56C6C);
 }
 
-.m-progress__point {
+.m-progress__wrap .m-progress__point {
   position: absolute;
   top: 50%;
   right: 0;
@@ -47,15 +50,18 @@
   background-color: var(--color-primary, #409EFF);
 }
 
-.m-progress__point--primary {
+.m-progress__wrap .m-progress__point .m-progress__point--primary {
   background-color: var(--color-primary, #409EFF);
 }
-.m-progress__point--success {
+
+.m-progress__wrap .m-progress__point .m-progress__point--success {
   background-color: var(--color-success, #67C23A);
 }
-.m-progress__point--warning {
+
+.m-progress__wrap .m-progress__point .m-progress__point--warning {
   background-color: var(--color-warning, #E6A23C);
 }
-.m-progress__point--danger {
+
+.m-progress__wrap .m-progress__point .m-progress__point--danger {
   background-color: var(--color-danger, #F56C6C);
 }

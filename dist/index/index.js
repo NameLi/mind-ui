@@ -156,7 +156,7 @@ Component({
 
     // 索引起始位置
     setTouchStartVal() {
-      const className = '.m-index-fixed'
+      const className = '.m-index__fixed'
       const query = wx.createSelectorQuery().in(this)
 
       query.select(className).boundingClientRect((res) => {

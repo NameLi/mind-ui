@@ -34,7 +34,7 @@ Modal.confirm = options => Modal(options)
 
 Modal.close = (selector = '#modal') => {
   const ctx = getCtx(selector)
-  ctx.onClose()
+  ctx.close()
 }
 
 export default Modal

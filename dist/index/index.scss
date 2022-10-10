@@ -1,0 +1,43 @@
+.m-index {
+  width: 100%;
+  height: 100%;
+
+  .m-index__fixed {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 10;
+    padding-left: 10px;
+    transform: translateY(-50%);
+
+    .m-index__fixed-item {
+      display: block;
+      height: 36rpx;
+      min-width: 40rpx;
+      line-height: 36rpx;
+      text-align: center;
+      color: #777;
+      font-size: 24rpx;
+
+      &.is-active {
+        color: var(--color-primary, #409EFF);
+      }
+    }
+  }
+
+  .m-index__tooltip {
+    z-index: 9;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 6rpx;
+    width: 160rpx;
+    height: 160rpx;
+    line-height: 160rpx;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    transform: translate3d(-50%, -50%, 0);
+  }
+}

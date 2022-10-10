@@ -1,0 +1,35 @@
+.m-timeline {
+  display: flex;
+
+  .m-time {
+    position: relative;
+    width: 120rpx;
+    min-height: 80rpx;
+    display: flex;
+    justify-content: center;
+    color: #aaa;
+    font-size: 28rpx;
+
+    &::after {
+      position: absolute;
+      top: 44rpx;
+      width: 1px;
+      bottom: 10rpx;
+      content: " ";
+      background: #ccc;
+      transform: translateY(.5);
+    }
+
+    .m-timeline__content {
+      flex: 1;
+      width: 0;
+      margin-top: 16rpx;
+      margin-bottom: 46rpx;
+      margin-right: 32rpx;
+    }
+  }
+}
+
+.is-last .m-time::after {
+  display: none;
+}

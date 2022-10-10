@@ -19,10 +19,12 @@ Component({
 
   properties: {
     name: null,
+    
     value: {
       type: Boolean,
       value: false
     },
+    
     disabled: {
       type: Boolean,
       value: false

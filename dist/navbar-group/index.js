@@ -119,7 +119,6 @@ Component({
         })
       }
 
-
       const scrollLeft = left - this.data.tabWidth / 2 + domWidth / 2
 
       const custonLineWidth = Math.floor(parseInt(this.data.lineWidth) * (this.data.tabWidth / 750))
