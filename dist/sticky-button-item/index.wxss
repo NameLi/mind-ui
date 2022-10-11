@@ -1,4 +1,4 @@
-.m-sticky-button {
+.m-sticky-item__button {
   z-index: 1;
   position: absolute;
   display: flex;
@@ -16,6 +16,6 @@
   background: var(--color-primary, #409EFF);
 }
 
-.m-sticky-button::after {
+.m-sticky-item__button::after {
   display: none;
 }

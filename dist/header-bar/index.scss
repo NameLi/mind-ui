@@ -7,57 +7,66 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-  }
+    background-color: #fff;
 
-  .m-header .back {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60rpx;
-    padding-left: 20rpx;
-    height: 100%;
-  }
+    &.is-fixed {
+      z-index: 9999;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
 
-  .m-header .back .back-icon {
-    width: 32rpx;
-    height: 32rpx;
-    background: #000;
-    -webkit-mask: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%2019.438L8.955%2020.5l-7.666-7.79a1.02%201.02%200%20010-1.42L8.955%203.5%2010%204.563%202.682%2012%2010%2019.438z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") no-repeat 50% 50%;
-    mask: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%2019.438L8.955%2020.5l-7.666-7.79a1.02%201.02%200%20010-1.42L8.955%203.5%2010%204.563%202.682%2012%2010%2019.438z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") no-repeat 50% 50%;
-    -webkit-mask-size: cover;
-    mask-size: cover;
-  }
+    .m-back {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60rpx;
+      padding-left: 20rpx;
+      height: 100%;
 
-  .m-header .back .back-text {
-    color: #000;
-    font-size: 32rpx;
-    font-weight: 600;
-  }
+      .m-back-icon {
+        width: 32rpx;
+        height: 32rpx;
+        background: #000;
+        -webkit-mask: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%2019.438L8.955%2020.5l-7.666-7.79a1.02%201.02%200%20010-1.42L8.955%203.5%2010%204.563%202.682%2012%2010%2019.438z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") no-repeat 50% 50%;
+        mask: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%2019.438L8.955%2020.5l-7.666-7.79a1.02%201.02%200%20010-1.42L8.955%203.5%2010%204.563%202.682%2012%2010%2019.438z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+      }
 
-  .m-header .content {
-    flex: 1;
-    width: 0;
-    display: flex;
-    align-items: center;
-    padding: 0 20rpx;
-  }
+      .m-back-text {
+        color: #000;
+        font-size: 32rpx;
+        font-weight: 600;
+      }
+    }
 
-  .m-header .content.center {
-    justify-content: center;
-  }
+    .m-header__content {
+      flex: 1;
+      width: 0;
+      display: flex;
+      align-items: center;
+      padding: 0 20rpx;
 
-  .content .title {
-    width: 420rpx;
-    line-height: 1;
-    font-size: 32rpx;
-    font-family: "-apple-system-font", "Helvetica Neue", Helvetica, "sans-serif";
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+      &.is-center {
+        justify-content: center;
 
-  .content.center .title {
-    width: 260rpx;
+        .m-header__title {
+          width: 260rpx;
+        }
+      }
+
+      .m-header__title {
+        width: 420rpx;
+        line-height: 1;
+        font-size: 32rpx;
+        font-family: "-apple-system-font", "Helvetica Neue", Helvetica, "sans-serif";
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
   }
 
   .m-spinner__snake {

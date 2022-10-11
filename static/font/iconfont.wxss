@@ -10,9 +10,7 @@
 .iconfont {
   font-family:"iconfont" !important;
   font-style:normal;
-  vertical-align: middle;
   -webkit-font-smoothing: antialiased;
-  display: inline-block;
 }
 
 .icon-cross:before {

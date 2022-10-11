@@ -1,6 +1,8 @@
 .sticky-fixed {
   position: fixed;
   bottom: 40rpx;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 .left-bottom {
   left: 40rpx;
@@ -15,5 +17,4 @@
 .custom-class {
   width: 80rpx !important;
   height: 80rpx !important;
-  line-height: 80rpx !important;
 }

@@ -11,10 +11,15 @@
 }
 
 .m-swipeout .m-swipeout__button--group {
+  opacity: 0;
   z-index: 1;
   position: absolute;
   right: 0;
   top: 0;
-  height: 100%;
   display: block;
+  height: 100%;
+}
+
+.m-swipeout .m-swipeout__button--group.is-ready {
+  opacity: 1;
 }

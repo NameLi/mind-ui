@@ -5,7 +5,7 @@ Component({
     addGlobalClass: true,
     multipleSlots: true
   },
-  
+
   properties: {
     loading: {
       type: Boolean,
@@ -59,7 +59,7 @@ Component({
 
   observers: {
     bgcolor(val) {
-      if(val) {
+      if (val) {
         if (val.includes('gradient')) {
           this.setData({
             bgColorStyle: `background-image: ${val};`
@@ -83,7 +83,7 @@ Component({
           bgImageStyle: `background-image: url("${val}")`
         })
       } else {
-        
+
         this.setData({
           bgImageStyle: ''
         })
@@ -91,14 +91,14 @@ Component({
     },
 
     align(val) {
-      if(val) {
+      if (val) {
         this.setData({
           titleAlignClass: val
         })
       } else {
         if (!this.data.align && app.globalData.isIOS) {
           this.setData({
-            titleAlignClass: 'center'
+            titleAlignClass: 'is-center'
           })
         } else {
           this.setData({
@@ -109,7 +109,7 @@ Component({
     },
 
     color(val) {
-      if(val) {
+      if (val) {
         this.setData({
           titleColorStyle: `color: ${val}`
         })
@@ -120,7 +120,7 @@ Component({
       }
     }
   },
-  
+
   data: {
     statusBarH: app.globalData.statusBarH,
     customBarH: app.globalData.customBarH,
@@ -134,11 +134,11 @@ Component({
   attached() {
     if (!this.data.titleAlign && app.globalData.isIOS) {
       this.setData({
-        titleAlignClass: 'center'
+        titleAlignClass: 'is-center'
       })
     }
   },
-  
+
   methods: {
     BackPage() {
       wx.navigateBack({

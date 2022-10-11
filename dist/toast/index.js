@@ -51,7 +51,7 @@ Component({
         type = '',
         icon = '',
         image = '',
-        duration = 3000,
+        duration = 2000,
         position = 'middle',
         mask = false,
         ghost = true,

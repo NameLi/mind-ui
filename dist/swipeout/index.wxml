@@ -11,7 +11,7 @@
   </view>
 
   <view 
-    class="m-swipeout__button--group"
+    class="m-swipeout__button--group {{ isReady ? 'is-ready' : '' }}"
     style="{{ buttonStyle }}"
   >
     <slot name="button" />

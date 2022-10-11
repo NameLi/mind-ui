@@ -1,5 +1,6 @@
 .m-radio {
   display: flex;
+  padding: 3rpx 0;
 }
 
 .m-radio .m-radio__icon-wrap {
@@ -62,6 +63,8 @@
 }
 
 .m-radio .m-radio__label {
+  display: inline-flex;
+  align-items: center;
   flex: 1;
   word-wrap: break-word;
   color: var(--color-text-regular, #606266);

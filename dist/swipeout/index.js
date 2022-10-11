@@ -2,7 +2,7 @@ let Instances = []
 
 Component({
   externalClasses: ['custom-class'],
-  
+
   options: {
     addGlobalClass: true,
     multipleSlots: true // 在组件定义时的选项中启用多slot支持
@@ -10,6 +10,7 @@ Component({
 
   data: {
     btnWidth: 0,
+    isReady: false,
     preventTouch: false,
     isMoving: false,
     touchStart: {}, // 记录滑动起始位置，模拟tap使用
@@ -36,6 +37,10 @@ Component({
 
         this.setData({
           buttonStyle
+        }, () => {
+          this.setData({
+            isReady: true
+          })
         })
       })
     },
@@ -75,7 +80,7 @@ Component({
 
       this.setData({
         setStyle,
-        buttonStyle
+        buttonStyle: buttonStyle + transition
       })
     },
 
@@ -209,7 +214,7 @@ Component({
       // 设置回弹动画时长
       const bounceTime = this.data.bounceTime // 回弹动画默认时长
       let moveDistance = Math.abs(touch.pageX - this.data.startX) //  移动距离
-      let bounceSec = parseInt(moveDistance / this.data.btnWidth * bounceTime) // 回弹动画时间，单位秒
+      let bounceSec = moveDistance / this.data.btnWidth * bounceTime // 回弹动画时间，单位秒
       if (bounceSec > bounceTime / 2) bounceSec = bounceTime - bounceSec // 时长过半则取反
       bounceSec = bounceSec.toFixed(2)
 

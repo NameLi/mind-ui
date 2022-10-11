@@ -22,7 +22,7 @@ App({
   globalData: {
     userInfo: null,
     isIOS: false,
-    
+
     customBarH: 70,
     statusBarH: 20,
     customBar: {}

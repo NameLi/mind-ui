@@ -23,7 +23,7 @@
     color: transparent;
     text-align: center;
     transition-property: color, border-color, background-color;
-    font-size: 30rpx;
+    font-size: 28rpx;
     font-weight: bold;
     border: 1px solid #e5e5e5;
     border-radius: 4rpx;
@@ -65,7 +65,6 @@
   .m-checkbox__label--disabled {
     color: #d3d4d5;
   }
-
 
   .m-checkbox__icon--prevent {
     background-color: #ebedf0;

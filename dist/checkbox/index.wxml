@@ -12,7 +12,7 @@
     >
       <m-icon
         name="confirm"
-        size="32"
+        size="30"
         color="{{ value ? '#fff' : 'transparent' }}"
       />
     </view>

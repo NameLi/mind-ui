@@ -27,7 +27,7 @@ Component({
     },
     iconSize: {
       type: Number,
-      value: 48
+      value: 40
     },
     bgcolor: {
       type: String

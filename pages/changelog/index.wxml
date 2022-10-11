@@ -1,4 +1,24 @@
 <m-timeline>
+	<m-timeline-item text="v0.4.0">
+		<view class="content">
+			<view class="date">2022-10-12</view>
+			<view class="text">
+				<view>1.优化.wxss由.scss生成</view>
+				<view>2.优化多个组件的样式</view>
+				<view>3.优化多个组件增加底部安全距离</view>
+				<view>4.优化 navbar 初始化时x轴显示滚动条问题</view>
+				<view>5.优化toast、message组件增加顶部安全距离</view>
+				<view>6.修复swipeout ios系统显示异常，优化初始化时按钮闪烁问题</view>
+				<view>7.修复 header 滚动时未固定问题</view>
+				<view>8.修复 icon 组件字体居中异常问题</view>
+				<view>9.修复 modal 组件 js 引入时异步关闭异常问题</view>
+				<view>10.rate 组件增加 step 步长属性</view>
+				<view>11.所有组件增加 addGlobalClass 属性</view>
+				<view>12.其它一些不影响功能的用户体验优化</view>
+			</view>
+		</view>
+	</m-timeline-item>
+
 	<m-timeline-item text="v0.3.1">
 		<view class="content">
 			<view class="date">2022-07-26</view>

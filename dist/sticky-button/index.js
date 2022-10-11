@@ -46,7 +46,7 @@ Component({
 
     iconSize: {
       type: Number,
-      value: 48
+      value: 44
     },
 
     iconColor: {
