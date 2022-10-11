@@ -1,8 +1,8 @@
 .m-cell {
-	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 	padding: 20rpx 32rpx;
 	line-height: 54rpx;
 	font-size: 28rpx;
@@ -34,6 +34,8 @@
 	}
 
 	.m-cell__desc {
+		display: flex;
+		align-items: center;
 		margin-left: 20rpx;
 		max-width: 400rpx;
 		color: var(--color-text-secondary, #909399);

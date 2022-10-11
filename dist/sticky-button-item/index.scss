@@ -14,8 +14,8 @@
   border: 0 !important;
   transition: transform .3s ease-in-out;
   background: var(--color-primary, #409EFF);
-}
 
-.m-sticky-button::after {
-  display: none;
+  &::after {
+    display: none;
+  }
 }

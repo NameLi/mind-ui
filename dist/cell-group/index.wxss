@@ -5,7 +5,7 @@
   transition: margin .2s ease-in-out;
 }
 
-.m-cell-group .m-cell-group--card {
+.m-cell-group.m-cell-group--card {
   margin: 32rpx;
   border-radius: 12rpx;
   overflow: hidden;

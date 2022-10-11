@@ -1,4 +1,4 @@
-<view class="m-radio custom-class {{ disabled ? 'm-radio--disabled' : '' }}">
+<view class="m-radio {{ disabled ? 'm-radio--disabled' : '' }} custom-class">
   <view
     wx:if="{{ labelLeft }}"
     class="m-radio__label m-radio__label--left"

@@ -58,3 +58,5 @@
   <m-cell title="更新日志" url="/pages/changelog/index" />
   <m-cell title="关于项目" url="/pages/about/index" />
 </m-cell-group>
+
+<view style="height: 40rpx;"></view>

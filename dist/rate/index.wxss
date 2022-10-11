@@ -4,9 +4,9 @@
 }
 
 .m-rate .m-rate__content {
+  display: flex;
   position: relative;
   margin-right: 4rpx;
-  display: flex;
 }
 
 .m-rate .m-rate__content.is-active {

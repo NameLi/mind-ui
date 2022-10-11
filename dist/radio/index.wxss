@@ -1,36 +1,36 @@
 .m-radio {
   display: flex;
-  align-items: center;
 }
 
 .m-radio .m-radio__icon-wrap {
-  font-size: 0;
+  display: flex;
+  align-items: center;
 }
 
 .m-radio .m-radio__icon-wrap .m-radio__icon {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 42rpx;
   height: 42rpx;
   color: var(--color-primary, #409EFF);
-  text-align: center;
   border: 1px solid #e5e5e5;
   border-radius: 100%;
   box-sizing: content-box;
-  vertical-align: middle;
   transition-property: color, border-color, background-color;
-  transition-duration: 0.2s;
+  transition-duration: 0.15s;
 }
 
 .m-radio .m-radio__icon-wrap .m-radio__icon::after {
-  display: block;
   content: " ";
+  display: block;
+  margin: auto;
   width: 20rpx;
   height: 20rpx;
   border-radius: 100%;
   background-color: currentColor;
   position: absolute;
-  margin: auto;
   left: 0;
   top: 0;
   right: 0;
@@ -39,25 +39,25 @@
   transition: transform 0.15s ease-in;
 }
 
-.m-radio .radio__icon--checked {
+.m-radio .m-radio__icon-wrap .m-radio__icon.m-radio__icon--checked {
   border-color: currentColor;
 }
 
-.m-radio .radio__icon--checked::after {
+.m-radio .m-radio__icon-wrap .m-radio__icon.m-radio__icon--checked::after {
   transform: scale(1);
 }
 
-.m-radio .m-radio__icon--disabled {
+.m-radio .m-radio__icon-wrap .m-radio__icon--disabled {
   border-color: #c8c9cc;
   background-color: #ebedf0;
 }
 
-.m-radio .m-radio__icon--disabled.m-radio__icon--checked {
+.m-radio .m-radio__icon-wrap .m-radio__icon--disabled.m-radio__icon--checked {
   color: #c8c9cc;
+  border-color: currentColor;
 }
 
-.m-radio .m-radio__icon--disabled.m-radio__icon--checked::after {
-  color: #c8c9cc;
+.m-radio .m-radio__icon-wrap .m-radio__icon--disabled.m-radio__icon--checked::after {
   background-color: currentColor;
 }
 
@@ -67,10 +67,10 @@
   color: var(--color-text-regular, #606266);
 }
 
-.m-radio .m-radio__label.radio__label--left {
+.m-radio .m-radio__label.m-radio__label--left {
   margin-right: 20rpx;
 }
 
-.m-radio .m-radio__label.radio__label--right {
+.m-radio .m-radio__label.m-radio__label--right {
   margin-left: 20rpx;
 }

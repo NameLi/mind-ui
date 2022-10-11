@@ -3,9 +3,12 @@
   width: 100rpx;
   height: 100rpx;
   line-height: 100rpx;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
-.m-sticky-button {
+.m-sticky-button__wrap .m-sticky-button {
+  z-index: 2;
   position: absolute;
   left: 0;
   top: 0;
@@ -14,17 +17,16 @@
   color: #fff;
   border-radius: 50%;
   text-align: center;
-  z-index: 2;
   font-size: 60rpx;
   background-color: var(--color-primary, #409EFF);
-  transition: transform .3s ease-in-out;
+  transition: transform .25s ease-in-out;
 }
 
-.m-sticky-button.is-active {
+.m-sticky-button__wrap .m-sticky-button.is-active {
   transform: rotate(135deg);
 }
 
-.m-sticky-button__container {
+.m-sticky-button__wrap .m-sticky-button__container {
   position: absolute;
   width: 80rpx;
   height: 80rpx;

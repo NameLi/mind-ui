@@ -3,9 +3,9 @@
   align-items: center;
 
   .m-rate__content {
+    display: flex;
     position: relative;
     margin-right: 4rpx;
-    display: flex;
 
     &.is-active {
       animation: jump 0.4s ease-in-out;
